@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/project/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://ngoccuongnguyen.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Accelerated First-Order Methods in Simulations and Optimizations</title>
+      <link>https://ngoccuongnguyen.github.io/project/afom/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/afom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CESMIX Project</title>
+      <link>https://ngoccuongnguyen.github.io/project/cesmix/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cesmix/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The Center for Exascale Simulation of Materials in Extreme Environments (CESMIX) seeks to advance the state-of-the-art in predictive simulation by connecting quantum and molecular simulations of materials with state-of-the-art programming languages, compiler technologies, and software performance engineering tools, underpinned by rigorous approaches to statistical inference and uncertainty quantification. Our motivating problem is to predict the degradation of complex (disordered and multi-component) materials under extreme loading, inaccessible to direct experimental observation. This application represents a technology domain of intense current interest, and exemplifies an important class of scientific problems - involving material interfaces in extreme environments. This project  is supported by the Department of Energy&amp;rsquo;s Predictive Science Academic Alliance Program (PSAAP-III).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Composable Next Generation Software Framework for Space Weather Data Assimilation and Uncertainty Quantification</title>
+      <link>https://ngoccuongnguyen.github.io/project/swqu/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/swqu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lightning Initiation and Prevention</title>
+      <link>https://ngoccuongnguyen.github.io/project/lip/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/lip/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
