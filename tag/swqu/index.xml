@@ -17,7 +17,29 @@
       <link>https://ngoccuongnguyen.github.io/project/swqu/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/project/swqu/</guid>
-      <description></description>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/swquimage.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The forecasting and reanalysis of space weather events poses a major challenge for many activities in space and beyond. For example, solar storms can damage the power supply infrastructure and computer networks on earth but also impact crucially space exploration and satellite traffic management. As a consequence, improved space weather prediction capabilities can unlock to tremendous societal and economic opportunities such as improved internet coverage via satellite mega-constellations. This multi-disciplinary project brings together teams from various institutions and fields to extend the computational capabilities in the realm of space weather modeling. As part of a larger NSF and NASA initiative motivated by the White House National Space Weather Strategy and Action Plan, the main objective of this project is to build a Julia-based, composable, sustainable, and portable open-source software framework for the model-based analysis of space weather. To that end, the project seeks to develop scalable algorithms for simulation of large-scale, high-fidelity models, reduced order modeling, data assimilation, and uncertainty propagation. These algorithms are then integrated and distributed to the wider space weather modeling community in form of a composable software framework build in Julia. This project is funded by NSF.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

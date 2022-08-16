@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hyper | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/hyper/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/hyper/index.xml" rel="self" type="application/rss+xml" />
+    <description>hyper</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>hyper</title>
+      <link>https://ngoccuongnguyen.github.io/tag/hyper/</link>
+    </image>
+    
+    <item>
+      <title>Implicit Large eddy simulation of hypersonic boundary-layer transition for a flared cone</title>
+      <link>https://ngoccuongnguyen.github.io/project/hyper1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hyper1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present an implicit large eddy simulation (ILES) of hypersonic boundary-layer transition for a flared cone at Mach number 6.0 and Reynolds number $10.8 \times 10^6$. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta (DIRK) scheme on graphics processor units (GPUs). A Jacobian-free Newton-Krylov (JFNK) method is used to solve nonlinear systems arising from the discretization of the Navier-Stokes equations. The ILES simulation exhibits the onset of primary and second-mode instabilities, quite zone, followed by transition to turbulence breakdown. These distinct characteristics of hypersonic flows on cone-like geometries are also observed in experiments. The Stanton number distribution and the pressure fluctuation are studied for different freestream intensities and compared with the experimental data. The results suggest that the ILES method is capable of capturing the onset of transition and turbulence breakdown  phenomena for hypersonic turbulent flows past a flared cone.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GPU-accelerated Large Eddy Simulation of Hypersonic Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/hyper2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hyper2/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;High-order discontinuous Galerkin (DG) methods have emerged as an attractive approach for large eddy simulation of turbulent flows owing to their high accuracy and implicit dissipation properties. However, the application of DG methods for hypersonic flows is still challenging due to the high-computational cost and the lack of robust shock capturing algorithms. In this paper, we adreess the efficiency and robustness of Discontinuous Galerkin methods. To that end we develop a high-order implicit discontinuous Galerkin method for the numerical simulation of hypersonic flows on graphics processors (GPUs). The main ingredients in our approach include i) implicit high-order DG approximation on unstructured/adapted meshes, ii) shock capturing for hypersonic flows, iii) iterative solution methods with CUDA/MPI implementation on GPU clusters, and iv) effective matrix-free preconditioner with reduced basis approximation of the Jacobian matrix. Numerical results on several test cases are presented to validate our method.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -39,9 +39,39 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub100/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.&lt;/p&gt;
 </description>
     </item>
     
@@ -50,11 +80,223 @@
       <link>https://ngoccuongnguyen.github.io/publication/pub103/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/publication/pub103/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim2.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim3.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim4.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implicit Large eddy simulation of hypersonic boundary-layer transition for a flared cone</title>
+      <link>https://ngoccuongnguyen.github.io/project/dg1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/dg1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present an implicit large eddy simulation (ILES) of hypersonic boundary-layer transition for a flared cone at Mach number 6.0 and Reynolds number $10.8 \times 10^6$. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta (DIRK) scheme on graphics processor units (GPUs). A Jacobian-free Newton-Krylov (JFNK) method is used to solve nonlinear systems arising from the discretization of the Navier-Stokes equations. The ILES simulation exhibits the onset of primary and second-mode instabilities, quite zone, followed by transition to turbulence breakdown. These distinct characteristics of hypersonic flows on cone-like geometries are also observed in experiments. The Stanton number distribution and the pressure fluctuation are studied for different freestream intensities and compared with the experimental data. The results suggest that the ILES method is capable of capturing the onset of transition and turbulence breakdown  phenomena for hypersonic turbulent flows past a flared cone.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implicit Large eddy simulation of hypersonic boundary-layer transition for a flared cone</title>
+      <link>https://ngoccuongnguyen.github.io/project/hyper1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hyper1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present an implicit large eddy simulation (ILES) of hypersonic boundary-layer transition for a flared cone at Mach number 6.0 and Reynolds number $10.8 \times 10^6$. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta (DIRK) scheme on graphics processor units (GPUs). A Jacobian-free Newton-Krylov (JFNK) method is used to solve nonlinear systems arising from the discretization of the Navier-Stokes equations. The ILES simulation exhibits the onset of primary and second-mode instabilities, quite zone, followed by transition to turbulence breakdown. These distinct characteristics of hypersonic flows on cone-like geometries are also observed in experiments. The Stanton number distribution and the pressure fluctuation are studied for different freestream intensities and compared with the experimental data. The results suggest that the ILES method is capable of capturing the onset of transition and turbulence breakdown  phenomena for hypersonic turbulent flows past a flared cone.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implicit Large eddy simulation of hypersonic boundary-layer transition for a flared cone</title>
+      <link>https://ngoccuongnguyen.github.io/publication/pub105/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/publication/pub105/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method</title>
+      <link>https://ngoccuongnguyen.github.io/project/les1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/les1/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/oat15a1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model.&lt;/p&gt;
 </description>
     </item>
     
@@ -63,11 +305,69 @@
       <link>https://ngoccuongnguyen.github.io/publication/pub94/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/publication/pub94/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/oat15a1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/oat15a2.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/oat15a3.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -78,7 +378,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub104/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -91,9 +391,39 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub101/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/les2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/les2/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations.&lt;/p&gt;
 </description>
     </item>
     
@@ -104,7 +434,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub93/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -117,7 +447,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub89/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -130,7 +460,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub92/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -143,7 +473,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub102/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -235,7 +565,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub70/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -248,7 +578,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub97/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -261,7 +591,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub75/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -274,7 +604,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub85/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -287,7 +617,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub61/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -300,7 +630,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub96/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -349,7 +679,29 @@
       <link>https://ngoccuongnguyen.github.io/project/swqu/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/project/swqu/</guid>
-      <description></description>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/swquimage.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The forecasting and reanalysis of space weather events poses a major challenge for many activities in space and beyond. For example, solar storms can damage the power supply infrastructure and computer networks on earth but also impact crucially space exploration and satellite traffic management. As a consequence, improved space weather prediction capabilities can unlock to tremendous societal and economic opportunities such as improved internet coverage via satellite mega-constellations. This multi-disciplinary project brings together teams from various institutions and fields to extend the computational capabilities in the realm of space weather modeling. As part of a larger NSF and NASA initiative motivated by the White House National Space Weather Strategy and Action Plan, the main objective of this project is to build a Julia-based, composable, sustainable, and portable open-source software framework for the model-based analysis of space weather. To that end, the project seeks to develop scalable algorithms for simulation of large-scale, high-fidelity models, reduced order modeling, data assimilation, and uncertainty propagation. These algorithms are then integrated and distributed to the wider space weather modeling community in form of a composable software framework build in Julia. This project is funded by NSF.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -361,13 +713,43 @@
     </item>
     
     <item>
+      <title>GPU-accelerated Large Eddy Simulation of Hypersonic Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/hyper2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hyper2/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;High-order discontinuous Galerkin (DG) methods have emerged as an attractive approach for large eddy simulation of turbulent flows owing to their high accuracy and implicit dissipation properties. However, the application of DG methods for hypersonic flows is still challenging due to the high-computational cost and the lack of robust shock capturing algorithms. In this paper, we adreess the efficiency and robustness of Discontinuous Galerkin methods. To that end we develop a high-order implicit discontinuous Galerkin method for the numerical simulation of hypersonic flows on graphics processors (GPUs). The main ingredients in our approach include i) implicit high-order DG approximation on unstructured/adapted meshes, ii) shock capturing for hypersonic flows, iii) iterative solution methods with CUDA/MPI implementation on GPU clusters, and iv) effective matrix-free preconditioner with reduced basis approximation of the Jacobian matrix. Numerical results on several test cases are presented to validate our method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Wall-resolved implicit large eddy simulation of transonic buffet over the OAT15A airfoil using a discontinuous Galerkin method</title>
       <link>https://ngoccuongnguyen.github.io/publication/pub95/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/publication/pub95/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -380,7 +762,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub64/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -393,7 +775,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub90/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -406,7 +788,7 @@
       <guid>https://ngoccuongnguyen.github.io/publication/pub56/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -544,7 +926,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub50/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -557,7 +939,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub76/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -570,7 +952,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub57/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -583,7 +965,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub71/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -596,7 +978,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub77/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -609,7 +991,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub74/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -622,7 +1004,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub79/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -635,7 +1017,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub59/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -648,7 +1030,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub78/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -661,7 +1043,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub86/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -674,7 +1056,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub26/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -687,7 +1069,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub58/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -700,7 +1082,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub87/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -713,7 +1095,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub46/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -726,7 +1108,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub51/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -739,7 +1121,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub29/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -752,7 +1134,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub80/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -765,7 +1147,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub30/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -778,7 +1160,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub99/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -791,7 +1173,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub66/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -804,7 +1186,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub44/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -817,7 +1199,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub88/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -830,7 +1212,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub65/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -843,7 +1225,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub24/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -856,7 +1238,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub45/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -869,7 +1251,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub38/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -882,7 +1264,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub49/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -895,7 +1277,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub47/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -908,7 +1290,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub69/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -921,7 +1303,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub28/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -934,7 +1316,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub62/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -947,7 +1329,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub67/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -960,7 +1342,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub32/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -973,7 +1355,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub98/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -986,7 +1368,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub82/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -999,7 +1381,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub81/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1012,7 +1394,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub84/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1025,7 +1407,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub34/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1038,7 +1420,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub52/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1051,7 +1433,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub54/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1064,7 +1446,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub43/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1077,7 +1459,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub91/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1090,7 +1472,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub14/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1103,7 +1485,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub83/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1116,7 +1498,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub40/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1129,7 +1511,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub37/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1142,7 +1524,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub39/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1155,7 +1537,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub72/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1168,7 +1550,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub13/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1181,7 +1563,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub35/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1194,7 +1576,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub15/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1207,7 +1589,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub27/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1220,7 +1602,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub23/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1233,7 +1615,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub10/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1246,7 +1628,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub5/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1259,7 +1641,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub11/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1272,7 +1654,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub20/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1285,7 +1667,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub17/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1298,7 +1680,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub36/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1311,7 +1693,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub33/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1324,7 +1706,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub63/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1337,7 +1719,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub22/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1350,7 +1732,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub6/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1363,7 +1745,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub8/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1376,7 +1758,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub21/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1389,7 +1771,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub48/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1402,7 +1784,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub12/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1415,7 +1797,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub55/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1428,7 +1810,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub3/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1441,7 +1823,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub4/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1454,7 +1836,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub25/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1467,7 +1849,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub19/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1480,7 +1862,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub9/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1493,7 +1875,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub42/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1506,7 +1888,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub41/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1519,7 +1901,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub68/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1532,7 +1914,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub53/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1545,7 +1927,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub16/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1558,7 +1940,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub2/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1571,7 +1953,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub18/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1584,7 +1966,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub73/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1597,7 +1979,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub31/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1610,7 +1992,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub60/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1623,7 +2005,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub7/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1636,7 +2018,7 @@ $$&lt;/p&gt;
       <guid>https://ngoccuongnguyen.github.io/publication/pub1/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
