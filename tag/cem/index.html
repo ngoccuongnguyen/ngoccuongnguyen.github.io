@@ -553,7 +553,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#featured"><span>Research</span></a>
+            <a class="nav-link " href="/#research"><span>Research</span></a>
           </li>
 
           
@@ -664,44 +664,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#accomplishments"><span>Softwares</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#collaborators"><span>Collaborators</span></a>
+            <a class="nav-link " href="/#softwares"><span>Software</span></a>
           </li>
 
           
@@ -897,11 +860,530 @@
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/project/cem1/" >Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</a>
+      <a href="/project/cem6/" >A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</a>
+    </div>
+
+    
+    <a href="/project/cem6/"  class="summary-link">
+      <div class="article-style">
+        We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      F. Vidal-Codina</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      C. Ciraci</span>, <span >
+      S.-H. Oh</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem6/cem6.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem6/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem3/" >An explicit hybridizable discontinuous Galerkin method for the acoustic wave equation</a>
+    </div>
+
+    
+    <a href="/project/cem3/"  class="summary-link">
+      <div class="article-style">
+        We present an explicit hybridizable discontinuous Galerkin (HDG) method for numerically solving the acoustic wave equation. The method is fully explicit, high-order accurate in both space and time, and coincides with the classic discontinuous Galerkin (DG) method with upwinding fluxes for a particular choice of its stabilization function. This means that it has the same computational complexity as other explicit DG methods. However, just as its implicit version, it provides optimal convergence of order for all the approximate variables including the gradient of the solution, and, when the time-stepping method is of order , it displays a superconvergence property which allow us, by means of local postprocessing, to obtain new improved approximations of the scalar field variables at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order in the L2 norm for. These properties do not hold for all numerical fluxes. Indeed, our results show that, when the HDG numerical flux is replaced by the Lax?Friedrichs flux, the above-mentioned superconvergence properties are lost, although some are recovered when the Lax?Friedrichs flux is used only in the interior of the domain. Finally, we extend the explicit HDG method to treat the wave equation with perfectly matched layers. We provide numerical examples to demonstrate the performance of the proposed method.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      M Stanglmeier</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      J Peraire</span>, <span >
+      B Cockburn</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem3/cem3.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem3/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem1/" >High-order implicit hybridizable discontinuous Galerkin methods for acoustics and elastodynamics</a>
     </div>
 
     
     <a href="/project/cem1/"  class="summary-link">
+      <div class="article-style">
+        We present a class of hybridizable discontinuous Galerkin (HDG) methods for the numerical simulation of wave phenomena in acoustics and elastodynamics. The methods are fully implicit and high-order accurate in both space and time, yet computationally attractive owing to their following distinctive features. First, they reduce the globally coupled unknowns to the approximate trace of the velocity, which is defined on the element faces and single-valued, thereby leading to a significant saving in the computational cost. In addition, all the approximate variables (including the approximate velocity and gradient) converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k ? 0 are used to represent the numerical solution and when the time-stepping method is accurate with order k + 1. When the time-stepping method is of order k + 2, superconvergence properties allows us, by means of local postprocessing, to obtain better, yet inexpensive approximations of the displacement and velocity at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order k + 2 in the L2-norm when k ? 1 for both acoustics and elastodynamics. Extensive numerical results are provided to illustrate these distinctive features.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      Jaume Peraire</span>, <span >
+      Bernardo Cockburn</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem1/cem1.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem1/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem2/" >Hybridizable discontinuous Galerkin methods for the time-harmonic Maxwells equations</a>
+    </div>
+
+    
+    <a href="/project/cem2/"  class="summary-link">
+      <div class="article-style">
+        We present two hybridizable discontinuous Galerkin (HDG) methods for the numerical solution of the time-harmonic Maxwell?s equations. The first HDG method explicitly enforces the divergence-free condition and thus necessitates the introduction of a Lagrange multiplier. It produces a linear system for the degrees of freedom of the approximate traces of both the tangential component of the vector field and the Lagrange multiplier. The second HDG method does not explicitly enforce the divergence-free condition and thus results in a linear system for the degrees of freedom of the approximate trace of the tangential component of the vector field only. For both HDG methods, the approximate vector field converges with the optimal order of k + 1 in the L2-norm, when polynomials of degree k are used to represent all the approximate variables. We propose elementwise postprocessing to obtain a new Hcurl-conforming approximate vector field which converges with order k + 1 in the Hcurl-norm. We present extensive numerical examples to demonstrate and compare the performance of the HDG methods.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      Jaume Peraire</span>, <span >
+      Bernardo Cockburn</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem2/cem2.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem2/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem5/" >Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</a>
+    </div>
+
+    
+    <a href="/project/cem5/"  class="summary-link">
       <div class="article-style">
         We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.
       </div>
@@ -941,14 +1423,276 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem1/cem1.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem5/cem5.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/project/cem1/cite.bib">
+        data-filename="/project/cem5/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem7/" >Symplectic Hamiltonian finite element methods for electromagnetics</a>
+    </div>
+
+    
+    <a href="/project/cem7/"  class="summary-link">
+      <div class="article-style">
+        We present several high-order accurate finite element methods for the Maxwell?s equations which provide time-invariant, non-drifting approximations to the total electric and magnetic charges, and to the total energy. We devise these methods by taking advantage of the Hamiltonian structures of the Maxwell?s equations as follows. First, we introduce spatial discretizations of the Maxwell?s equations using mixed finite element, discontinuous Galerkin, and hybridizable discontinuous Galerkin methods to obtain a semi-discrete system of equations which display discrete versions of the Hamiltonian structure of the Maxwell?s equations. Then we discretize the resulting semi-discrete system in time by using a symplectic integrator. This ensures the conservation properties of the fully discrete system of equations. For the Symplectic Hamiltonian HDG method, we present numerical experiments which confirm its optimal orders of convergence for all variables and its conservation properties for the total linear and angular momenta, as well as the total energy. Finally, we discuss the extension of our results to other boundary conditions and to numerical schemes defined by different weak formulations.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Manuel A. Sanchez</span>, <span >
+      Shukai Du</span>, <span >
+      Bernardo Cockburn</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      Jaime Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem7/cem7.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem7/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem4/" >Symplectic Hamiltonian HDG methods for wave propagation phenomena</a>
+    </div>
+
+    
+    <a href="/project/cem4/"  class="summary-link">
+      <div class="article-style">
+        We devise the first symplectic Hamiltonian hybridizable discontinuous Galerkin (HDG) methods for the acoustic wave equation. We discretize in space by using a Hamiltonian HDG scheme, that is, an HDG method which preserves the Hamiltonian structure of the wave equation, and in time by using symplectic, diagonally implicit and explicit partitioned Runge?Kutta methods. The fundamental feature of the resulting scheme is that the conservation of a discrete energy, which is nothing but a discrete version of the original Hamiltonian, is guaranteed. We present numerical experiments which indicate that the method achieves optimal approximations of order k+1 in the L2-norm when polynomials of degree k?0 and Runge?Kutta time-marching methods of order k+1 are used. In addition, by means of post-processing techniques and by increasing the order of the Runge?Kutta method to k+2, we obtain superconvergent approximations of order k+2 in the L2-norm for the displacement and the velocity. We also present numerical examples that corroborate that the methods conserve energy and that they compare favorably with dissipative HDG schemes, of similar accuracy properties, for long-time simulations.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      M. A. Sanchez</span>, <span >
+      C. Ciuca</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      J. Peraire</span>, <span >
+      B. Cockburn</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem4/cem4.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem4/cite.bib">
   Cite
 </a>
 

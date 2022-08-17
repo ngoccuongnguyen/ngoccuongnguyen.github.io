@@ -553,7 +553,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#featured"><span>Research</span></a>
+            <a class="nav-link " href="/#research"><span>Research</span></a>
           </li>
 
           
@@ -664,44 +664,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#accomplishments"><span>Softwares</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#collaborators"><span>Collaborators</span></a>
+            <a class="nav-link " href="/#softwares"><span>Software</span></a>
           </li>
 
           
@@ -897,13 +860,13 @@
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/project/hyper2/" >GPU-accelerated Large Eddy Simulation of Hypersonic Flows</a>
+      <a href="/project/cfd9/" >A Hybridized Multiscale Discontinuous Galerkin Method for Compressible Flows</a>
     </div>
 
     
-    <a href="/project/hyper2/"  class="summary-link">
+    <a href="/project/cfd9/"  class="summary-link">
       <div class="article-style">
-        High-order discontinuous Galerkin (DG) methods have emerged as an attractive approach for large eddy simulation of turbulent flows owing to their high accuracy and implicit dissipation properties. However, the application of DG methods for hypersonic flows is still challenging due to the high-computational cost and the lack of robust shock capturing algorithms. In this paper, we adreess the efficiency and robustness of Discontinuous Galerkin methods. To that end we develop a high-order implicit discontinuous Galerkin method for the numerical simulation of hypersonic flows on graphics processors (GPUs). The main ingredients in our approach include i) implicit high-order DG approximation on unstructured/adapted meshes, ii) shock capturing for hypersonic flows, iii) iterative solution methods with CUDA/MPI implementation on GPU clusters, and iv) effective matrix-free preconditioner with reduced basis approximation of the Jacobian matrix. Numerical results on several test cases are presented to validate our method.
+        We introduce a hybridized multiscale discontinuous Galerkin (HMDG) method for the numerical solution of compressible flows. The HMDG method is developed upon extending the hybridizable discontinuous Galerkin (HDG) method presented in [30]. The extension is carried out by modifying the local approximation spaces on elements. Our local approximation spaces are characterized by two integers (n*, k*), where n* is the number of subcells within an element and k* is the polynomial degree of shape functions defined on the subcells. The selection of the value of (n*, k*) on a particular element depends on the smoothness of the solution on that element. More specifically, for elements on which the solution is smooth, we choose the smallest value n* = 1 and the highest degree k* = k. For elements containing shocks in the solution, we use the largest value n* = n and the lowest degree k* = 0 so as to capture shocks without using artificial viscosity and limiting slopes/fluxes. The proposed method thus combines the accuracy and efficiency of higli-order approximations with the robustness of low-order approximations. Numerical results are presented to demonstrate the performance of the proposed method.
       </div>
     </a>
     
@@ -918,7 +881,8 @@
 
   <span class="author-highlighted">
       Ngoc Cuong Nguyen</span>, <span >
-      Sebastien Terrana</span>, <span >
+      Xevi Roca</span>, <span >
+      David Moro</span>, <span >
       Jaime Peraire</span>
       </div>
       
@@ -939,14 +903,1180 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/hyper2/hyper2.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cfd9/cfd9.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/project/hyper2/cite.bib">
+        data-filename="/project/cfd9/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/uqml1/" >A model and variance reduction method for computing statistical outputs of stochastic elliptic partial differential equations</a>
+    </div>
+
+    
+    <a href="/project/uqml1/"  class="summary-link">
+      <div class="article-style">
+        We present a model and variance reduction method for the fast and reliable computation of statistical outputs of stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the hybridizable discontinuous Galerkin (HDG) discretization of elliptic partial differential equations (PDEs), which allows us to obtain high-order accurate solutions of the governing PDE; (2) the reduced basis method for a new HDG discretization of the underlying PDE to enable real-time solution of the parameterized PDE in the presence of stochastic parameters; and (3) a multilevel variance reduction method that exploits the statistical correlation among the different reduced basis approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the reduced basis approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the reduced basis approximations and the sizes of Monte Carlo samples to achieve a given error tolerance. We provide numerical examples to demonstrate the performance of the proposed method.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      F. Vidal-Codina</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      M.B. Giles</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/uqml1/uqml1.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/uqml1/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/photonics10/" >A multiscale continuous Galerkin method for stochastic simulation and robust design of photonic crystals</a>
+    </div>
+
+    
+    <a href="/project/photonics10/"  class="summary-link">
+      <div class="article-style">
+        We present a multiscale continuous Galerkin (MSCG) method for the fast and accurate stochastic simulation and optimization of time-harmonic wave propagation through photonic crystals. The MSCG method exploits repeated patterns in the geometry to drastically decrease computational cost and incorporates the following ingredients (1) a reference domain formulation that allows us to treat geometric variability resulting from manufacturing uncertainties; (2) a reduced basis approximation to solve the parametrized local subproblems; (3) a gradient computation of the objective function; and (4) a model and variance reduction technique that enables the accelerated computation of statistical outputs by exploiting the statistical correlation between the MSCG solution and the reduced basis approximation. The proposed method is thus well suited for both deterministic and stochastic simulations, as well as robust design of photonic crystals. We provide convergence and cost analysis of the MSCG method, as well as a simulation results for a waveguide T-splitter and a Z-bend to illustrate its advantages for stochastic simulation and robust design.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      F. Vidal-Codina</span>, <span >
+      J. Saa-Seoane</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/photonics10/photonics10.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/photonics10/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/rbm12/" >A multiscale reduced-basis method for parametrized elliptic partial differential equations with multiple scales</a>
+    </div>
+
+    
+    <a href="/project/rbm12/"  class="summary-link">
+      <div class="article-style">
+        We present a technique for solving parametrized elliptic partial differential equations with multiple scales. The technique is based on the combination of the reduced basis method [C. Prud?homme, D. Rovas, K. Veroy, Y. Maday, A.T. Patera, G. Turinici, Reliable real-time solution of parametrized partial differential equations reduced-basis output bound methods, Journal of Fluids Engineering 124 (1) (2002) 70?80] and the multiscale finite element method [T.Y. Hou, X.H. Wu, A multiscale finite element method for elliptic problems in composite materials and porous media, Journal of Computational Physics 134 (1) (1997) 169?189] to treat problems in which the differential coefficient is characterized by a large number of independent parameters. For the multiscale finite element method, a large number of cell problems has to be solved at the fine local mesh for each new configuration of the differential coefficient. In order to improve the computational efficiency of this method, we construct reduced basis spaces that are adapted to the local parameter dependence of the differential operator. The approximate solutions of the cell problems are computed accurately and efficiently via performing Galekin projection onto the reduced basis spaces and implementing the offline?online computational procedure. Therefore, a large number of similar computations at the fine local mesh can be carried out with lower computational cost for each new configuration of the differential coefficient. Numerical results are provided to demonstrate the accuracy and efficiency of the proposed approach.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/rbm12/rbm12.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/rbm12/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/cem6/" >A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</a>
+    </div>
+
+    
+    <a href="/project/cem6/"  class="summary-link">
+      <div class="article-style">
+        We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      F. Vidal-Codina</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      C. Ciraci</span>, <span >
+      S.-H. Oh</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/cem6/cem6.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/cem6/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/photonics11/" >A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</a>
+    </div>
+
+    
+    <a href="/project/photonics11/"  class="summary-link">
+      <div class="article-style">
+        We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      F. Vidal-Codina</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      C. Ciraci</span>, <span >
+      S.-H. Oh</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/photonics11/photonics11.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/photonics11/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/les4/" >A physics-based shock capturing method for large-eddy simulation</a>
+    </div>
+
+    
+    <a href="/project/les4/"  class="summary-link">
+      <div class="article-style">
+        We present a shock capturing method for large-eddy simulation of turbulent flows. The proposed method relies on physical mechanisms to resolve and smooth sharp unresolved flow features that may otherwise lead to numerical instability, such as shock waves and under-resolved thermal and shear layers. To that end, we devise various sensors to detect when and where the shear viscosity, bulk viscosity and thermal conductivity of the fluid do not suffice to stabilize the numerical solution. In such cases, the fluid viscosities are selectively increased to ensure the cell Peclet number is of order one so that these flow features can be well represented with the grid resolution. Although the shock capturing method is devised in the context of discontinuous Galerkin methods, it can be used with other discretization schemes. The performance of the method is illustrated through numerical simulation of external and internal flows in transonic, supersonic, and hypersonic regimes. For the problems considered, the shock capturing method performs robustly, provides sharp shock profiles, and has a small impact on the resolved turbulent structures. These three features are critical to enable robust and accurate large-eddy simulations of shock flows.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Pablo Fernandez</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      Jaime Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/les4/les4.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/les4/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/rbm13/" >A posteriori error estimation and basis adaptivity for reduced-basis approximation of nonaffine-parametrized linear elliptic partial differential equations</a>
+    </div>
+
+    
+    <a href="/project/rbm13/"  class="summary-link">
+      <div class="article-style">
+        In this paper, we extend the earlier work [M. Barrault, Y. Maday, N. C. Nguyen, A.T. Patera, An ?empirical interpolation? method application to efficient reduced-basis discretization of partial differential equations, C.R. Acad. Sci. Paris, Serie I 339 (2004) 667?672; M.A. Grepl, Y. Maday, N.C. Nguyen, A.T. Patera, Efficient reduced-basis treatment of nonaffine and nonlinear partial differential equations, M2AN Math. Model. Numer. Anal. 41 (3) (2007) 575?605.] to provide a posteriori error estimation and basis adaptivity for reduced-basis approximation of linear elliptic partial differential equations with nonaffine parameter dependence. The essential components are (i) rapidly convergent reduced-basis approximations ? (Galerkin) projection onto a space spanned by N global hierarchical basis functions which are constructed from solutions of the governing partial differential equation at judiciously selected points in parameter space; (ii) stable and inexpensive interpolation procedures ? methods which allow us to replace nonaffine parameter functions with a coefficient-function expansion as a sum of M products of parameter-dependent coefficients and parameter-independent functions; (iii) a posteriori error estimation ? relaxations of the error-residual equation that provide inexpensive yet sharp error bounds for the error in the outputs of interest; (iv) optimal basis construction ? processes which make use of the error bounds as an inexpensive surrogate for the expensive true error to explore the parameter space in the quest for an optimal sampling set; and (v) offline/online computational procedures ? methods which decouple the generation and projection stages of the approximation process. The operation count for the online stage - in which, given a new parameter value, we calculate the output of interest and associated error bounds - depends only on N, M, and the affine parametric complexity of the problem; the method is thus ideally suited for repeated and reliable evaluation of input?output relationships in the many-query or real-time contexts.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/rbm13/rbm13.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/rbm13/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/hdg11/" >A posteriori goal-oriented bounds for the Poisson problem using potential and equilibrated flux reconstructions: Application to the hybridizable discontinuous Galerkin method</a>
+    </div>
+
+    
+    <a href="/project/hdg11/"  class="summary-link">
+      <div class="article-style">
+        We present a general framework to compute upper and lower bounds for linear-functional outputs of the exact solutions of the Poisson equation based on reconstructions of the field variable and flux for both the primal and adjoint problems. The method is devised from a generalization of the complementary energy principle and the duality theory. Using duality theory, the computation of bounds is reduced to finding independent potential and equilibrated flux reconstructions. A generalization of this result is also introduced allowing to derive alternative guaranteed bounds from nearly-arbitrary H(div;?) flux reconstructions (only zero-order equilibration is required). This approach is applicable to any numerical method used to compute the solution. In this work, the proposed approach is applied to derive bounds for the hybridizable discontinuous Galerkin (HDG) method. An attractive feature of the proposed approach is that superconvergence on the bound gap is achieved, yielding accurate bounds even for very coarse meshes. Numerical experiments are presented to illustrate the performance and convergence of the bounds for the HDG method in both uniform and adaptive mesh refinements.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      N. Pares</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      P. Diez</span>, <span >
+      J. Peraire</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/hdg11/hdg11.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/hdg11/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://cesmix.mit.edu" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>Project Website</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/exapde/Exasim" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Open Source</a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/rbm9/" >A reduced basis approach for variational problems with stochastic parameters: Application to heat conduction with variable Robin coefficient</a>
+    </div>
+
+    
+    <a href="/project/rbm9/"  class="summary-link">
+      <div class="article-style">
+        In this work, a Reduced Basis (RB) approach is used to solve a large number of boundary value problems parametrized by a stochastic input - expressed as a Karhunen?Loeve expansion ? in order to compute outputs that are smooth functionals of the random solution fields. The RB method proposed here for variational problems parametrized by stochastic coefficients bears many similarities to the RB approach developed previously for deterministic systems. However, the stochastic framework requires the development of new a posteriori estimates for statistical outputs - such as the first two moments of integrals of the random solution fields; these error bounds, in turn, permit efficient sampling of the input stochastic parameters and fast reliable computation of the outputs in particular in the many-query context.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Sebastien Boyaval</span>, <span >
+      Claude Le Bris</span>, <span >
+      Yvon Maday</span>, <span class="author-highlighted">
+      Ngoc Cuong Nguyen</span>, <span >
+      Anthony T Patera</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/rbm9/rbm9.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/project/rbm9/cite.bib">
   Cite
 </a>
 
@@ -1010,6 +2140,8 @@
     
     <li class="page-item"><a class="page-link" href="/project/">&laquo;</a></li>
     
+    
+    <li class="page-item"><a class="page-link" href="/project/page/3/">&raquo;</a></li>
     
   </ul>
 </nav>

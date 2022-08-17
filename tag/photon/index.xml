@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>photon | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/photon/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/photon/index.xml" rel="self" type="application/rss+xml" />
+    <description>photon</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>photon</title>
+      <link>https://ngoccuongnguyen.github.io/tag/photon/</link>
+    </image>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for computing nonlocal electromagnetic effects in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics6/</guid>
+      <description>&lt;p&gt;The interaction of light with metallic nanostructures produces a collective excitation of electrons at the metal surface, also known as surface plasmons. These collective excitations lead to resonances that enable the confinement of light in deep-subwavelength regions, thereby leading to large near-field enhancements. The simulation of plasmon resonances presents notable challenges. From the modeling perspective, the realistic behavior of conduction-band electrons in metallic nanostructures is not captured by Maxwell&amp;rsquo;s equations, thus requiring additional modeling. From the simulation perspective, the disparity in length scales stemming from the extreme field localization demands efficient and accurate numerical methods. In this paper, we develop the hybridizable discontinuous Galerkin (HDG) method to solve Maxwell&amp;rsquo;s equations augmented with the hydrodynamic model for the conduction-band electrons in noble metals. This method enables the efficient simulation of plasmonic nanostructures while accounting for the nonlocal interactions between electrons and the incident light. We introduce a novel postprocessing scheme to recover superconvergent solutions and demonstrate the convergence of the proposed HDG method for the simulation of a 2D gold nanowire and a 3D periodic annular nanogap structure. The results of the hydrodynamic model are compared to those of a simplified local response model, showing that differences between them can be significant at the nanoscale.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A multiscale continuous Galerkin method for stochastic simulation and robust design of photonic crystals</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics10/</guid>
+      <description>&lt;p&gt;We present a multiscale continuous Galerkin (MSCG) method for the fast and accurate stochastic simulation and optimization of time-harmonic wave propagation through photonic crystals. The MSCG method exploits repeated patterns in the geometry to drastically decrease computational cost and incorporates the following ingredients (1) a reference domain formulation that allows us to treat geometric variability resulting from manufacturing uncertainties; (2) a reduced basis approximation to solve the parametrized local subproblems; (3) a gradient computation of the objective function; and (4) a model and variance reduction technique that enables the accelerated computation of statistical outputs by exploiting the statistical correlation between the MSCG solution and the reduced basis approximation. The proposed method is thus well suited for both deterministic and stochastic simulations, as well as robust design of photonic crystals. We provide convergence and cost analysis of the MSCG method, as well as a simulation results for a waveguide T-splitter and a Z-bend to illustrate its advantages for stochastic simulation and robust design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics11/</guid>
+      <description>&lt;p&gt;We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&amp;rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bandgap optimization of two-dimensional photonic crystals using semidefinite programming and subspace methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics4/</guid>
+      <description>&lt;p&gt;In this paper, we consider the optimal design of photonic crystal structures for two-dimensional square lattices. The mathematical formulation of the bandgap optimization problem leads to an infinite-dimensional Hermitian eigenvalue optimization problem parametrized by the dielectric material and the wave vector. To make the problem tractable, the original eigenvalue problem is discretized using the finite element method into a series of finite-dimensional eigenvalue problems for multiple values of the wave vector parameter. The resulting optimization problem is large-scale and non-convex, with low regularity and non-differentiable objective. By restricting to appropriate eigenspaces, we reduce the large-scale non-convex optimization problem via reparametrization to a sequence of small-scale convex semidefinite programs (SDPs) for which modern SDP solvers can be efficiently applied. Numerical results are presented for both transverse magnetic (TM) and transverse electric (TE) polarizations at several frequency bands. The optimized structures exhibit patterns which go far beyond typical physical intuition on periodic media design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computing parametrized solutions for plasmonic nanogap structures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics9/</guid>
+      <description>&lt;p&gt;The interaction of electromagnetic waves with metallic nanostructures generates resonant oscillations of the conduction-band electrons at the metal surface. These resonances can lead to large enhancements of the incident field and to the confinement of light to small regions, typically several orders of magnitude smaller than the incident wavelength. The accurate prediction of these resonances entails several challenges. Small geometric variations in the plasmonic structure may lead to large variations in the electromagnetic field responses. Furthermore, the material parameters that characterize the optical behavior of metals at the nanoscale need to be determined experimentally and are consequently subject to measurement errors. It then becomes essential that any predictive tool for the simulation and design of plasmonic structures accounts for fabrication tolerances and measurement uncertainties. In this paper, we develop a reduced order modeling framework that is capable of real-time accurate electromagnetic responses of plasmonic nanogap structures for a wide range of geometry and material parameters. The main ingredients of the proposed method are (i) the hybridizable discontinuous Galerkin method to numerically solve the equations governing electromagnetic wave propagation in dielectric and metallic media, (ii) a reference domain formulation of the time-harmonic Maxwell&amp;rsquo;s equations to account for arbitrary geometry variations; and (iii) proper orthogonal decomposition and empirical interpolation techniques to construct an efficient reduced model. To demonstrate effectiveness of the models developed, we analyze geometry sensitivities and explore optimal designs of a 3D periodic coaxial nanogap structure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design of photonic crystals with multiple and combined band gaps</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics5/</guid>
+      <description>&lt;p&gt;We present and use an algorithm based on convex conic optimization to design two-dimensional photonic crystals with large absolute band gaps. Among several illustrations we show that it is possible to design photonic crystals which exhibit multiple absolute band gaps for the combined transverse electric and magnetic modes. The optimized crystals show complicated patterns which are far different from existing photonic crystal designs. We employ subspace approximation and mesh adaptivity to enhance computational efficiency. For some examples involving two band gaps, we demonstrate the tradeoff frontier between two different absolute band gaps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fabrication-Adaptive Optimization with an Application to Photonic Crystal Design</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics8/</guid>
+      <description>&lt;p&gt;It is often the case that the computed optimal solution of an optimization problem cannot be implemented directly, irrespective of data accuracy, because of either (i) technological limitations (such as physical tolerances of machines or processes), (ii) the deliberate simplification of a model to keep it tractable (by ignoring certain types of constraints that pose computational difficulties), and/or (iii) human factors (getting people to ?do? the optimal solution). Motivated by this observation, we present a modeling paradigm called ?fabrication-adaptive optimization? for treating issues of implementation/fabrication. We develop computationally focused theory and algorithms, and we present computational results for incorporating considerations of implementation/fabrication into constrained optimization problems that arise in photonic crystal design. The fabrication-adaptive optimization framework stems from the robust regularization of a function. When the feasible region is not a normed space (as typically encountered in application settings), the fabrication-adaptive optimization framework typically yields a nonconvex optimization problem. (In the special case where the feasible region is a finite-dimensional normed space, we show that fabrication-adaptive optimization can be recast as an instance of modern robust optimization.) We study a variety of problems with special structures on functions, feasible regions, and norms for which computation is tractable and develop an algorithmic scheme for solving these problems in spite of the challenges of nonconvexity. We apply our methodology to compute fabrication-adaptive designs of two-dimensional photonic crystals with a variety of prescribed features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-Contrast Infrared Absorption Spectroscopy via Mass-Produced Coaxial Zero-Mode Resonators with Sub-10 nm Gaps</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics2/</guid>
+      <description>&lt;p&gt;We present a wafer-scale array of resonant coaxial nanoapertures as a practical platform for surface-enhanced infrared absorption spectroscopy (SEIRA). Coaxial nanoapertures with sub-10 nm gaps are fabricated via photolithography, atomic layer deposition of a sacrificial Al2O3 layer to define the nanogaps, and planarization via glancing-angle ion milling. At the zeroth-order Fabry-Perot resonance condition, our coaxial apertures act as a ?zero-mode resonator (ZMR)?, efficiently funneling as much as 34 percent of incident infrared (IR) light along 10 nm annular gaps. After removing Al2O3 in the gaps and inserting silk protein, we can couple the intense optical fields of the annular nanogap into the vibrational modes of protein molecules. From 7 nm gap ZMR devices coated with a 5 nm thick silk protein film, we observe high-contrast IR absorbance signals drastically suppressing 58 percent of the transmitted light and infer a strong IR absorption enhancement factor of 104?105. These single nanometer gap ZMR devices can be mass-produced via batch processing and offer promising routes for broad applications of SEIRA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-throughput fabrication of resonant metamaterials with ultrasmall coaxial apertures via atomic layer lithography</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics1/</guid>
+      <description>&lt;p&gt;We combine atomic layer lithography and glancing-angle ion polishing to create wafer-scale metamaterials composed of dense arrays of ultrasmall coaxial nanocavities in gold films. This new fabrication scheme makes it possible to shrink the diameter and increase the packing density of 2 nm-gap coaxial resonators, an extreme subwavelength structure first manufactured via atomic layer lithography, both by a factor of 100 with respect to previous studies. We demonstrate that the nonpropagating zeroth-order Fabry-Perot mode, which possesses slow light-like properties at the cutoff resonance, traps infrared light inside 2 nm gaps (gap volume ? 3/106). Notably, the annular gaps cover only 3 percent or less of the metal surface, while open-area normalized transmission is as high as 1700 percent at the epsilon-near-zero (ENZ) condition. The resulting energy accumulation alongside extraordinary optical transmission can benefit applications in nonlinear optics, optical trapping, and surface-enhanced spectroscopies. Furthermore, because the resonance wavelength is independent of the cavity length and dramatically red shifts as the gap size is reduced, large-area arrays can be constructed with resonance period, making this fabrication method ideal for manufacturing resonant metamaterials.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling and observation of mid-infrared nonlocality in effective epsilon-near-zero ultranarrow coaxial apertures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics7/</guid>
+      <description>&lt;p&gt;With advances in nanofabrication techniques, extreme-scale nanophotonic devices with critical gap dimensions of just 1?2?nm have been realized. Plasmons in such ultranarrow gaps can exhibit nonlocal response, which was previously shown to limit the field enhancement and cause optical properties to deviate from the local description. Using atomic layer lithography, we create mid-infrared-resonant coaxial apertures with gap sizes as small as 1?nm and observe strong evidence of nonlocality, including spectral shifts and boosted transmittance of the cutoff epsilon-near-zero mode. Experiments are supported by full-wave 3-D nonlocal simulations performed with the hybridizable discontinuous Galerkin method. This numerical method captures atomic-scale variations of the electromagnetic fields while efficiently handling extreme-scale size mismatch. Combining atomic-layer-based fabrication techniques with fast and accurate numerical simulations provides practical routes to design and fabricate highly-efficient large-area mid-infrared sensors, antennas, and metasurfaces.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nanogap-enhanced terahertz sensing of 1 nm thick lambda/106 dielectric films</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics3/</guid>
+      <description>&lt;p&gt;We experimentally show that terahertz (THz) waves confined in sub-10 nm metallic gaps can detect refractive index changes caused by only a 1 nm thick (??/106) dielectric overlayer. We use atomic layer lithography to fabricate a wafer-scale array of annular nanogaps. Using THz time-domain spectroscopy in conjunction with atomic layer deposition, we measure spectral shifts of a THz resonance peak with increasing Al2O3 film thickness in 1 nm intervals. Because of the enormous mismatch in length scales between THz waves and sub-10 nm gaps, conventional modeling techniques cannot readily be used to analyze our results. We employ an advanced finite-element-modeling (FEM) technique, Hybridizable Discontinuous Galerkin (HDG) scheme, for full three-dimensional modeling of the resonant transmission of THz waves through an annular gap that is 2 nm in width and 32 ?m in diameter. Our multiscale 3D FEM technique and atomic layer lithography will enable a series of new investigations in THz nanophotonics that has not been possible before.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terahertz and infrared nonlocality and field saturation in extreme-scale nanoslits</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics12/</guid>
+      <description>&lt;p&gt;Partial differential equations (PDEs) are commonly used to model a wide variety of physical phenomena. A PDE model of a physical problem is typically described by conservation laws, constitutive laws, material properties, boundary conditions, boundary data, and geometry. In most practical applications, however, the PDE model is only an approximation to the real physical problem due to both (i) the deliberate mathematical simplification of the model to keep it tractable and (ii) the inherent uncertainty of the physical parameters. In such cases, the PDE model may not produce a good prediction of the true state of the underlying physical problem. In this paper, we introduce a functional regression method that incorporates observations into a deterministic linear PDE model to improve its prediction of the true state. Our method is devised as follows. First, we augment the PDE model with a random Gaussian functional which serves to represent various sources of uncertainty in the model. We next derive a linear regression model for the Gaussian functional by utilizing observations and adjoint states. This allows us to determine the posterior distribution of the Gaussian functional and the posterior distribution for our estimate of the true state. Furthermore, we consider the problem of experimental design in this setting, wherein we develop an algorithm for designing experiments to efficiently reduce the variance of our state estimate. We provide several examples from the heat conduction, the convection-diffusion equation, and the reduced wave equation, all of which demonstrate the performance of the proposed methodology.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

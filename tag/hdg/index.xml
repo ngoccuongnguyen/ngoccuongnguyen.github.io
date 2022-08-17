@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hdg | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/hdg/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/hdg/index.xml" rel="self" type="application/rss+xml" />
+    <description>hdg</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>hdg</title>
+      <link>https://ngoccuongnguyen.github.io/tag/hdg/</link>
+    </image>
+    
+    <item>
+      <title>A high-order hybridizable discontinuous Galerkin method for elliptic interface problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg12/</guid>
+      <description>&lt;p&gt;We present a high-order hybridizable discontinuous Galerkin method for solving elliptic interface problems in which the solution and gradient are nonsmooth because of jump conditions across the interface. The hybridizable discontinuous Galerkin method is endowed with several distinct characteristics. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the global degrees of freedom. Second, they provide, for elliptic problems with polygonal interfaces, approximations of all the variables that converge with the optimal order of k?+?1 in the L2(?)-norm where k denotes the polynomial order of the approximation spaces. Third, they possess some superconvergence properties that allow the use of an inexpensive element-by-element postprocessing to compute a new approximate solution that converges with order k?+?2. However, for elliptic problems with finite jumps in the solution across the curvilinear interface, the approximate solution and gradient do not converge optimally if the elements at the interface are isoparametric. The discrepancy between the exact geometry and the approximate triangulation near the curved interfaces results in lower order convergence. To recover the optimal convergence for the approximate solution and gradient, we propose to use superparametric elements at the interface.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridized discontinuous Petrov-Galerkin scheme for scalar conservation laws</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg6/</guid>
+      <description>&lt;p&gt;We present a hybridized discontinuous Petrov?Galerkin (HDPG) method for the numerical solution of steady and time-dependent scalar conservation laws. The method combines a hybridization technique with a local Petrov?Galerkin approach in which the test functions are computed to maximize the inf-sup condition. Since the Petrov?Galerkin approach does not guarantee a conservative solution, we propose to enforce this explicitly by introducing a constraint into the local Petrov?Galerkin problem. When the resulting nonlinear system is solved using the Newton?Raphson procedure, the solution inside each element can be locally condensed to yield a global linear system involving only the degrees of freedom of the numerical trace. This results in a significant reduction in memory storage and computation time for the solution of the matrix system, albeit at the cost of solving the local Petrov?Galerkin problems. However, these local problems are independent of each other and thus perfectly scalable. We present several numerical examples to assess the performance of the proposed method. The results show that the HDPG method outperforms the hybridizable discontinuous Galerkin method for problems involving discontinuities. Moreover, for the test case proposed by Peterson, the HDPG method provides optimal convergence of order k?+?1.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A posteriori goal-oriented bounds for the Poisson problem using potential and equilibrated flux reconstructions: Application to the hybridizable discontinuous Galerkin method</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg11/</guid>
+      <description>&lt;p&gt;We present a general framework to compute upper and lower bounds for linear-functional outputs of the exact solutions of the Poisson equation based on reconstructions of the field variable and flux for both the primal and adjoint problems. The method is devised from a generalization of the complementary energy principle and the duality theory. Using duality theory, the computation of bounds is reduced to finding independent potential and equilibrated flux reconstructions. A generalization of this result is also introduced allowing to derive alternative guaranteed bounds from nearly-arbitrary H(div;?) flux reconstructions (only zero-order equilibration is required). This approach is applicable to any numerical method used to compute the solution. In this work, the proposed approach is applied to derive bounds for the hybridizable discontinuous Galerkin (HDG) method. An attractive feature of the proposed approach is that superconvergence on the bound gap is achieved, yielding accurate bounds even for very coarse meshes. Numerical experiments are presented to illustrate the performance and convergence of the bounds for the HDG method in both uniform and adaptive mesh refinements.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An HDG method for dissimilar meshes</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg10/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin (HDG) method for dissimilar meshes. The method is devised by formulating HDG discretizations on separate meshes and gluing these HDG discretizations through appropriate transmission conditions that weakly enforce the continuity of the numerical trace and the numerical flux across the dissimilar interfaces. The transmission conditions are based upon transferring the numerical flux from the first mesh to the second mesh and the numerical trace from the second mesh to the first one. The transfer of the numerical trace/flux from one mesh to the other relies on the extrapolation of the approximate flux, and is made to be consistent with the HDG methodology for conforming meshes. Stability of the HDG method is shown and the error analysis of the HDG method is established. Numerical results are presented to validate the theoretical results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for linear convection-diffusion equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg1/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin method for the numerical solution of steady and time-dependent linear convection?diffusion equations. We devise the method as follows. First, we express the approximate scalar variable and corresponding flux within each element in terms of an approximate trace of the scalar variable along the element boundary. We then define a unique value for the approximate trace by enforcing the continuity of the normal component of the flux across the element boundary; a global equation system solely in terms of the approximate trace is thus obtained. The high number of globally coupled degrees of freedom in the discontinuous Galerkin approximation is therefore significantly reduced. If the problem is time-dependent, we discretize the time derivative by means of backward difference formulae. This results in efficient schemes capable of producing high-order accurate solutions in space and time. Indeed, when the time-marching method is th order accurate and when polynomials of degree &lt;em&gt;p&lt;/em&gt; are used to represent the scalar variable, the flux and the approximate trace, we observe that the approximations for the scalar variable, the flux and the trace of the scalar variable converge with the optimal order of &lt;em&gt;p+1&lt;/em&gt; in the L2 norm. Finally, we introduce a simple element-by-element postprocessing scheme to obtain new approximations of the flux and the scalar variable. The new approximate flux, which has a continuous inter-element normal component, is shown to converge with order &lt;em&gt;p+1&lt;/em&gt;. The new approximate scalar variable is shown to converge with order &lt;em&gt;p+2&lt;/em&gt;. For the time-dependent case, the postprocessing does not need to be applied at each time-step but only at the times for which an enhanced solution is required. Moreover, the postprocessing procedure is less expensive than the solution procedure, since it is performed at the element level. Extensive numerical results are presented to demonstrate the convergence properties of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for nonlinear convection-diffusion equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg2/</guid>
+      <description>&lt;p&gt;In this paper, we present hybridizable discontinuous Galerkin methods for the numerical solution of steady and time-dependent nonlinear convection?diffusion equations. The methods are devised by expressing the approximate scalar variable and corresponding flux in terms of an approximate trace of the scalar variable and then explicitly enforcing the jump condition of the numerical fluxes across the element boundary. Applying the Newton?Raphson procedure and the hybridization technique, we obtain a global equation system solely in terms of the approximate trace of the scalar variable at every Newton iteration. The high number of globally coupled degrees of freedom in the discontinuous Galerkin approximation is therefore significantly reduced. We then extend the method to time-dependent problems by approximating the time derivative by means of backward difference formulae. When the time-marching method is p+1 order accurate and when polynomials of degree p are used to represent the scalar variable, each component of the flux and the approximate trace, we observe that the approximations for the scalar variable and the flux converge with the optimal order of p+1 in the L2 norm. Finally, we apply element-by-element postprocessing schemes to obtain new approximations of the flux and the scalar variable. The new approximate flux, which has a continuous interelement normal component, is shown to converge with order p+1 in the L2 norm. The new approximate scalar variable is shown to converge with order p+2 in the L2 norm. The postprocessing is performed at the element level and is thus much less expensive than the solution procedure. For the time-dependent case, the postprocessing does not need to be applied at each time step but only at the times for which an enhanced solution is required. Extensive numerical results are provided to demonstrate the performance of the present method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HDG Methods for Hyperbolic Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg8/</guid>
+      <description>&lt;p&gt;We give a short overview of the development of the so-called hybridizable discontinuous Galerkin methods for hyperbolic problems. We describe the methods, discuss their main features and display numerical results which illustrate their performance. We do this in the framework of wave propagation problems. In particular, we show that these methods are amenable to static condensation, and hence to efficient implementation, both for time-dependent (with implicit time-marching schemes) and for time-harmonic problems; we also show that they can be used with explicit time-marching schemes. We discuss an unexpected, recently uncovered superconvergence property and introduce a new postprocessing for time-harmonic Maxwell&amp;rsquo;s equations. We end by providing bibliographical notes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg3/</guid>
+      <description>&lt;p&gt;We present an overview of recent developments of HDG methods for numerically solving partial differential equations in fluid mechanics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for partial differential equations in continuum mechanics</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg5/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridization and Postprocessing Techniques for Mixed Eigenfunctions</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg4/</guid>
+      <description>&lt;p&gt;We introduce hybridization and postprocessing techniques for the Raviart?Thomas approximation of second-order elliptic eigenvalue problems. Hybridization reduces the Raviart?Thomas approximation to a condensed eigenproblem. The condensed eigenproblem is nonlinear, but smaller than the original mixed approximation. We derive multiple iterative algorithms for solving the condensed eigenproblem and examine their interrelationships and convergence rates. An element-by-element postprocessing technique to improve accuracy of computed eigenfunctions is also presented. We prove that a projection of the error in the eigenspace approximation by the mixed method (of any order) superconverges and that the postprocessed eigenfunction approximations converge faster for smooth eigenfunctions. Numerical experiments using a square and an L-shaped domain illustrate the theoretical results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridized discontinuous Galerkin methods for wave propagation</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg9/</guid>
+      <description>&lt;p&gt;We present the recent development of hybridizable and embedded discontinuous Galerkin (DG) methods for wave propagation problems in fluids, solids, and electromagnetism. In each of these areas, we describe the methods, discuss their main features, display numerical results to illustrate their performance, and conclude with bibliography notes. The main ingredients in devising these DG methods are (1) a local Galerkin projection of the underlying partial differential equations at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; (2) a judicious choice of the numerical flux to provide stability and consistency; and (3) a global jump condition that enforces the continuity of the numerical flux to obtain a global system in terms of the numerical trace. These DG methods are termed hybridized DG methods, because they are amenable to hybridization (static condensation) and hence to more efficient implementations. They share many common advantages of DG methods and possess some unique features that make them well-suited to wave propagation problems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spectral approximations by the HDG method</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg7/</guid>
+      <description>&lt;p&gt;We consider the numerical approximation of the spectrum of a second-order elliptic eigenvalue problem by the hybridizable discontinuous Galerkin (HDG) method. We show for problems with smooth eigenfunctions that the approximate eigenvalues and eigenfunctions converge at the rate 2k+1 and k+1, respectively. Here k is the degree of the polynomials used to approximate the solution, its flux, and the numerical traces. Our numerical studies show that a Rayleigh quotient-like formula applied to certain locally postprocessed approximations can yield eigenvalues that converge faster at the rate 2k + 2 for the HDG method as well as for the Brezzi-Douglas-Marini (BDM) method. We also derive and study a condensed nonlinear eigenproblem for the numerical traces obtained by eliminating all the other variables.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

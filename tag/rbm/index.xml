@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rbm | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/rbm/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/rbm/index.xml" rel="self" type="application/rss+xml" />
+    <description>rbm</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>rbm</title>
+      <link>https://ngoccuongnguyen.github.io/tag/rbm/</link>
+    </image>
+    
+    <item>
+      <title>?Natural norm? a posteriori error estimators for reduced basis approximations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm7/</guid>
+      <description>&lt;p&gt;We present a technique for the rapid and reliable prediction of linear-functional outputs of coercive and non-coercive linear elliptic partial differential equations with affine parameter dependence. The essential components are (i) rapidly convergent global reduced basis approximations ? (Galerkin) projection onto a space WN spanned by solutions of the governing partial differential equation at N judiciously selected points in parameter space; (ii) a posteriori error estimation ? relaxations of the error-residual equation that provide inexpensive yet sharp bounds for the error in the outputs of interest; and (iii) offline/online computational procedures ? methods which decouple the generation and projection stages of the approximation process. The operation count for the online stage ? in which, given a new parameter value, we calculate the output of interest and associated error bound ? depends only on N (typically very small) and the parametric complexity of the problem. In this paper we propose a new ?natural norm? formulation for our reduced basis error estimation framework that (a) greatly simplifies and improves our inf?sup lower bound construction (offline) and evaluation (online) ? a critical ingredient of our a posteriori error estimators; and (b) much better controls ? significantly sharpens ? our output error bounds, in particular (through deflation) for parameter values corresponding to nearly singular solution behavior. We apply the method to two illustrative problems a coercive Laplacian heat conduction problem ? which becomes singular as the heat transfer coefficient tends to zero; and a non-coercive Helmholtz acoustics problem ? which becomes singular as we approach resonance. In both cases, we observe very economical and sharp construction of the requisite natural-norm inf?sup lower bound; rapid convergence of the reduced basis approximation; reasonable effectivities (even for near-singular behavior) for our deflated output error estimators; and significant ? several order of magnitude ? (online) computational savings relative to standard finite element procedures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A general multipurpose interpolation procedure: the magic points</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm3/</guid>
+      <description>&lt;p&gt;Lagrangian interpolation is a classical way to approximate general functions by finite sums of well chosen, pre-defined, linearly independent interpolating functions; it is much simpler to implement than determining the best fits with respect to some Banach (or even Hilbert) norms. In addition, only partial knowledge is required (here values on some set of points). The problem of defining the best sample of points is nevertheless rather complex and is in general open. In this paper we propose a way to derive such sets of points. We do not claim that the points resulting from the construction explained here are optimal in any sense. Nevertheless, the resulting interpolation method is proven to work under certain hypothesis, the process is very general and simple to implement, and compared to situations where the best behavior is known, it is relatively competitive.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A multiscale reduced-basis method for parametrized elliptic partial differential equations with multiple scales</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm12/</guid>
+      <description>&lt;p&gt;We present a technique for solving parametrized elliptic partial differential equations with multiple scales. The technique is based on the combination of the reduced basis method [C. Prud?homme, D. Rovas, K. Veroy, Y. Maday, A.T. Patera, G. Turinici, Reliable real-time solution of parametrized partial differential equations reduced-basis output bound methods, Journal of Fluids Engineering 124 (1) (2002) 70?80] and the multiscale finite element method [T.Y. Hou, X.H. Wu, A multiscale finite element method for elliptic problems in composite materials and porous media, Journal of Computational Physics 134 (1) (1997) 169?189] to treat problems in which the differential coefficient is characterized by a large number of independent parameters. For the multiscale finite element method, a large number of cell problems has to be solved at the fine local mesh for each new configuration of the differential coefficient. In order to improve the computational efficiency of this method, we construct reduced basis spaces that are adapted to the local parameter dependence of the differential operator. The approximate solutions of the cell problems are computed accurately and efficiently via performing Galekin projection onto the reduced basis spaces and implementing the offline?online computational procedure. Therefore, a large number of similar computations at the fine local mesh can be carried out with lower computational cost for each new configuration of the differential coefficient. Numerical results are provided to demonstrate the accuracy and efficiency of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A posteriori error estimation and basis adaptivity for reduced-basis approximation of nonaffine-parametrized linear elliptic partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm13/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm13/</guid>
+      <description>&lt;p&gt;In this paper, we extend the earlier work [M. Barrault, Y. Maday, N. C. Nguyen, A.T. Patera, An ?empirical interpolation? method application to efficient reduced-basis discretization of partial differential equations, C.R. Acad. Sci. Paris, Serie I 339 (2004) 667?672; M.A. Grepl, Y. Maday, N.C. Nguyen, A.T. Patera, Efficient reduced-basis treatment of nonaffine and nonlinear partial differential equations, M2AN Math. Model. Numer. Anal. 41 (3) (2007) 575?605.] to provide a posteriori error estimation and basis adaptivity for reduced-basis approximation of linear elliptic partial differential equations with nonaffine parameter dependence. The essential components are (i) rapidly convergent reduced-basis approximations ? (Galerkin) projection onto a space spanned by N global hierarchical basis functions which are constructed from solutions of the governing partial differential equation at judiciously selected points in parameter space; (ii) stable and inexpensive interpolation procedures ? methods which allow us to replace nonaffine parameter functions with a coefficient-function expansion as a sum of M products of parameter-dependent coefficients and parameter-independent functions; (iii) a posteriori error estimation ? relaxations of the error-residual equation that provide inexpensive yet sharp error bounds for the error in the outputs of interest; (iv) optimal basis construction ? processes which make use of the error bounds as an inexpensive surrogate for the expensive true error to explore the parameter space in the quest for an optimal sampling set; and (v) offline/online computational procedures ? methods which decouple the generation and projection stages of the approximation process. The operation count for the online stage - in which, given a new parameter value, we calculate the output of interest and associated error bounds - depends only on N, M, and the affine parametric complexity of the problem; the method is thus ideally suited for repeated and reliable evaluation of input?output relationships in the many-query or real-time contexts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A reduced basis approach for variational problems with stochastic parameters: Application to heat conduction with variable Robin coefficient</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm9/</guid>
+      <description>&lt;p&gt;In this work, a Reduced Basis (RB) approach is used to solve a large number of boundary value problems parametrized by a stochastic input - expressed as a Karhunen?Loeve expansion ? in order to compute outputs that are smooth functionals of the random solution fields. The RB method proposed here for variational problems parametrized by stochastic coefficients bears many similarities to the RB approach developed previously for deterministic systems. However, the stochastic framework requires the development of new a posteriori estimates for statistical outputs - such as the first two moments of integrals of the random solution fields; these error bounds, in turn, permit efficient sampling of the input stochastic parameters and fast reliable computation of the outputs in particular in the many-query context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An efficient reduced-order modeling approach for non-linear parametrized partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm8/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An empirical interpolation method: application to efficient reduced-basis discretization of partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm1/</guid>
+      <description>&lt;p&gt;We present an efficient reduced-basis discretization procedure for partial differential equations with nonaffine parameter dependence. The method replaces nonaffine coefficient functions with a collateral reduced-basis expansion which then permits an (effectively affine) offline?online computational decomposition. The essential components of the approach are (i) a good collateral reduced-basis approximation space, (ii) a stable and inexpensive interpolation procedure, and (iii) an effective a posteriori estimator to quantify the newly introduced errors. Theoretical and numerical results respectively anticipate and confirm the good behavior of the technique.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Certified real-time solution of parametrized partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm4/</guid>
+      <description>&lt;p&gt;Engineering analysis requires the prediction of (say, a single) selected ?output? se relevant to ultimate component and system performance. Typical outputs include energies and forces, critical stresses or strains, flowrates or pressure drops, and various local and global measures of concentration, temperature, and flux. These outputs are functions of system parameters, or ?inputs?, ?, that serve to identify a particular realization or configuration of the component or system. These inputs typically reflect geometry, properties, and boundary conditions and loads; we shall assume that ? is a P-vector (or P-tuple) of parameters in a prescribed closed input domain D ? ?p. The input-output relationship se(?) D ? ? thus encapsulates the behavior relevant to the desired engineering context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Efficient reduced-basis treatment of nonaffine and nonlinear partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm2/</guid>
+      <description>&lt;p&gt;In this paper, we extend the reduced-basis approximations developed earlier for linear elliptic and parabolic partial differential equations with affine parameter dependence to problems involving (a) nonaffine dependence on the parameter, and (b) nonlinear dependence on the field variable. The method replaces the nonaffine and nonlinear terms with a coefficient function approximation which then permits an efficient offline-online computational decomposition. We first review the coefficient function approximation procedure. The essential ingredients are (i) a good collateral reduced-basis approximation space, and (ii) a stable and inexpensive interpolation procedure. We then apply this approach to linear nonaffine and nonlinear elliptic and parabolic equations; in each instance, we discuss the reduced-basis approximation and the associated offline-online computational procedures. Numerical results are presented to assess our approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rapid identification of material properties of the interface tissue in dental implant systems using reduced basis method</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm14/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm14/</guid>
+      <description>&lt;p&gt;This paper proposes a rapid inverse analysis approach based on the reduced basis (RB) method and the Levenberg?Marquardt?Fletcher algorithm to identify the ?unknown? material properties Young?s modulus and stiffness-proportional Rayleigh damping coefficient of the interfacial tissue between a dental implant and the surrounding bones. In the forward problem, a finite element approximation for a three-dimensional dental implant-bone model is first built. A RB approximation is then established by using a proper orthogonal decomposition ? Greedy algorithm and the Galerkin projection to enable extremely fast and reliable computation of displacement responses for a range of material properties. In the inverse analysis, the RB approximation for the dental implant-bone model are incorporated in the Levenberg?Marquardt?Fletcher algorithm to enable rapid identification of the unknown material properties. Numerical results are presented to demonstrate the efficiency and robustness of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced Basis Approximation and a Posteriori Error Estimation for Parametrized Parabolic PDEs: Application to Real-Time Bayesian Parameter Estimation</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reduced basis approximation and a posteriori error estimation for the parametrized unsteady Boussinesq equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm11/</guid>
+      <description>&lt;p&gt;In this paper we present reduced basis (RB) approximations and associated rigorous a posteriori error bounds for the parametrized unsteady Boussinesq equations. The essential ingredients are Galerkin projection onto a low-dimensional space associated with a smooth parametric manifold ? to provide dimension reduction; an efficient proper orthogonal decomposition?Greedy sampling method for identification of optimal and numerically stable approximations ? to yield rapid convergence; accurate (online) calculation of the solution-dependent stability factor by the successive constraint method ? to quantify the growth of perturbations/residuals in time; rigorous a posteriori bounds for the errors in the RB approximation and associated outputs ? to provide certainty in our predictions; and an offline?online computational decomposition strategy for our RB approximation and associated error bound ? to minimize marginal cost and hence achieve high performance in the real-time and many-query contexts. The method is applied to a transient natural convection problem in a two-dimensional &amp;ldquo;complex&amp;rdquo; enclosure ? a square with a small rectangle cutout ? parametrized by Grashof number and orientation with respect to gravity. Numerical results indicate that the RB approximation converges rapidly and that furthermore the (inexpensive) rigorous a posteriori error bounds remain practicable for parameter domains and final times of physical interest.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced basis approximation and a posteriori error estimation for the time-dependent viscous Burgers equation</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm6/</guid>
+      <description>&lt;p&gt;In this paper we present rigorous a posteriori L 2 error bounds for reduced basis approximations of the unsteady viscous Burgers? equation in one space dimension. The a posteriori error estimator, derived from standard analysis of the error-residual equation, comprises two key ingredients?both of which admit efficient Offline-Online treatment. The first is a sum over timesteps of the square of the dual norm of the residual; the second is an accurate upper bound (computed by the Successive Constraint Method) for the exponential-in-time stability factor. These error bounds serve both Offline for construction of the reduced basis space by a new POD-Greedy procedure and Online for verification of fidelity. The a posteriori error bounds are practicable for final times (measured in convective units) T?O(1) and Reynolds numbers ? ?1?1; we present numerical results for a (stationary) steepening front for T=2 and 1?? ?1?200.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced Basis Techniques for Stochastic Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm5/</guid>
+      <description>&lt;p&gt;We report here on the recent application of a now classical general reduction technique, the Reduced-Basis (RB) approach initiated by C. Prud?homme et al. in J. Fluids Eng. 124(1), 70?80, 2002, to the specific context of differential equations with random coefficients. After an elementary presentation of the approach, we review two contributions of the authors in Comput. Methods Appl. Mech. Eng. 198(41?44), 3187?3206, 2009, which presents the application of the RB approach for the discretization of a simple second order elliptic equation supplied with a random boundary condition, and in Commun. Math. Sci., 2009, which uses a RB type approach to reduce the variance in the Monte-Carlo simulation of a stochastic differential equation. We conclude the review with some general comments and also discuss possible tracks for further research in the direction.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

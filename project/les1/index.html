@@ -78,7 +78,7 @@
   
     
   
-  <meta name="description" content="We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model." />
+  <meta name="description" content="We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://ngoccuongnguyen.github.io/project/les1/" />
@@ -310,8 +310,8 @@
   
   <meta property="og:site_name" content="Dr. Ngoc Cuong Nguyen" />
   <meta property="og:url" content="https://ngoccuongnguyen.github.io/project/les1/" />
-  <meta property="og:title" content="Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method | Dr. Ngoc Cuong Nguyen" />
-  <meta property="og:description" content="We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model." /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:title" content="The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows | Dr. Ngoc Cuong Nguyen" />
+  <meta property="og:description" content="We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations." /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -344,14 +344,14 @@
     "@type": "WebPage",
     "@id": "https://ngoccuongnguyen.github.io/project/les1/"
   },
-  "headline": "Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method",
+  "headline": "The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows",
   
   "datePublished": "2022-01-01T00:00:00Z",
   "dateModified": "2022-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Ngoc Cuong Nguyen"
+    "name": "Pablo Fernandez"
   },
   
   "publisher": {
@@ -362,7 +362,7 @@
       "url": "https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model."
+  "description": "We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations."
 }
 </script>
 
@@ -373,7 +373,7 @@
   
 
 
-  <title>Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method | Dr. Ngoc Cuong Nguyen</title>
+  <title>The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows | Dr. Ngoc Cuong Nguyen</title>
 
   
   
@@ -598,7 +598,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#featured"><span>Research</span></a>
+            <a class="nav-link " href="/#research"><span>Research</span></a>
           </li>
 
           
@@ -709,44 +709,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#accomplishments"><span>Softwares</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#collaborators"><span>Collaborators</span></a>
+            <a class="nav-link " href="/#softwares"><span>Software</span></a>
           </li>
 
           
@@ -905,7 +868,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method</h1>
+  <h1>The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows</h1>
 
   
 
@@ -922,9 +885,9 @@
   <div>
     
 
-  <span class="author-highlighted">
+  <span >
+      Pablo Fernandez</span>, <span class="author-highlighted">
       Ngoc Cuong Nguyen</span>, <span >
-      Sebastien Terrana</span>, <span >
       Jaime Peraire</span>
   </div>
   
@@ -1038,28 +1001,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/oat15a1.png" alt="Example image" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model.</p>
+      <p>We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations.</p>
 
     </div>
 
@@ -1088,7 +1030,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://ngoccuongnguyen.github.io/project/les1/&amp;text=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://ngoccuongnguyen.github.io/project/les1/&amp;text=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1101,7 +1043,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://ngoccuongnguyen.github.io/project/les1/&amp;t=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://ngoccuongnguyen.github.io/project/les1/&amp;t=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1114,7 +1056,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method&amp;body=https://ngoccuongnguyen.github.io/project/les1/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows&amp;body=https://ngoccuongnguyen.github.io/project/les1/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1127,7 +1069,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://ngoccuongnguyen.github.io/project/les1/&amp;title=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://ngoccuongnguyen.github.io/project/les1/&amp;title=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1140,7 +1082,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method%20https://ngoccuongnguyen.github.io/project/les1/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows%20https://ngoccuongnguyen.github.io/project/les1/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1153,7 +1095,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://ngoccuongnguyen.github.io/project/les1/&amp;title=Large-Eddy%20Simulation%20of%20Transonic%20Buffet%20Using%20Matrix-Free%20Discontinuous%20Galerkin%20Method" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://ngoccuongnguyen.github.io/project/les1/&amp;title=The%20hybridized%20discontinuous%20Galerkin%20method%20for%20implicit%20large-eddy%20simulation%20of%20transitional%20turbulent%20flows" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1172,6 +1114,12 @@
 
 
   
+  
+    
+
+
+
+
   
     
 
@@ -1317,12 +1265,6 @@
 
     </div>
   </div>
-
-
-  
-    
-
-
 
 
   

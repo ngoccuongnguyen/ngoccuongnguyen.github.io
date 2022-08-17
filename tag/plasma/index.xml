@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plasma | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/plasma/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/plasma/index.xml" rel="self" type="application/rss+xml" />
+    <description>plasma</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>plasma</title>
+      <link>https://ngoccuongnguyen.github.io/tag/plasma/</link>
+    </image>
+    
+    <item>
+      <title>Aircraft Charging and its Influence on Triggered Lightning</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma2/</guid>
+      <description>&lt;p&gt;This paper reports on a laboratory experiment to study the effect of vehicle net charge on the inception of a positive leader from an aircraft exposed to high atmospheric electric fields. The experiment models the first stage of aircraft-triggered lightning in which a positive leader typically develops from the vehicle and is shortly afterwards followed by a negative leader. This mechanism of lightning initiation amounts to around 90 percent of strikes to aircraft. Aircraft can acquire net charge levels of the order of a millicoulomb from a number of sources including corona emission, charged particles in the engine exhaust, and charge transfer by collisions with particles in the atmosphere. In addition, aircraft could potentially be artificially charged through controlled charge emission from the surface. Experiments were performed on a model aircraft with a 1m wingspan, which was suspended between two parallel electrodes in a 1.45m gap with voltage difference of a few hundred kilovolts applied across it. In this configuration, it is found that the breakdown field can vary by as much as 30 percent for the range of charging levels tested. The experimental results show agreement with an electrostatic model of leader initiation from aircraft, and the model indicates that the effect can be substantially stronger if additional negative charge is added to the aircraft. The results from this work suggest that flying uncharged is not optimal in terms of lightning avoidance and open up the possibility of developing risk-reduction strategies based on net charge control.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arc reattachment driven by a turbulent boundary layer: implications for the sweeping of lightning arcs along aircraft</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma6/</guid>
+      <description>&lt;p&gt;A lightning channel attached to an aircraft in flight will be swept along the aircraft?s surface in response to the relative velocity between the arc?s root (attached to a moving electrode) and the bulk of the arc, which is stationary with respect to the air. During this process, the reattachment of the arc to new locations often occurs. The detailed description of this swept stroke is still at an early stage of research, and it entails the interaction between an electrical arc and the flow boundary layer. In this paper we examine the implications of the structure of the boundary layer for the arc sweeping and reattachment process by considering different velocity profiles, both for laminar and turbulent flow, as well as a high fidelity description, using large eddy simulation, of transitional flow over an airfoil. It is found that the local velocity fluctuations in a turbulent flow may be important contributors to the reattachment of the arc, through a combination of an increased potential drop along the arc and local approaches of the arc to the surface. Specific flow features, such as the presence of a laminar recirculation bubble, can also contribute to the possibility of reattachment.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Charge Control Strategy for Aircraft-Triggered Lightning Strike Risk Reduction</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma4/</guid>
+      <description>&lt;p&gt;We propose a charge control strategy to reduce the risk of an aircraft-triggered lightning strike that exploits the asymmetry between the positive and negative ends of the bidirectional leader development, which is the first phase of an aircraft-initiated lightning event. Because positive leaders are initiated and can propagate in lower fields than negative leaders, in general, a positive leader would occur first. During propagation of the positive leader, initiation of the negative leader is favored through the removal of positive charge from the aircraft. Based on this well-accepted bidirectional leader theory, we propose hindering the initiation of the positive leader by charging the aircraft to a negative level, selected to ensure that a negative leader will not form. Although not observed so far, a negative leader could be initiated first if the field enhancement at the negative end were much greater than at the positive end. In this situation, the biasing of the aircraft should be to positive levels. More generally, we propose that the optimum level of aircraft charging is that which makes both leaders equally unlikely. We present a theoretical study of the effectiveness of the strategy for an ellipsoidal fuselage as well as the geometry of a Falcon aircraft. The practical implementation, including the necessary sensors and actuators, is also discussed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computational study of glow corona discharge in wind: Biased conductor</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma1/</guid>
+      <description>&lt;p&gt;Corona discharges in flowing gas are of technological significance for a wide range of applications, ranging from plasma reactors to lightning protection systems. Numerous experimental studies of corona discharges in wind have confirmed the strong influence of wind on the corona current. Many of these studies report global electrical characteristics of the gaseous discharge but do not present details of the spatial structure of the potential field and charge distribution. Numerical simulation can help clarify the role of wind on the ion redistribution and the electric field shielding. In this work, we propose a methodology to solve numerically for the drift region of a DC glow corona using the usual approach of collapsing the ionization region to the electrode surface, but allowing for strong inhomogeneities in the electrical and flow setup. Numerical results for a grounded wire in the presence of an ambient electric field and wind are presented. The model predicts that the effect of the wind is to reduce the extension of the corona over the wire and to shift the center of the ion distribution upstream of the flow. In addition, we find that, even though the near-surface ion distribution is strongly affected by the ion injection law used, the current characteristics and the far field solution remain pretty much unaffected.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controlled Electric Charging of an Aircraft in Flight using Corona Discharge</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma5/</guid>
+      <description>&lt;p&gt;This work is part of an ongoing study to provide an artificial means of controlling the net electrical charge of an aircraft in flight through charge emission. The charging system consists on an onboard d.c. high voltage power supply (of the order of 10 kV) with the high voltage terminal connected to a coronating anode and the low voltage terminal connected to the body whose potential needs to be controlled. The system must be electrically floating and exposed to wind. During an initial transient, the positive ions produced by the corona are convected away by the wind and the body charges negatively in response. This paper presents a theoretical model of the charging strategy that reveals two distinct regimes of charging and corona operation, as well as wind tunnel experiments using both a sphere-corona tip assembly and a 2D wing-corona wire assembly that confirm the theoretical predictions. Finally, we implement the system in an RC aircraft to demonstrate that charging in flight using corona discharge is feasible and does not affect flight operations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Corona Discharge in Wind for Electrically Isolated Electrodes</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma3/</guid>
+      <description>&lt;p&gt;For various problems in atmospheric electricity it is necessary to understand the behavior of corona discharge in wind. Prior work considers grounded electrode systems, of relevance for earthed towers, trees, or windmills subjected to thunderstorms fields. In this configuration, the effect of wind is to remove the shielding ions from the coronating electrode vicinity strengthening the corona and increasing its current. There are a number of cases, such as isolated wind turbine blades or airborne vehicles, that are not completely represented by the available models and experiments. This paper focuses on electrode systems that are electrically isolated from their environment and reports on a wind tunnel campaign and accompanying theoretical work. In this configuration, there are two competing effects the removal of the shielding ions by the wind, strengthening the corona, and the electrode system charging negatively for positive corona with respect to its environment, weakening the corona. This leads to three different operating regimes, namely, for positions that favor ion recapture, charging is limited and current increases with wind as in the classical scaling, for positions that favor ion transport by the wind, the system charges negatively and the current decreases with wind, for the later configuration, as wind increases, the current can vanish and the system potential saturates. The results from this work demonstrate that classical scaling laws of corona discharge in wind do not necessarily apply for isolated electrodes and illustrate the feasibility of using a glow corona in wind for controlled charging of a floating body.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiscale Modeling of Streamers: High-Fidelity Versus Computationally Efficient Methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma7/</guid>
+      <description>&lt;p&gt;2D axisymmetric streamer model is presented, using the fluid drift-diffusion approx- imation and the Hyridizable Discontinuous Galerkin (HDG) numerical method for spatial discretization. Numerical verification of the newly developed code is performed against the literature, demonstrating very good agreement with state-of-the-art codes, and results are presented for single-filament streamers using a plate-to-plate geometry, both with and without photoionization. Full-physics numerical models, such as the one presented, are computationally costly and not prone to parametrically studying streamers. Reduced order models of streamers are of interest to quantitatively relate streamer macroscopic parameters, but they need to be compared to higher-fidelity models to demonstrate their validity. In this contribution, the macroscopic parameter streamer model recently developed by our group is validated against the higher-fidelity model. The macroscopic parameter streamer model is based on the results of a reduced-order 1.5D quasi-steady model (i.e., 1D solution of the species continuity equations, 2D solution of Poisson equation, solved in the reference frame of the streamer). The comparison shows that the general trends captured by the macroscopic model, in terms of radius, speed, tip electric field and channel electric field relations, are in agreement with the results of the higher-fidelity simulations and limitations of the predictions are discussed.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

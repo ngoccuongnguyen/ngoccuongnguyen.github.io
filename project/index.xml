@@ -13,92 +13,578 @@
     </image>
     
     <item>
-      <title>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors</title>
-      <link>https://ngoccuongnguyen.github.io/project/sc1/</link>
+      <title>?Natural norm? a posteriori error estimators for reduced basis approximations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm7/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://ngoccuongnguyen.github.io/project/sc1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.&lt;/p&gt;
+      <guid>https://ngoccuongnguyen.github.io/project/rbm7/</guid>
+      <description>&lt;p&gt;We present a technique for the rapid and reliable prediction of linear-functional outputs of coercive and non-coercive linear elliptic partial differential equations with affine parameter dependence. The essential components are (i) rapidly convergent global reduced basis approximations ? (Galerkin) projection onto a space WN spanned by solutions of the governing partial differential equation at N judiciously selected points in parameter space; (ii) a posteriori error estimation ? relaxations of the error-residual equation that provide inexpensive yet sharp bounds for the error in the outputs of interest; and (iii) offline/online computational procedures ? methods which decouple the generation and projection stages of the approximation process. The operation count for the online stage ? in which, given a new parameter value, we calculate the output of interest and associated error bound ? depends only on N (typically very small) and the parametric complexity of the problem. In this paper we propose a new ?natural norm? formulation for our reduced basis error estimation framework that (a) greatly simplifies and improves our inf?sup lower bound construction (offline) and evaluation (online) ? a critical ingredient of our a posteriori error estimators; and (b) much better controls ? significantly sharpens ? our output error bounds, in particular (through deflation) for parameter values corresponding to nearly singular solution behavior. We apply the method to two illustrative problems a coercive Laplacian heat conduction problem ? which becomes singular as the heat transfer coefficient tends to zero; and a non-coercive Helmholtz acoustics problem ? which becomes singular as we approach resonance. In both cases, we observe very economical and sharp construction of the requisite natural-norm inf?sup lower bound; rapid convergence of the reduced basis approximation; reasonable effectivities (even for near-singular behavior) for our deflated output error estimators; and significant ? several order of magnitude ? (online) computational savings relative to standard finite element procedures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A class of embedded discontinuous Galerkin methods for computational fluid dynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd5/</guid>
+      <description>&lt;p&gt;We present a class of embedded discontinuous Galerkin (EDG) methods for numerically solving the Euler equations and the Navier?Stokes equations. The essential ingredients are a local Galerkin projection of the underlying governing equations at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the approximate trace, a judicious choice of the numerical flux to provide stability and consistency, and a global jump condition that weakly enforces the single-valuedness of the numerical flux to arrive at a global formulation in terms of the numerical trace. The EDG methods are thus obtained from the hybridizable discontinuous Galerkin (HDG) method by requiring the approximate trace to belong to smaller approximation spaces than the one in the HDG method. In the EDG methods, the numerical trace is taken to be continuous on a suitable collection of faces, thus resulting in an even smaller number of globally coupled degrees of freedom than in the HDG method. On the other hand, the EDG methods are no longer locally conservative. In the framework of convection?diffusion problems, this lack of local conservativity is reflected in the fact that the EDG methods do not provide the optimal convergence of the approximate gradient or the superconvergence for the scalar variable for diffusion-dominated problems as the HDG method does. However, since the HDG method does not display these properties in the convection-dominated regime, the EDG method becomes a reasonable alternative since it produces smaller algebraic systems than the HDG method. In fact, the resulting stiffness matrix has a similar sparsity pattern as that of the statically condensed continuous Galerkin (CG) method. The main advantage of the EDG methods is that they are generally more stable and robust than the CG method for solving convection-dominated problems. Numerical results are presented to illustrate the performance of the EDG methods. They confirm that, even though the EDG methods are not locally conservative, they are a viable alternative to the HDG method in the convection-dominated regime.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A dissimilar non-matching HDG discretization for Stokes flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd12/</guid>
+      <description>&lt;p&gt;In this work we propose and analyze an HDG method for the Stokes equation whose domain is discretized by two independent polygonal subdomains with different meshsizes. This causes a non-conformity at the intersection of the subdomains or leaves a gap (unmeshed region) between them. In order to appropriately couple these two different discretizations, we propose suitable transmission conditions to preserve the high order convergence of the scheme. Furthermore, stability estimates are established in order to show the well-posedness of the method and the error estimates. In particular, for smooth enough solutions, the L2 norm of the errors associated to the approximations of the velocity gradient, the velocity and the pressure are of order hk+1, where h is the meshsize and k is the polynomial degree of the local approximation spaces. Moreover, the method presents superconvergence of the velocity trace and the divergence-free postprocessed velocity. Finally, we show numerical experiments that validate our theory and the capacities of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A general multipurpose interpolation procedure: the magic points</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm3/</guid>
+      <description>&lt;p&gt;Lagrangian interpolation is a classical way to approximate general functions by finite sums of well chosen, pre-defined, linearly independent interpolating functions; it is much simpler to implement than determining the best fits with respect to some Banach (or even Hilbert) norms. In addition, only partial knowledge is required (here values on some set of points). The problem of defining the best sample of points is nevertheless rather complex and is in general open. In this paper we propose a way to derive such sets of points. We do not claim that the points resulting from the construction explained here are optimal in any sense. Nevertheless, the resulting interpolation method is proven to work under certain hypothesis, the process is very general and simple to implement, and compared to situations where the best behavior is known, it is relatively competitive.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A high-order hybridizable discontinuous Galerkin method for elliptic interface problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg12/</guid>
+      <description>&lt;p&gt;We present a high-order hybridizable discontinuous Galerkin method for solving elliptic interface problems in which the solution and gradient are nonsmooth because of jump conditions across the interface. The hybridizable discontinuous Galerkin method is endowed with several distinct characteristics. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the global degrees of freedom. Second, they provide, for elliptic problems with polygonal interfaces, approximations of all the variables that converge with the optimal order of k?+?1 in the L2(?)-norm where k denotes the polynomial order of the approximation spaces. Third, they possess some superconvergence properties that allow the use of an inexpensive element-by-element postprocessing to compute a new approximate solution that converges with order k?+?2. However, for elliptic problems with finite jumps in the solution across the curvilinear interface, the approximate solution and gradient do not converge optimally if the elements at the interface are isoparametric. The discrepancy between the exact geometry and the approximate triangulation near the curved interfaces results in lower order convergence. To recover the optimal convergence for the approximate solution and gradient, we propose to use superparametric elements at the interface.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for both thin and 3D nonlinear elastic structures</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm3/</guid>
+      <description>&lt;p&gt;We present a 3D hybridizable discontinuous Galerkin (HDG) method for nonlinear elasticity which can be efficiently used for thin structures with large deformation. The HDG method is developed for a three-field formulation of nonlinear elasticity and is endowed with a number of attractive features that make it ideally suited for thin structures. Regarding robustness, the method avoids a variety of locking phenomena such as membrane locking, shear locking, and volumetric locking. Regarding accuracy, the method yields optimal convergence for the displacements, which can be further improved by an inexpensive postprocessing. And finally, regarding efficiency, the only globally coupled unknowns are the degrees of freedom of the numerical trace on the interior faces, resulting in substantial savings in computational time and memory storage. This last feature is particularly advantageous for thin structures because the number of interior faces is typically small. In addition, we discuss the implementation of the HDG method with arc-length algorithms for phenomena such as snap-through, where the standard load incrementation algorithm becomes unstable. Numerical results are presented to verify the convergence and demonstrate the performance of the HDG method through simple analytical and popular benchmark problems in the literature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for computing nonlocal electromagnetic effects in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics6/</guid>
+      <description>&lt;p&gt;The interaction of light with metallic nanostructures produces a collective excitation of electrons at the metal surface, also known as surface plasmons. These collective excitations lead to resonances that enable the confinement of light in deep-subwavelength regions, thereby leading to large near-field enhancements. The simulation of plasmon resonances presents notable challenges. From the modeling perspective, the realistic behavior of conduction-band electrons in metallic nanostructures is not captured by Maxwell&amp;rsquo;s equations, thus requiring additional modeling. From the simulation perspective, the disparity in length scales stemming from the extreme field localization demands efficient and accurate numerical methods. In this paper, we develop the hybridizable discontinuous Galerkin (HDG) method to solve Maxwell&amp;rsquo;s equations augmented with the hydrodynamic model for the conduction-band electrons in noble metals. This method enables the efficient simulation of plasmonic nanostructures while accounting for the nonlocal interactions between electrons and the incident light. We introduce a novel postprocessing scheme to recover superconvergent solutions and demonstrate the convergence of the proposed HDG method for the simulation of a 2D gold nanowire and a 3D periodic annular nanogap structure. The results of the hydrodynamic model are compared to those of a simplified local response model, showing that differences between them can be significant at the nanoscale.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for the compressible Euler and Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd3/</guid>
+      <description>&lt;p&gt;In this paper, we present a Hybridizable Discontinuous Galerkin (HDG) method for the solution of the compressible Euler and Navier-Stokes equations. The method is devised by using the discontinuous Galerkin approximation with a special choice of the numerical fluxes and weakly imposing the continuity of the normal component of the numerical fluxes across the element interfaces. This allows the approximate conserved variables defining the discontinuous Galerkin solution to be locally condensed, thereby resulting in a reduced system which involves only the degrees of freedom of the approximate traces of the solution. The HDG method inherits the geometric flexibility and arbitrary high order accuracy of Discontinuous Galerkin methods, but offers a significant reduction in the computational cost as well as improved accuracy and convergence properties. In particular, we show that HDG produces optimal converges rates for both the conserved quantities as well as the viscous stresses and the heat fluxes. We present some numerical results to demonstrate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for the incompressible Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd13/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd13/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin method for the numerical solution the incompressible Navier-Stokes equations. The method is devised by using the discontinuous Galerkin approximation with a special choice of the numerical traces and a fully implicit time-stepping method for temporal discretization. The HDG method possesses several unique features which distinguish themselves from other discontinuous Galerkin methods. First, it reduces the globally coupled unknowns to the approximate trace of the velocity and the mean of the pressure on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, it allows for pressure, vorticity and stress boundary conditions to be prescribed on different parts of the boundary. Third, it provides, for smooth viscous-dominated problems, approximations of the velocity, pressure, and velocity gradient which converge with the optimal order of k+1 in the L2 norm, when polynomials of degree k ? 0 are used for all components of the approximate solution. And fourth, it displays superconvergence properties that allow us to use the above-mentioned optimal convergence properties to define an element-by-element postprocessing scheme to compute a new and better approximate velocity. Indeed, this new approximation is exactly divergence-free, H(div)-conforming, and converges with order k + 2 for k ? 1 and with order 1 for k = 0 in the L2 norm. We present extensive numerical results to demonstrate the accuracy and convergence properties of the method for a wide range of Reynolds numbers and for various polynomial degrees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridized discontinuous Petrov-Galerkin scheme for scalar conservation laws</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg6/</guid>
+      <description>&lt;p&gt;We present a hybridized discontinuous Petrov?Galerkin (HDPG) method for the numerical solution of steady and time-dependent scalar conservation laws. The method combines a hybridization technique with a local Petrov?Galerkin approach in which the test functions are computed to maximize the inf-sup condition. Since the Petrov?Galerkin approach does not guarantee a conservative solution, we propose to enforce this explicitly by introducing a constraint into the local Petrov?Galerkin problem. When the resulting nonlinear system is solved using the Newton?Raphson procedure, the solution inside each element can be locally condensed to yield a global linear system involving only the degrees of freedom of the numerical trace. This results in a significant reduction in memory storage and computation time for the solution of the matrix system, albeit at the cost of solving the local Petrov?Galerkin problems. However, these local problems are independent of each other and thus perfectly scalable. We present several numerical examples to assess the performance of the proposed method. The results show that the HDPG method outperforms the hybridizable discontinuous Galerkin method for problems involving discontinuities. Moreover, for the test case proposed by Peterson, the HDPG method provides optimal convergence of order k?+?1.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Hybridized Multiscale Discontinuous Galerkin Method for Compressible Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd9/</guid>
+      <description>&lt;p&gt;&amp;lsquo;We introduce a hybridized multiscale discontinuous Galerkin (HMDG) method for the numerical solution of compressible flows. The HMDG method is developed upon extending the hybridizable discontinuous Galerkin (HDG) method presented in [30]. The extension is carried out by modifying the local approximation spaces on elements. Our local approximation spaces are characterized by two integers (n*, k*), where n* is the number of subcells within an element and k* is the polynomial degree of shape functions defined on the subcells. The selection of the value of (n*, k*) on a particular element depends on the smoothness of the solution on that element. More specifically, for elements on which the solution is smooth, we choose the smallest value n* = 1 and the highest degree k* = k. For elements containing shocks in the solution, we use the largest value n* = n and the lowest degree k* = 0 so as to capture shocks without using artificial viscosity and limiting slopes/fluxes. The proposed method thus combines the accuracy and efficiency of higli-order approximations with the robustness of low-order approximations. Numerical results are presented to demonstrate the performance of the proposed method.&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A model and variance reduction method for computing statistical outputs of stochastic elliptic partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml1/</guid>
+      <description>&lt;p&gt;We present a model and variance reduction method for the fast and reliable computation of statistical outputs of stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the hybridizable discontinuous Galerkin (HDG) discretization of elliptic partial differential equations (PDEs), which allows us to obtain high-order accurate solutions of the governing PDE; (2) the reduced basis method for a new HDG discretization of the underlying PDE to enable real-time solution of the parameterized PDE in the presence of stochastic parameters; and (3) a multilevel variance reduction method that exploits the statistical correlation among the different reduced basis approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the reduced basis approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the reduced basis approximations and the sizes of Monte Carlo samples to achieve a given error tolerance. We provide numerical examples to demonstrate the performance of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A multiscale continuous Galerkin method for stochastic simulation and robust design of photonic crystals</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics10/</guid>
+      <description>&lt;p&gt;We present a multiscale continuous Galerkin (MSCG) method for the fast and accurate stochastic simulation and optimization of time-harmonic wave propagation through photonic crystals. The MSCG method exploits repeated patterns in the geometry to drastically decrease computational cost and incorporates the following ingredients (1) a reference domain formulation that allows us to treat geometric variability resulting from manufacturing uncertainties; (2) a reduced basis approximation to solve the parametrized local subproblems; (3) a gradient computation of the objective function; and (4) a model and variance reduction technique that enables the accelerated computation of statistical outputs by exploiting the statistical correlation between the MSCG solution and the reduced basis approximation. The proposed method is thus well suited for both deterministic and stochastic simulations, as well as robust design of photonic crystals. We provide convergence and cost analysis of the MSCG method, as well as a simulation results for a waveguide T-splitter and a Z-bend to illustrate its advantages for stochastic simulation and robust design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A multiscale reduced-basis method for parametrized elliptic partial differential equations with multiple scales</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm12/</guid>
+      <description>&lt;p&gt;We present a technique for solving parametrized elliptic partial differential equations with multiple scales. The technique is based on the combination of the reduced basis method [C. Prud?homme, D. Rovas, K. Veroy, Y. Maday, A.T. Patera, G. Turinici, Reliable real-time solution of parametrized partial differential equations reduced-basis output bound methods, Journal of Fluids Engineering 124 (1) (2002) 70?80] and the multiscale finite element method [T.Y. Hou, X.H. Wu, A multiscale finite element method for elliptic problems in composite materials and porous media, Journal of Computational Physics 134 (1) (1997) 169?189] to treat problems in which the differential coefficient is characterized by a large number of independent parameters. For the multiscale finite element method, a large number of cell problems has to be solved at the fine local mesh for each new configuration of the differential coefficient. In order to improve the computational efficiency of this method, we construct reduced basis spaces that are adapted to the local parameter dependence of the differential operator. The approximate solutions of the cell problems are computed accurately and efficiently via performing Galekin projection onto the reduced basis spaces and implementing the offline?online computational procedure. Therefore, a large number of similar computations at the fine local mesh can be carried out with lower computational cost for each new configuration of the differential coefficient. Numerical results are provided to demonstrate the accuracy and efficiency of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem6/</guid>
+      <description>&lt;p&gt;We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&amp;rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics11/</guid>
+      <description>&lt;p&gt;We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&amp;rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A physics-based shock capturing method for large-eddy simulation</title>
+      <link>https://ngoccuongnguyen.github.io/project/les4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/les4/</guid>
+      <description>&lt;p&gt;We present a shock capturing method for large-eddy simulation of turbulent flows. The proposed method relies on physical mechanisms to resolve and smooth sharp unresolved flow features that may otherwise lead to numerical instability, such as shock waves and under-resolved thermal and shear layers. To that end, we devise various sensors to detect when and where the shear viscosity, bulk viscosity and thermal conductivity of the fluid do not suffice to stabilize the numerical solution. In such cases, the fluid viscosities are selectively increased to ensure the cell Peclet number is of order one so that these flow features can be well represented with the grid resolution. Although the shock capturing method is devised in the context of discontinuous Galerkin methods, it can be used with other discretization schemes. The performance of the method is illustrated through numerical simulation of external and internal flows in transonic, supersonic, and hypersonic regimes. For the problems considered, the shock capturing method performs robustly, provides sharp shock profiles, and has a small impact on the resolved turbulent structures. These three features are critical to enable robust and accurate large-eddy simulations of shock flows.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A posteriori error estimation and basis adaptivity for reduced-basis approximation of nonaffine-parametrized linear elliptic partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm13/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm13/</guid>
+      <description>&lt;p&gt;In this paper, we extend the earlier work [M. Barrault, Y. Maday, N. C. Nguyen, A.T. Patera, An ?empirical interpolation? method application to efficient reduced-basis discretization of partial differential equations, C.R. Acad. Sci. Paris, Serie I 339 (2004) 667?672; M.A. Grepl, Y. Maday, N.C. Nguyen, A.T. Patera, Efficient reduced-basis treatment of nonaffine and nonlinear partial differential equations, M2AN Math. Model. Numer. Anal. 41 (3) (2007) 575?605.] to provide a posteriori error estimation and basis adaptivity for reduced-basis approximation of linear elliptic partial differential equations with nonaffine parameter dependence. The essential components are (i) rapidly convergent reduced-basis approximations ? (Galerkin) projection onto a space spanned by N global hierarchical basis functions which are constructed from solutions of the governing partial differential equation at judiciously selected points in parameter space; (ii) stable and inexpensive interpolation procedures ? methods which allow us to replace nonaffine parameter functions with a coefficient-function expansion as a sum of M products of parameter-dependent coefficients and parameter-independent functions; (iii) a posteriori error estimation ? relaxations of the error-residual equation that provide inexpensive yet sharp error bounds for the error in the outputs of interest; (iv) optimal basis construction ? processes which make use of the error bounds as an inexpensive surrogate for the expensive true error to explore the parameter space in the quest for an optimal sampling set; and (v) offline/online computational procedures ? methods which decouple the generation and projection stages of the approximation process. The operation count for the online stage - in which, given a new parameter value, we calculate the output of interest and associated error bounds - depends only on N, M, and the affine parametric complexity of the problem; the method is thus ideally suited for repeated and reliable evaluation of input?output relationships in the many-query or real-time contexts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A posteriori goal-oriented bounds for the Poisson problem using potential and equilibrated flux reconstructions: Application to the hybridizable discontinuous Galerkin method</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg11/</guid>
+      <description>&lt;p&gt;We present a general framework to compute upper and lower bounds for linear-functional outputs of the exact solutions of the Poisson equation based on reconstructions of the field variable and flux for both the primal and adjoint problems. The method is devised from a generalization of the complementary energy principle and the duality theory. Using duality theory, the computation of bounds is reduced to finding independent potential and equilibrated flux reconstructions. A generalization of this result is also introduced allowing to derive alternative guaranteed bounds from nearly-arbitrary H(div;?) flux reconstructions (only zero-order equilibration is required). This approach is applicable to any numerical method used to compute the solution. In this work, the proposed approach is applied to derive bounds for the hybridizable discontinuous Galerkin (HDG) method. An attractive feature of the proposed approach is that superconvergence on the bound gap is achieved, yielding accurate bounds even for very coarse meshes. Numerical experiments are presented to illustrate the performance and convergence of the bounds for the HDG method in both uniform and adaptive mesh refinements.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A reduced basis approach for variational problems with stochastic parameters: Application to heat conduction with variable Robin coefficient</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm9/</guid>
+      <description>&lt;p&gt;In this work, a Reduced Basis (RB) approach is used to solve a large number of boundary value problems parametrized by a stochastic input - expressed as a Karhunen?Loeve expansion ? in order to compute outputs that are smooth functionals of the random solution fields. The RB method proposed here for variational problems parametrized by stochastic coefficients bears many similarities to the RB approach developed previously for deterministic systems. However, the stochastic framework requires the development of new a posteriori estimates for statistical outputs - such as the first two moments of integrals of the random solution fields; these error bounds, in turn, permit efficient sampling of the input stochastic parameters and fast reliable computation of the outputs in particular in the many-query context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Time-Spectral Hybridizable Discontinuous Galerkin Method for Periodic Flow Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd8/</guid>
+      <description>&lt;p&gt;Numerical simulations of time-periodic flows are an essential design tool for a wide range of engineered systems, including jet engines, wind turbines and flapping wings. Conventional solvers for time-periodic flows are limited in accuracy and efficiency by the low-order Finite Volume and time-marching methods they typically employ. These methods introduce significant numerical dissipation in the simulated flow, and can require hundreds of timesteps to describe a periodic flow with only a few harmonic modes. However, recent developments in high-order methods and Fourier-based time discretizations present an opportunity to greatly improve computational performance. This thesis presents a novel Time-Spectral Hybridizable Discontinuous Galerkin (HDG) method for periodic flow problems, together with applications to flow through cascades and rotor/stator assemblies in aeronautical turbomachinery. The present work combines a Fourier-based Time-Spectral discretization in time with an HDG discretization in space, realizing the dual benefits of spectral accuracy in time and high-order accuracy in space. Low numerical dissipation and favorable stability properties are inherited from the high-order HDG method, together with a reduced number of globally coupled degrees of freedom compared to other DG methods. HDG provides a natural framework for treating boundary conditions, which is exploited in the development of a new high-order sliding mesh interface coupling technique for multiple-row turbomachinery problems. A regularization of the Spalart-Allmaras turbulence model is also employed to ensure numerical stability of unsteady flow solutions obtained with high-order methods. Turning to the temporal discretization, the Time-Spectral method enables direct solution of a periodic flow state, bypasses initial transient behavior, and can often deliver substantial savings in computational cost compared to implicit time-marching. An important driver of computational efficiency is the ability to select and resolve only the most important frequencies of a periodic problem, such as the blade-passing frequencies in turbomachinery flows. To this end, the present work introduces an adaptive frequency selection technique, using the Time-Spectral residual to form an inexpensive error indicator. Having selected a set of frequencies, the accuracy of the Time-Spectral solution is greatly improved by using optimally selected collocation points in time. For multi-domain problems such as turbomachinery flows, an anti-aliasing filter is also needed to avoid errors in the transfer of the solution across the sliding interface. All of these aspects contribute to the Adaptive Time-Spectral HDG method developed in this thesis. Performance characteristics of the method are demonstrated through applications to periodic ordinary differential equations, a convection problem, laminar flow over a pitching airfoil, and turbulent flow through a range of single- and multiple-row turbomachinery configurations. For a 2:1 rotor/stator flow problem, the Adaptive Time-Spectral HDG method correctly identifies the relevant frequencies in each blade row. This leads to an accurate periodic flow solution with greatly reduced computational cost, when compared to sequentially selected frequencies or a time-marching solution. For comparable accuracy in prediction of rotor loading, the Adaptive Time- Spectral HDG method incurs 3 times lower computational cost (CPU time) than time-marching, and for prediction of only the 1st harmonic amplitude, these savings rise to a factor of 200. Finally, in three-row compressor flow simulations, a high-order HDG method is shown to achieve significantly greater accuracy than a lower-order method with the same computational cost. For example, considering error in the amplitude of the 1st harmonic mode of total rotor loading, a p = 1 computation results in 20% error, in contrast to only 1% error in a p = 4 solution with comparable cost. This highlights the benefits that can be obtained from higher-order methods in the context of turbomachinery flow problems&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accelerated Residual Methods for the Iterative Solution of Systems of Equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc2/</guid>
+      <description>&lt;p&gt;We present accelerated residual methods for the iterative solution of systems of equations by leveraging recent developments in accelerated gradient methods for convex optimization. The stability properties of the proposed method are analyzed for linear systems of equations by using the finite difference equation theory. Next, we introduce a residual descent restarting strategy and an adaptive computation of the acceleration parameter to enhance the robustness and efficiency of our method. Furthermore, we incorporate preconditioning techniques into the proposed method to accelerate its convergence. We demonstrate the performance of our method on systems of equations resulting from the finite element approximation of linear and nonlinear partial differential equations. In a variety of test cases, the numerical results show that the proposed method is competitive with the pseudo&amp;ndash;time-marching method, Nesterov&amp;rsquo;s method, and Newton&amp;ndash;Krylov methods. Finally, we discuss some open issues that should be addressed in future research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advances in the development of a High Order, Viscous-Inviscid Interaction Solver</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd10/</guid>
+      <description>&lt;p&gt;We present a high order viscous-inviscid interaction solver for aerodynamic flows. Our approach is based on a split formulation where the viscous and inviscid effects are solved in two different domains that overlap near solid walls or the wake centerline and are coupled using the equivalent mass transpiration proposed by Lighthill. Both the viscous and inviscid solvers are based on a high order Hybridized Discontinuous Galerkin scheme (HDG). In the case of the viscous solver, the mesh is extruded on the fly from the surface mesh using a normal scaling indicator ?, based on integrated boundary layer quantities, that is computed as part of the solution. Results will be presented to validate the coupled viscous-inviscid solver in a variety of cases using the Euler equations as well as the full potential equation as inviscid models.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aircraft Charging and its Influence on Triggered Lightning</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma2/</guid>
+      <description>&lt;p&gt;This paper reports on a laboratory experiment to study the effect of vehicle net charge on the inception of a positive leader from an aircraft exposed to high atmospheric electric fields. The experiment models the first stage of aircraft-triggered lightning in which a positive leader typically develops from the vehicle and is shortly afterwards followed by a negative leader. This mechanism of lightning initiation amounts to around 90 percent of strikes to aircraft. Aircraft can acquire net charge levels of the order of a millicoulomb from a number of sources including corona emission, charged particles in the engine exhaust, and charge transfer by collisions with particles in the atmosphere. In addition, aircraft could potentially be artificially charged through controlled charge emission from the surface. Experiments were performed on a model aircraft with a 1m wingspan, which was suspended between two parallel electrodes in a 1.45m gap with voltage difference of a few hundred kilovolts applied across it. In this configuration, it is found that the breakdown field can vary by as much as 30 percent for the range of charging levels tested. The experimental results show agreement with an electrostatic model of leader initiation from aircraft, and the model indicates that the effect can be substantially stronger if additional negative charge is added to the aircraft. The results from this work suggest that flying uncharged is not optimal in terms of lightning avoidance and open up the possibility of developing risk-reduction strategies based on net charge control.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An adaptive shock-capturing HDG method for compressible flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd14/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd14/</guid>
+      <description>&lt;p&gt;We introduce a hybridizable discontinuous Galerkin (HDG) method for the numerical solution of the compressible Euler equations with shock waves. By locally condensing the approximate conserved variables the HDG method results in a final system involving only the degrees of freedom of the approximate traces of the conserved variables. The HDG method inherits the geometric flexibility and high-order accuracy of discontinuous Galerkin methods, and offers a significant reduction in the computational cost. In order to treat compressible fluid flows with discontinuities, the HDG method is equipped with an artificial viscosity term based on an extension of existing artificial viscosity methods. Moreover, the artificial viscosity can be used as an indicator for adaptive grid refinement to improve shock profiles. Numerical results for subsonic, transonic, supersonic, and hypersonic flows are presented to demonstrate the performance of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An efficient reduced-order modeling approach for non-linear parametrized partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm8/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Empirical Interpolation and Model-Variance Reduction Method for Computing Statistical Outputs  of Parametrized Stochastic Partial Differential Equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml4/</guid>
+      <description>&lt;p&gt;We present an empirical interpolation and model-variance reduction method for the fast and reliable computation of statistical outputs of parametrized stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the real-time computation of reduced basis (RB) outputs approximating high-fidelity outputs computed with the hybridizable discontinuous Galerkin (HDG) discretization; (2) the empirical interpolation for an efficient offline-online decoupling of the parametric and stochastic influence; and (3) a multilevel variance reduction method that exploits the statistical correlation between the low-fidelity approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the RB approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the RB approximations and the size of Monte Carlo samples to achieve a given error tolerance. In addition, we extend the method to compute estimates for the gradients of the statistical outputs. The proposed method is particularly useful for stochastic optimization problems where many evaluations of the objective function and its gradient are required.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An empirical interpolation method: application to efficient reduced-basis discretization of partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm1/</guid>
+      <description>&lt;p&gt;We present an efficient reduced-basis discretization procedure for partial differential equations with nonaffine parameter dependence. The method replaces nonaffine coefficient functions with a collateral reduced-basis expansion which then permits an (effectively affine) offline?online computational decomposition. The essential components of the approach are (i) a good collateral reduced-basis approximation space, (ii) a stable and inexpensive interpolation procedure, and (iii) an effective a posteriori estimator to quantify the newly introduced errors. Theoretical and numerical results respectively anticipate and confirm the good behavior of the technique.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An explicit hybridizable discontinuous Galerkin method for the acoustic wave equation</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem3/</guid>
+      <description>&lt;p&gt;We present an explicit hybridizable discontinuous Galerkin (HDG) method for numerically solving the acoustic wave equation. The method is fully explicit, high-order accurate in both space and time, and coincides with the classic discontinuous Galerkin (DG) method with upwinding fluxes for a particular choice of its stabilization function. This means that it has the same computational complexity as other explicit DG methods. However, just as its implicit version, it provides optimal convergence of order for all the approximate variables including the gradient of the solution, and, when the time-stepping method is of order , it displays a superconvergence property which allow us, by means of local postprocessing, to obtain new improved approximations of the scalar field variables at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order in the L2 norm for. These properties do not hold for all numerical fluxes. Indeed, our results show that, when the HDG numerical flux is replaced by the Lax?Friedrichs flux, the above-mentioned superconvergence properties are lost, although some are recovered when the Lax?Friedrichs flux is used only in the interior of the domain. Finally, we extend the explicit HDG method to treat the wave equation with perfectly matched layers. We provide numerical examples to demonstrate the performance of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An HDG method for dissimilar meshes</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg10/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin (HDG) method for dissimilar meshes. The method is devised by formulating HDG discretizations on separate meshes and gluing these HDG discretizations through appropriate transmission conditions that weakly enforce the continuity of the numerical trace and the numerical flux across the dissimilar interfaces. The transmission conditions are based upon transferring the numerical flux from the first mesh to the second mesh and the numerical trace from the second mesh to the first one. The transfer of the numerical trace/flux from one mesh to the other relies on the extrapolation of the approximate flux, and is made to be consistent with the HDG methodology for conforming meshes. Stability of the HDG method is shown and the error analysis of the HDG method is established. Numerical results are presented to validate the theoretical results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for linear convection-diffusion equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg1/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin method for the numerical solution of steady and time-dependent linear convection?diffusion equations. We devise the method as follows. First, we express the approximate scalar variable and corresponding flux within each element in terms of an approximate trace of the scalar variable along the element boundary. We then define a unique value for the approximate trace by enforcing the continuity of the normal component of the flux across the element boundary; a global equation system solely in terms of the approximate trace is thus obtained. The high number of globally coupled degrees of freedom in the discontinuous Galerkin approximation is therefore significantly reduced. If the problem is time-dependent, we discretize the time derivative by means of backward difference formulae. This results in efficient schemes capable of producing high-order accurate solutions in space and time. Indeed, when the time-marching method is th order accurate and when polynomials of degree &lt;em&gt;p&lt;/em&gt; are used to represent the scalar variable, the flux and the approximate trace, we observe that the approximations for the scalar variable, the flux and the trace of the scalar variable converge with the optimal order of &lt;em&gt;p+1&lt;/em&gt; in the L2 norm. Finally, we introduce a simple element-by-element postprocessing scheme to obtain new approximations of the flux and the scalar variable. The new approximate flux, which has a continuous inter-element normal component, is shown to converge with order &lt;em&gt;p+1&lt;/em&gt;. The new approximate scalar variable is shown to converge with order &lt;em&gt;p+2&lt;/em&gt;. For the time-dependent case, the postprocessing does not need to be applied at each time-step but only at the times for which an enhanced solution is required. Moreover, the postprocessing procedure is less expensive than the solution procedure, since it is performed at the element level. Extensive numerical results are presented to demonstrate the convergence properties of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for nonlinear convection-diffusion equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg2/</guid>
+      <description>&lt;p&gt;In this paper, we present hybridizable discontinuous Galerkin methods for the numerical solution of steady and time-dependent nonlinear convection?diffusion equations. The methods are devised by expressing the approximate scalar variable and corresponding flux in terms of an approximate trace of the scalar variable and then explicitly enforcing the jump condition of the numerical fluxes across the element boundary. Applying the Newton?Raphson procedure and the hybridization technique, we obtain a global equation system solely in terms of the approximate trace of the scalar variable at every Newton iteration. The high number of globally coupled degrees of freedom in the discontinuous Galerkin approximation is therefore significantly reduced. We then extend the method to time-dependent problems by approximating the time derivative by means of backward difference formulae. When the time-marching method is p+1 order accurate and when polynomials of degree p are used to represent the scalar variable, each component of the flux and the approximate trace, we observe that the approximations for the scalar variable and the flux converge with the optimal order of p+1 in the L2 norm. Finally, we apply element-by-element postprocessing schemes to obtain new approximations of the flux and the scalar variable. The new approximate flux, which has a continuous interelement normal component, is shown to converge with order p+1 in the L2 norm. The new approximate scalar variable is shown to converge with order p+2 in the L2 norm. The postprocessing is performed at the element level and is thus much less expensive than the solution procedure. For the time-dependent case, the postprocessing does not need to be applied at each time step but only at the times for which an enhanced solution is required. Extensive numerical results are provided to demonstrate the performance of the present method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for the incompressible Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd1/</guid>
+      <description>&lt;p&gt;We present an implicit high-order hybridizable discontinuous Galerkin method for the steady-state and time-dependent incompressible Navier?Stokes equations. The method is devised by using the discontinuous Galerkin discretization for a velocity gradient-pressure?velocity formulation of the incompressible Navier?Stokes equations with a special choice of the numerical traces. The method possesses several unique features which distinguish itself from other discontinuous Galerkin methods. First, it reduces the globally coupled unknowns to the approximate trace of the velocity and the mean of the pressure on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Moreover, if the augmented Lagrangian method is used to solve the linearized system, the globally coupled unknowns become the approximate trace of the velocity only. Second, it provides, for smooth viscous-dominated problems, approximations of the velocity, pressure, and velocity gradient which converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k?0 are used for all components of the approximate solution. And third, it displays superconvergence properties that allow us to use the above-mentioned optimal convergence properties to define an element-by-element postprocessing scheme to compute a new and better approximate velocity. Indeed, this new approximation is exactly divergence-free, H (div)-conforming, and converges with order k + 2 for k ? 1 and with order 1 for k = 0 in the L2-norm. Moreover, a novel and systematic way is proposed for imposing boundary conditions for the stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the method. This can be done on different parts of the boundary and does not result in the degradation of the optimal order of convergence properties of the method. Extensive numerical results are presented to demonstrate the convergence and accuracy properties of the method for a wide range of Reynolds numbers and for various polynomial degrees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis of HDG methods for Oseen equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd4/</guid>
+      <description>&lt;p&gt;We propose a hybridizable discontinuous Galerkin (HDG) method to numerically solve the Oseen equations which can be seen as the linearized version of the incompressible Navier-Stokes equations. We use same polynomial degree to approximate the velocity, its gradient and the pressure. With a special projection and postprocessing, we obtain optimal convergence for the velocity gradient and pressure and superconvergence for the velocity. Numerical results supporting our theoretical results are provided.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arc reattachment driven by a turbulent boundary layer: implications for the sweeping of lightning arcs along aircraft</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma6/</guid>
+      <description>&lt;p&gt;A lightning channel attached to an aircraft in flight will be swept along the aircraft?s surface in response to the relative velocity between the arc?s root (attached to a moving electrode) and the bulk of the arc, which is stationary with respect to the air. During this process, the reattachment of the arc to new locations often occurs. The detailed description of this swept stroke is still at an early stage of research, and it entails the interaction between an electrical arc and the flow boundary layer. In this paper we examine the implications of the structure of the boundary layer for the arc sweeping and reattachment process by considering different velocity profiles, both for laminar and turbulent flow, as well as a high fidelity description, using large eddy simulation, of transitional flow over an airfoil. It is found that the local velocity fluctuations in a turbulent flow may be important contributors to the reattachment of the arc, through a combination of an increased potential drop along the arc and local approaches of the arc to the surface. Specific flow features, such as the presence of a laminar recirculation bubble, can also contribute to the possibility of reattachment.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bandgap optimization of two-dimensional photonic crystals using semidefinite programming and subspace methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics4/</guid>
+      <description>&lt;p&gt;In this paper, we consider the optimal design of photonic crystal structures for two-dimensional square lattices. The mathematical formulation of the bandgap optimization problem leads to an infinite-dimensional Hermitian eigenvalue optimization problem parametrized by the dielectric material and the wave vector. To make the problem tractable, the original eigenvalue problem is discretized using the finite element method into a series of finite-dimensional eigenvalue problems for multiple values of the wave vector parameter. The resulting optimization problem is large-scale and non-convex, with low regularity and non-differentiable objective. By restricting to appropriate eigenspaces, we reduce the large-scale non-convex optimization problem via reparametrization to a sequence of small-scale convex semidefinite programs (SDPs) for which modern SDP solvers can be efficiently applied. Numerical results are presented for both transverse magnetic (TM) and transverse electric (TE) polarizations at several frequency bands. The optimized structures exhibit patterns which go far beyond typical physical intuition on periodic media design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Certified real-time solution of parametrized partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm4/</guid>
+      <description>&lt;p&gt;Engineering analysis requires the prediction of (say, a single) selected ?output? se relevant to ultimate component and system performance. Typical outputs include energies and forces, critical stresses or strains, flowrates or pressure drops, and various local and global measures of concentration, temperature, and flux. These outputs are functions of system parameters, or ?inputs?, ?, that serve to identify a particular realization or configuration of the component or system. These inputs typically reflect geometry, properties, and boundary conditions and loads; we shall assume that ? is a P-vector (or P-tuple) of parameters in a prescribed closed input domain D ? ?p. The input-output relationship se(?) D ? ? thus encapsulates the behavior relevant to the desired engineering context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Charge Control Strategy for Aircraft-Triggered Lightning Strike Risk Reduction</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma4/</guid>
+      <description>&lt;p&gt;We propose a charge control strategy to reduce the risk of an aircraft-triggered lightning strike that exploits the asymmetry between the positive and negative ends of the bidirectional leader development, which is the first phase of an aircraft-initiated lightning event. Because positive leaders are initiated and can propagate in lower fields than negative leaders, in general, a positive leader would occur first. During propagation of the positive leader, initiation of the negative leader is favored through the removal of positive charge from the aircraft. Based on this well-accepted bidirectional leader theory, we propose hindering the initiation of the positive leader by charging the aircraft to a negative level, selected to ensure that a negative leader will not form. Although not observed so far, a negative leader could be initiated first if the field enhancement at the negative end were much greater than at the positive end. In this situation, the biasing of the aircraft should be to positive levels. More generally, we propose that the optimum level of aircraft charging is that which makes both leaders equally unlikely. We present a theoretical study of the effectiveness of the strategy for an ellipsoidal fuselage as well as the geometry of a Falcon aircraft. The practical implementation, including the necessary sensors and actuators, is also discussed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computational study of glow corona discharge in wind: Biased conductor</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma1/</guid>
+      <description>&lt;p&gt;Corona discharges in flowing gas are of technological significance for a wide range of applications, ranging from plasma reactors to lightning protection systems. Numerous experimental studies of corona discharges in wind have confirmed the strong influence of wind on the corona current. Many of these studies report global electrical characteristics of the gaseous discharge but do not present details of the spatial structure of the potential field and charge distribution. Numerical simulation can help clarify the role of wind on the ion redistribution and the electric field shielding. In this work, we propose a methodology to solve numerically for the drift region of a DC glow corona using the usual approach of collapsing the ionization region to the electrode surface, but allowing for strong inhomogeneities in the electrical and flow setup. Numerical results for a grounded wire in the presence of an ambient electric field and wind are presented. The model predicts that the effect of the wind is to reduce the extension of the corona over the wire and to shift the center of the ion distribution upstream of the flow. In addition, we find that, even though the near-surface ion distribution is strongly affected by the ion injection law used, the current characteristics and the far field solution remain pretty much unaffected.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computing parametrized solutions for plasmonic nanogap structures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics9/</guid>
+      <description>&lt;p&gt;The interaction of electromagnetic waves with metallic nanostructures generates resonant oscillations of the conduction-band electrons at the metal surface. These resonances can lead to large enhancements of the incident field and to the confinement of light to small regions, typically several orders of magnitude smaller than the incident wavelength. The accurate prediction of these resonances entails several challenges. Small geometric variations in the plasmonic structure may lead to large variations in the electromagnetic field responses. Furthermore, the material parameters that characterize the optical behavior of metals at the nanoscale need to be determined experimentally and are consequently subject to measurement errors. It then becomes essential that any predictive tool for the simulation and design of plasmonic structures accounts for fabrication tolerances and measurement uncertainties. In this paper, we develop a reduced order modeling framework that is capable of real-time accurate electromagnetic responses of plasmonic nanogap structures for a wide range of geometry and material parameters. The main ingredients of the proposed method are (i) the hybridizable discontinuous Galerkin method to numerically solve the equations governing electromagnetic wave propagation in dielectric and metallic media, (ii) a reference domain formulation of the time-harmonic Maxwell&amp;rsquo;s equations to account for arbitrary geometry variations; and (iii) proper orthogonal decomposition and empirical interpolation techniques to construct an efficient reduced model. To demonstrate effectiveness of the models developed, we analyze geometry sensitivities and explore optimal designs of a 3D periodic coaxial nanogap structure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controlled Electric Charging of an Aircraft in Flight using Corona Discharge</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma5/</guid>
+      <description>&lt;p&gt;This work is part of an ongoing study to provide an artificial means of controlling the net electrical charge of an aircraft in flight through charge emission. The charging system consists on an onboard d.c. high voltage power supply (of the order of 10 kV) with the high voltage terminal connected to a coronating anode and the low voltage terminal connected to the body whose potential needs to be controlled. The system must be electrically floating and exposed to wind. During an initial transient, the positive ions produced by the corona are convected away by the wind and the body charges negatively in response. This paper presents a theoretical model of the charging strategy that reveals two distinct regimes of charging and corona operation, as well as wind tunnel experiments using both a sphere-corona tip assembly and a 2D wing-corona wire assembly that confirm the theoretical predictions. Finally, we implement the system in an RC aircraft to demonstrate that charging in flight using corona discharge is feasible and does not affect flight operations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Corona Discharge in Wind for Electrically Isolated Electrodes</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma3/</guid>
+      <description>&lt;p&gt;For various problems in atmospheric electricity it is necessary to understand the behavior of corona discharge in wind. Prior work considers grounded electrode systems, of relevance for earthed towers, trees, or windmills subjected to thunderstorms fields. In this configuration, the effect of wind is to remove the shielding ions from the coronating electrode vicinity strengthening the corona and increasing its current. There are a number of cases, such as isolated wind turbine blades or airborne vehicles, that are not completely represented by the available models and experiments. This paper focuses on electrode systems that are electrically isolated from their environment and reports on a wind tunnel campaign and accompanying theoretical work. In this configuration, there are two competing effects the removal of the shielding ions by the wind, strengthening the corona, and the electrode system charging negatively for positive corona with respect to its environment, weakening the corona. This leads to three different operating regimes, namely, for positions that favor ion recapture, charging is limited and current increases with wind as in the classical scaling, for positions that favor ion transport by the wind, the system charges negatively and the current decreases with wind, for the later configuration, as wind increases, the current can vanish and the system potential saturates. The results from this work demonstrate that classical scaling laws of corona discharge in wind do not necessarily apply for isolated electrodes and illustrate the feasibility of using a glow corona in wind for controlled charging of a floating body.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design of photonic crystals with multiple and combined band gaps</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics5/</guid>
+      <description>&lt;p&gt;We present and use an algorithm based on convex conic optimization to design two-dimensional photonic crystals with large absolute band gaps. Among several illustrations we show that it is possible to design photonic crystals which exhibit multiple absolute band gaps for the combined transverse electric and magnetic modes. The optimized crystals show complicated patterns which are far different from existing photonic crystal designs. We employ subspace approximation and mesh adaptivity to enhance computational efficiency. For some examples involving two band gaps, we demonstrate the tradeoff frontier between two different absolute band gaps.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dilation-based shock capturing for high-order methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd6/</guid>
+      <description>&lt;p&gt;In this paper, we introduce a shock-capturing artificial viscosity technique for high-order unstructured mesh methods. This artificial viscosity model is based on a non-dimensional form of the divergence of the velocity. The technique is an extension and improvement of the dilation-based artificial viscosity methods introduced in Premasuthan et al., and further extended in Nguyen and Peraire . The approach presented has a number attractive properties including non-dimensional analytical form, sub-cell resolution, and robustness for complex shock flows on anisotropic meshes. We present extensive numerical results to demonstrate the performance of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Efficient reduced-basis treatment of nonaffine and nonlinear partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm2/</guid>
+      <description>&lt;p&gt;In this paper, we extend the reduced-basis approximations developed earlier for linear elliptic and parabolic partial differential equations with affine parameter dependence to problems involving (a) nonaffine dependence on the parameter, and (b) nonlinear dependence on the field variable. The method replaces the nonaffine and nonlinear terms with a coefficient function approximation which then permits an efficient offline-online computational decomposition. We first review the coefficient function approximation procedure. The essential ingredients are (i) a good collateral reduced-basis approximation space, and (ii) a stable and inexpensive interpolation procedure. We then apply this approach to linear nonaffine and nonlinear elliptic and parabolic equations; in each instance, we discuss the reduced-basis approximation and the associated offline-online computational procedures. Numerical results are presented to assess our approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entropy-stable hybridized discontinuous Galerkin methods for the compressible Euler and Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd7/</guid>
+      <description>&lt;p&gt;In the spirit of making high-order discontinuous Galerkin (DG) methods more competitive, researchers have developed the hybridized DG methods, a class of discontinuous Galerkin methods that generalizes the Hybridizable DG (HDG), the Embedded DG (EDG) and the Interior Embedded DG (IEDG) methods. These methods are amenable to hybridization (static condensation) and thus to more computationally efficient implementations. Like other high-order DG methods, however, they may suffer from numerical stability issues in under-resolved fluid flow simulations. In this spirit, we introduce the hybridized DG methods for the compressible Euler and Navier-Stokes equations in entropy variables. Under a suitable choice of the numerical flux, the scheme can be shown to be entropy stable and satisfy the Second Law of Thermodynamics in an integral sense. The performance and robustness of the proposed family of schemes are illustrated through a series of steady and unsteady flow problems in subsonic, transonic, and supersonic regimes. The hybridized DG methods in entropy variables show the optimal accuracy order given by the polynomial approximation space, and are significantly superior to their counterparts in conservation variables in terms of stability and robustness, particularly for under-resolved and shock flows.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc5/</guid>
+      <description>&lt;p&gt;This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fabrication-Adaptive Optimization with an Application to Photonic Crystal Design</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics8/</guid>
+      <description>&lt;p&gt;It is often the case that the computed optimal solution of an optimization problem cannot be implemented directly, irrespective of data accuracy, because of either (i) technological limitations (such as physical tolerances of machines or processes), (ii) the deliberate simplification of a model to keep it tractable (by ignoring certain types of constraints that pose computational difficulties), and/or (iii) human factors (getting people to ?do? the optimal solution). Motivated by this observation, we present a modeling paradigm called ?fabrication-adaptive optimization? for treating issues of implementation/fabrication. We develop computationally focused theory and algorithms, and we present computational results for incorporating considerations of implementation/fabrication into constrained optimization problems that arise in photonic crystal design. The fabrication-adaptive optimization framework stems from the robust regularization of a function. When the feasible region is not a normed space (as typically encountered in application settings), the fabrication-adaptive optimization framework typically yields a nonconvex optimization problem. (In the special case where the feasible region is a finite-dimensional normed space, we show that fabrication-adaptive optimization can be recast as an instance of modern robust optimization.) We study a variety of problems with special structures on functions, feasible regions, and norms for which computation is tractable and develop an algorithmic scheme for solving these problems in spite of the challenges of nonconvexity. We apply our methodology to compute fabrication-adaptive designs of two-dimensional photonic crystals with a variety of prescribed features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Functional Regression for State Prediction Using Linear PDE Models and Observations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml5/</guid>
+      <description>&lt;p&gt;Partial differential equations (PDEs) are commonly used to model a wide variety of physical phenomena. A PDE model of a physical problem is typically described by conservation laws, constitutive laws, material properties, boundary conditions, boundary data, and geometry. In most practical applications, however, the PDE model is only an approximation to the real physical problem due to both (i) the deliberate mathematical simplification of the model to keep it tractable and (ii) the inherent uncertainty of the physical parameters. In such cases, the PDE model may not produce a good prediction of the true state of the underlying physical problem. In this paper, we introduce a functional regression method that incorporates observations into a deterministic linear PDE model to improve its prediction of the true state. Our method is devised as follows. First, we augment the PDE model with a random Gaussian functional which serves to represent various sources of uncertainty in the model. We next derive a linear regression model for the Gaussian functional by utilizing observations and adjoint states. This allows us to determine the posterior distribution of the Gaussian functional and the posterior distribution for our estimate of the true state. Furthermore, we consider the problem of experimental design in this setting, wherein we develop an algorithm for designing experiments to efficiently reduce the variance of our state estimate. We provide several examples from the heat conduction, the convection-diffusion equation, and the reduced wave equation, all of which demonstrate the performance of the proposed methodology.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gaussian functional regression for linear partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml3/</guid>
+      <description>&lt;p&gt;In this paper, we present a new statistical approach to the problem of incorporating experimental observations into a mathematical model described by linear partial differential equations (PDEs) to improve the prediction of the state of a physical system. We augment the linear PDE with a functional that accounts for the uncertainty in the mathematical model and is modeled as a Gaussian process. This gives rise to a stochastic PDE which is characterized by the Gaussian functional. We develop a Gaussian functional regression method to determine the posterior mean and covariance of the Gaussian functional, thereby solving the stochastic PDE to obtain the posterior distribution for our prediction of the physical state. Our method has the following features which distinguish itself from other regression methods. First, it incorporates both the mathematical model and the observations into the regression procedure. Second, it can handle the observations given in the form of linear functionals of the field variable. Third, the method is non-parametric in the sense that it provides a systematic way to optimally determine the prior covariance operator of the Gaussian functional based on the observations. Fourth, it provides the posterior distribution quantifying the magnitude of uncertainty in our prediction of the physical state. We present numerical results to illustrate these features of the method and compare its performance to that of the standard Gaussian process regression.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gaussian functional regression for output prediction: Model assimilation and experimental design</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml2/</guid>
+      <description>&lt;p&gt;In this paper, we introduce a Gaussian functional regression (GFR) technique that integrates multi-fidelity models with model reduction to efficiently predict the input?output relationship of a high-fidelity model. The GFR method combines the high-fidelity model with a low-fidelity model to provide an estimate of the output of the high-fidelity model in the form of a posterior distribution that can characterize uncertainty in the prediction. A reduced basis approximation is constructed upon the low-fidelity model and incorporated into the GFR method to yield an inexpensive posterior distribution of the output estimate. As this posterior distribution depends crucially on a set of training inputs at which the high-fidelity models are simulated, we develop a greedy sampling algorithm to select the training inputs. Our approach results in an output prediction model that inherits the fidelity of the high-fidelity model and has the computational complexity of the reduced basis approximation. Numerical results are presented to demonstrate the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GPU-accelerated sparse matrix-vector product for a hybridizable discontinuous Galerkin method</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc3/</guid>
+      <description>&lt;p&gt;The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HDG Methods for Hyperbolic Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg8/</guid>
+      <description>&lt;p&gt;We give a short overview of the development of the so-called hybridizable discontinuous Galerkin methods for hyperbolic problems. We describe the methods, discuss their main features and display numerical results which illustrate their performance. We do this in the framework of wave propagation problems. In particular, we show that these methods are amenable to static condensation, and hence to efficient implementation, both for time-dependent (with implicit time-marching schemes) and for time-harmonic problems; we also show that they can be used with explicit time-marching schemes. We discuss an unexpected, recently uncovered superconvergence property and introduce a new postprocessing for time-harmonic Maxwell&amp;rsquo;s equations. We end by providing bibliographical notes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-Contrast Infrared Absorption Spectroscopy via Mass-Produced Coaxial Zero-Mode Resonators with Sub-10 nm Gaps</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics2/</guid>
+      <description>&lt;p&gt;We present a wafer-scale array of resonant coaxial nanoapertures as a practical platform for surface-enhanced infrared absorption spectroscopy (SEIRA). Coaxial nanoapertures with sub-10 nm gaps are fabricated via photolithography, atomic layer deposition of a sacrificial Al2O3 layer to define the nanogaps, and planarization via glancing-angle ion milling. At the zeroth-order Fabry-Perot resonance condition, our coaxial apertures act as a ?zero-mode resonator (ZMR)?, efficiently funneling as much as 34 percent of incident infrared (IR) light along 10 nm annular gaps. After removing Al2O3 in the gaps and inserting silk protein, we can couple the intense optical fields of the annular nanogap into the vibrational modes of protein molecules. From 7 nm gap ZMR devices coated with a 5 nm thick silk protein film, we observe high-contrast IR absorbance signals drastically suppressing 58 percent of the transmitted light and infer a strong IR absorption enhancement factor of 104?105. These single nanometer gap ZMR devices can be mass-produced via batch processing and offer promising routes for broad applications of SEIRA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-order implicit hybridizable discontinuous Galerkin methods for acoustics and elastodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem1/</guid>
+      <description>&lt;p&gt;We present a class of hybridizable discontinuous Galerkin (HDG) methods for the numerical simulation of wave phenomena in acoustics and elastodynamics. The methods are fully implicit and high-order accurate in both space and time, yet computationally attractive owing to their following distinctive features. First, they reduce the globally coupled unknowns to the approximate trace of the velocity, which is defined on the element faces and single-valued, thereby leading to a significant saving in the computational cost. In addition, all the approximate variables (including the approximate velocity and gradient) converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k ? 0 are used to represent the numerical solution and when the time-stepping method is accurate with order k + 1. When the time-stepping method is of order k + 2, superconvergence properties allows us, by means of local postprocessing, to obtain better, yet inexpensive approximations of the displacement and velocity at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order k + 2 in the L2-norm when k ? 1 for both acoustics and elastodynamics. Extensive numerical results are provided to illustrate these distinctive features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-order implicit hybridizable discontinuous Galerkin methods for acoustics and elastodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm1/</guid>
+      <description>&lt;p&gt;We present a class of hybridizable discontinuous Galerkin (HDG) methods for the numerical simulation of wave phenomena in acoustics and elastodynamics. The methods are fully implicit and high-order accurate in both space and time, yet computationally attractive owing to their following distinctive features. First, they reduce the globally coupled unknowns to the approximate trace of the velocity, which is defined on the element faces and single-valued, thereby leading to a significant saving in the computational cost. In addition, all the approximate variables (including the approximate velocity and gradient) converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k ? 0 are used to represent the numerical solution and when the time-stepping method is accurate with order k + 1. When the time-stepping method is of order k + 2, superconvergence properties allows us, by means of local postprocessing, to obtain better, yet inexpensive approximations of the displacement and velocity at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order k + 2 in the L2-norm when k ? 1 for both acoustics and elastodynamics. Extensive numerical results are provided to illustrate these distinctive features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-throughput fabrication of resonant metamaterials with ultrasmall coaxial apertures via atomic layer lithography</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics1/</guid>
+      <description>&lt;p&gt;We combine atomic layer lithography and glancing-angle ion polishing to create wafer-scale metamaterials composed of dense arrays of ultrasmall coaxial nanocavities in gold films. This new fabrication scheme makes it possible to shrink the diameter and increase the packing density of 2 nm-gap coaxial resonators, an extreme subwavelength structure first manufactured via atomic layer lithography, both by a factor of 100 with respect to previous studies. We demonstrate that the nonpropagating zeroth-order Fabry-Perot mode, which possesses slow light-like properties at the cutoff resonance, traps infrared light inside 2 nm gaps (gap volume ? 3/106). Notably, the annular gaps cover only 3 percent or less of the metal surface, while open-area normalized transmission is as high as 1700 percent at the epsilon-near-zero (ENZ) condition. The resulting energy accumulation alongside extraordinary optical transmission can benefit applications in nonlinear optics, optical trapping, and surface-enhanced spectroscopies. Furthermore, because the resonance wavelength is independent of the cavity length and dramatically red shifts as the gap size is reduced, large-area arrays can be constructed with resonance period, making this fabrication method ideal for manufacturing resonant metamaterials.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg3/</guid>
+      <description>&lt;p&gt;We present an overview of recent developments of HDG methods for numerically solving partial differential equations in fluid mechanics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for partial differential equations in continuum mechanics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm2/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for partial differential equations in continuum mechanics</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg5/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for the time-harmonic Maxwells equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem2/</guid>
+      <description>&lt;p&gt;We present two hybridizable discontinuous Galerkin (HDG) methods for the numerical solution of the time-harmonic Maxwell?s equations. The first HDG method explicitly enforces the divergence-free condition and thus necessitates the introduction of a Lagrange multiplier. It produces a linear system for the degrees of freedom of the approximate traces of both the tangential component of the vector field and the Lagrange multiplier. The second HDG method does not explicitly enforce the divergence-free condition and thus results in a linear system for the degrees of freedom of the approximate trace of the tangential component of the vector field only. For both HDG methods, the approximate vector field converges with the optimal order of k + 1 in the L2-norm, when polynomials of degree k are used to represent all the approximate variables. We propose elementwise postprocessing to obtain a new Hcurl-conforming approximate vector field which converges with order k + 1 in the Hcurl-norm. We present extensive numerical examples to demonstrate and compare the performance of the HDG methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridization and Postprocessing Techniques for Mixed Eigenfunctions</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg4/</guid>
+      <description>&lt;p&gt;We introduce hybridization and postprocessing techniques for the Raviart?Thomas approximation of second-order elliptic eigenvalue problems. Hybridization reduces the Raviart?Thomas approximation to a condensed eigenproblem. The condensed eigenproblem is nonlinear, but smaller than the original mixed approximation. We derive multiple iterative algorithms for solving the condensed eigenproblem and examine their interrelationships and convergence rates. An element-by-element postprocessing technique to improve accuracy of computed eigenfunctions is also presented. We prove that a projection of the error in the eigenspace approximation by the mixed method (of any order) superconverges and that the postprocessed eigenfunction approximations converge faster for smooth eigenfunctions. Numerical experiments using a square and an L-shaped domain illustrate the theoretical results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridized discontinuous Galerkin methods for wave propagation</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg9/</guid>
+      <description>&lt;p&gt;We present the recent development of hybridizable and embedded discontinuous Galerkin (DG) methods for wave propagation problems in fluids, solids, and electromagnetism. In each of these areas, we describe the methods, discuss their main features, display numerical results to illustrate their performance, and conclude with bibliography notes. The main ingredients in devising these DG methods are (1) a local Galerkin projection of the underlying partial differential equations at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; (2) a judicious choice of the numerical flux to provide stability and consistency; and (3) a global jump condition that enforces the continuity of the numerical flux to obtain a global system in terms of the numerical trace. These DG methods are termed hybridized DG methods, because they are amenable to hybridization (static condensation) and hence to more efficient implementations. They share many common advantages of DG methods and possess some unique features that make them well-suited to wave propagation problems.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</title>
-      <link>https://ngoccuongnguyen.github.io/project/cem1/</link>
+      <link>https://ngoccuongnguyen.github.io/project/cem5/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://ngoccuongnguyen.github.io/project/cem1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Implicit Large eddy simulation of hypersonic boundary-layer transition for a flared cone</title>
-      <link>https://ngoccuongnguyen.github.io/project/dg1/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://ngoccuongnguyen.github.io/project/dg1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;We present an implicit large eddy simulation (ILES) of hypersonic boundary-layer transition for a flared cone at Mach number 6.0 and Reynolds number $10.8 \times 10^6$. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta (DIRK) scheme on graphics processor units (GPUs). A Jacobian-free Newton-Krylov (JFNK) method is used to solve nonlinear systems arising from the discretization of the Navier-Stokes equations. The ILES simulation exhibits the onset of primary and second-mode instabilities, quite zone, followed by transition to turbulence breakdown. These distinct characteristics of hypersonic flows on cone-like geometries are also observed in experiments. The Stanton number distribution and the pressure fluctuation are studied for different freestream intensities and compared with the experimental data. The results suggest that the ILES method is capable of capturing the onset of transition and turbulence breakdown  phenomena for hypersonic turbulent flows past a flared cone.&lt;/p&gt;
+      <guid>https://ngoccuongnguyen.github.io/project/cem5/</guid>
+      <description>&lt;p&gt;We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.&lt;/p&gt;
 </description>
     </item>
     
@@ -133,62 +619,190 @@
     </item>
     
     <item>
-      <title>Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method</title>
-      <link>https://ngoccuongnguyen.github.io/project/les1/</link>
+      <title>Implicit large-eddy simulation of compressible flows using the Interior Embedded Discontinuous Galerkin method</title>
+      <link>https://ngoccuongnguyen.github.io/project/les2/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://ngoccuongnguyen.github.io/project/les1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/oat15a1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model.&lt;/p&gt;
+      <guid>https://ngoccuongnguyen.github.io/project/les2/</guid>
+      <description>&lt;p&gt;We present a high-order implicit large-eddy simulation (ILES) approach for simulating transitional turbulent flows. The approach consists of an Interior Embedded Discontinuous Galerkin (IEDG) method for the discretization of the compressible Navier-Stokes equations and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The IEDG method arises from the marriage of the Embedded Discontinuous Galerkin (EDG) method and the Hybridizable Discontinuous Galerkin (HDG) method. As such, the IEDG method inherits the advantages of both the EDG method and the HDG method to make itself well-suited for turbulence simulations. We propose a minimal residual Newton algorithm for solving the nonlinear system arising from the IEDG discretization of the Navier-Stokes equations. The preconditioned GMRES algorithm is based on a restricted additive Schwarz (RAS) preconditioner in conjunction with a block incomplete LU factorization at the subdomain level. The proposed approach is applied to the ILES of transitional turbulent flows over a NACA 65-(18)10 compressor cascade at Reynolds number 250,000 in both design and off-design conditions. The high-order ILES results show good agreement with a subgrid-scale LES model discretized with a second-order finite volume code while using significantly less degrees of freedom. This work shows that high-order accuracy is key for predicting transitional turbulent flows without a SGS model.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Large-Eddy Simulation of Transonic Buffet Using Matrix-Free Discontinuous Galerkin Method</title>
+      <link>https://ngoccuongnguyen.github.io/project/les5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/les5/</guid>
+      <description>&lt;p&gt;We present an implicit large-eddy simulation of transonic buffet over the OAT15A supercritical airfoil at Mach number 0.73, angle of attack 3.5 degrees, and Reynolds number 3 millions. The simulation is performed using a matrix-free discontinuous Galerkin (DG) method and a diagonally implicit Runge-Kutta scheme on graphics processor units. We propose a Jacobian-free Newton-Krylov method to solve nonlinear systems arising from the discretization of the Navier?Stokes equations. The method successfully predicts the buffet onset, the buffet frequency, and turbulence statistics owing to the high-order DG discretization and an efficient mesh refinement for the laminar and turbulent boundary layers. A number of physical phenomena present in the experiment are captured in our simulation, including periodical low-frequency oscillations of shock wave in the streamwise direction, strong shear layer detached from the shock wave due to shock-wave/boundary-layer interaction and small-scale structures broken down by the shear-layer instability in the transition region, and shock-induced flow separation. The pressure coefficient, the root mean square of the fluctuating pressure, and the streamwise range of the shock wave oscillation agree well with the experimental data. The results suggest that the proposed method can accurately predict the onset of turbulence and buffet phenomena at high Reynolds numbers without a subgrid scale model or a wall model.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mesh Topology Preserving Boundary-Layer Adaptivity Method for Steady Viscous Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd11/</guid>
+      <description>&lt;p&gt;The efficiency and accuracy of viscous flow simulations depend crucially on the quality of the boundary-layer mesh. Too coarse meshes can result in inaccurate predictions and in some cases lead to numerical instabilities, whereas too fine meshes produce accurate predictions at the expense of long simulation times. Constructing an optimal (or near-optimal) boundary-layer mesh has been recognized as an important problem in computational fluid dynamics. For few simple flows, one may be able to construct such a mesh a priori before simulation. For most viscous flow simulations, however, it is difficult to generate such mesh in advance. In this paper, a boundary-layer adaptivity method is developed for the efficient computation of steady viscous flows. This method turns the problem of determining the location of the mesh nodes into a set of equations that are solved simultaneously with the flow equations. The mesh equations are designed so that the boundary-layer mesh adapts to the viscous layers as the flow solver marches toward the converged solution. Extensive numerical experiments are presented to demonstrate the performance of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling and observation of mid-infrared nonlocality in effective epsilon-near-zero ultranarrow coaxial apertures</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics7/</guid>
+      <description>&lt;p&gt;With advances in nanofabrication techniques, extreme-scale nanophotonic devices with critical gap dimensions of just 1?2?nm have been realized. Plasmons in such ultranarrow gaps can exhibit nonlocal response, which was previously shown to limit the field enhancement and cause optical properties to deviate from the local description. Using atomic layer lithography, we create mid-infrared-resonant coaxial apertures with gap sizes as small as 1?nm and observe strong evidence of nonlocality, including spectral shifts and boosted transmittance of the cutoff epsilon-near-zero mode. Experiments are supported by full-wave 3-D nonlocal simulations performed with the hybridizable discontinuous Galerkin method. This numerical method captures atomic-scale variations of the electromagnetic fields while efficiently handling extreme-scale size mismatch. Combining atomic-layer-based fabrication techniques with fast and accurate numerical simulations provides practical routes to design and fabricate highly-efficient large-area mid-infrared sensors, antennas, and metasurfaces.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiscale Modeling of Streamers: High-Fidelity Versus Computationally Efficient Methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/plasma7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/plasma7/</guid>
+      <description>&lt;p&gt;2D axisymmetric streamer model is presented, using the fluid drift-diffusion approx- imation and the Hyridizable Discontinuous Galerkin (HDG) numerical method for spatial discretization. Numerical verification of the newly developed code is performed against the literature, demonstrating very good agreement with state-of-the-art codes, and results are presented for single-filament streamers using a plate-to-plate geometry, both with and without photoionization. Full-physics numerical models, such as the one presented, are computationally costly and not prone to parametrically studying streamers. Reduced order models of streamers are of interest to quantitatively relate streamer macroscopic parameters, but they need to be compared to higher-fidelity models to demonstrate their validity. In this contribution, the macroscopic parameter streamer model recently developed by our group is validated against the higher-fidelity model. The macroscopic parameter streamer model is based on the results of a reduced-order 1.5D quasi-steady model (i.e., 1D solution of the species continuity equations, 2D solution of Poisson equation, solved in the reference frame of the streamer). The comparison shows that the general trends captured by the macroscopic model, in terms of radius, speed, tip electric field and channel electric field relations, are in agreement with the results of the higher-fidelity simulations and limitations of the predictions are discussed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nanogap-enhanced terahertz sensing of 1 nm thick lambda/106 dielectric films</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics3/</guid>
+      <description>&lt;p&gt;We experimentally show that terahertz (THz) waves confined in sub-10 nm metallic gaps can detect refractive index changes caused by only a 1 nm thick (??/106) dielectric overlayer. We use atomic layer lithography to fabricate a wafer-scale array of annular nanogaps. Using THz time-domain spectroscopy in conjunction with atomic layer deposition, we measure spectral shifts of a THz resonance peak with increasing Al2O3 film thickness in 1 nm intervals. Because of the enormous mismatch in length scales between THz waves and sub-10 nm gaps, conventional modeling techniques cannot readily be used to analyze our results. We employ an advanced finite-element-modeling (FEM) technique, Hybridizable Discontinuous Galerkin (HDG) scheme, for full three-dimensional modeling of the resonant transmission of THz waves through an annular gap that is 2 nm in width and 32 ?m in diameter. Our multiscale 3D FEM technique and atomic layer lithography will enable a series of new investigations in THz nanophotonics that has not been possible before.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RANS solutions using high order discontinuous Galerkin methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd2/</guid>
+      <description>&lt;p&gt;We present a practical approach for the numerical solution of the Reynolds averaged Navier-Stokes (RANS) equations using high-order discontinuous Galerkin methods. Turbulence is modeled by the Spalart-Allmaras (SA) one-equation model. We introduce an artificial viscosity model for SA equation which is aimed at accommodating high-order RANS approximations on grids which would otherwise be too coarse. Generally, the model term is only active at the edge of the boundary layer, where the grid resolution is insufficient to capture the abrupt change in curvature required for the eddy viscosity profile to match its free-stream value. Furthermore, the amount of viscosity required decreases with the grid resolution and vanishes when the resolution is sufficiently high. For transonic computations, an additional shock-capturing artificial viscosity model term is required. Numerical predictions for turbulent flows past a flat plate and a NACA 0012 airfoil are presented via comparison with the experimental measurements. In the flat plate case, grid refinement studies are performed in order to assess the convergence properties and demonstrate the effectiveness of high-order approximations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rapid identification of material properties of the interface tissue in dental implant systems using reduced basis method</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm14/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm14/</guid>
+      <description>&lt;p&gt;This paper proposes a rapid inverse analysis approach based on the reduced basis (RB) method and the Levenberg?Marquardt?Fletcher algorithm to identify the ?unknown? material properties Young?s modulus and stiffness-proportional Rayleigh damping coefficient of the interfacial tissue between a dental implant and the surrounding bones. In the forward problem, a finite element approximation for a three-dimensional dental implant-bone model is first built. A RB approximation is then established by using a proper orthogonal decomposition ? Greedy algorithm and the Galerkin projection to enable extremely fast and reliable computation of displacement responses for a range of material properties. In the inverse analysis, the RB approximation for the dental implant-bone model are incorporated in the Levenberg?Marquardt?Fletcher algorithm to enable rapid identification of the unknown material properties. Numerical results are presented to demonstrate the efficiency and robustness of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced Basis Approximation and a Posteriori Error Estimation for Parametrized Parabolic PDEs: Application to Real-Time Bayesian Parameter Estimation</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reduced basis approximation and a posteriori error estimation for the parametrized unsteady Boussinesq equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm11/</guid>
+      <description>&lt;p&gt;In this paper we present reduced basis (RB) approximations and associated rigorous a posteriori error bounds for the parametrized unsteady Boussinesq equations. The essential ingredients are Galerkin projection onto a low-dimensional space associated with a smooth parametric manifold ? to provide dimension reduction; an efficient proper orthogonal decomposition?Greedy sampling method for identification of optimal and numerically stable approximations ? to yield rapid convergence; accurate (online) calculation of the solution-dependent stability factor by the successive constraint method ? to quantify the growth of perturbations/residuals in time; rigorous a posteriori bounds for the errors in the RB approximation and associated outputs ? to provide certainty in our predictions; and an offline?online computational decomposition strategy for our RB approximation and associated error bound ? to minimize marginal cost and hence achieve high performance in the real-time and many-query contexts. The method is applied to a transient natural convection problem in a two-dimensional &amp;ldquo;complex&amp;rdquo; enclosure ? a square with a small rectangle cutout ? parametrized by Grashof number and orientation with respect to gravity. Numerical results indicate that the RB approximation converges rapidly and that furthermore the (inexpensive) rigorous a posteriori error bounds remain practicable for parameter domains and final times of physical interest.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced basis approximation and a posteriori error estimation for the time-dependent viscous Burgers equation</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm6/</guid>
+      <description>&lt;p&gt;In this paper we present rigorous a posteriori L 2 error bounds for reduced basis approximations of the unsteady viscous Burgers? equation in one space dimension. The a posteriori error estimator, derived from standard analysis of the error-residual equation, comprises two key ingredients?both of which admit efficient Offline-Online treatment. The first is a sum over timesteps of the square of the dual norm of the residual; the second is an accurate upper bound (computed by the Successive Constraint Method) for the exponential-in-time stability factor. These error bounds serve both Offline for construction of the reduced basis space by a new POD-Greedy procedure and Online for verification of fidelity. The a posteriori error bounds are practicable for final times (measured in convective units) T?O(1) and Reynolds numbers ? ?1?1; we present numerical results for a (stationary) steepening front for T=2 and 1?? ?1?200.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced Basis Techniques for Stochastic Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/rbm5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/rbm5/</guid>
+      <description>&lt;p&gt;We report here on the recent application of a now classical general reduction technique, the Reduced-Basis (RB) approach initiated by C. Prud?homme et al. in J. Fluids Eng. 124(1), 70?80, 2002, to the specific context of differential equations with random coefficients. After an elementary presentation of the approach, we review two contributions of the authors in Comput. Methods Appl. Mech. Eng. 198(41?44), 3187?3206, 2009, which presents the application of the RB approach for the discretization of a simple second order elliptic equation supplied with a random boundary condition, and in Commun. Math. Sci., 2009, which uses a RB type approach to reduce the variance in the Monte-Carlo simulation of a stochastic differential equation. We conclude the review with some general comments and also discuss possible tracks for further research in the direction.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced-basis method for the iterative solution of parametrized symmetric positive-definite linear systems</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc4/</guid>
+      <description>&lt;p&gt;We present a class of reduced basis (RB) methods for the iterative solution of parametrized symmetric positive-definite (SPD) linear systems. The essential ingredients are a Galerkin projection of the underlying parametrized system onto a reduced basis space to obtain a reduced system; an adaptive greedy algorithm to efficiently determine sampling parameters and associated basis vectors; an offline-online computational procedure and a multi-fidelity approach to decouple the construction and application phases of the reduced basis method; and solution procedures to employ the reduced basis approximation as a stand-alone iterative solver or as a preconditioner in the conjugate gradient method. We present numerical examples to demonstrate the performance of the proposed methods in comparison with multigrid methods. Numerical results show that, when applied to solve linear systems resulting from discretizing the Poisson&amp;rsquo;s equations, the speed of convergence of our methods matches or surpasses that of the multigrid-preconditioned conjugate gradient method, while their computational cost per iteration is significantly smaller providing a feasible alternative when the multigrid approach is out of reach due to timing or memory constraints for large systems. Moreover, numerical results verify that this new class of reduced basis methods, when applied as a stand-alone solver or as a preconditioner, is capable of achieving the accuracy at the level of the truth approximation which is far beyond the RB level.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc1/</guid>
+      <description>&lt;p&gt;A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spectral approximations by the HDG method</title>
+      <link>https://ngoccuongnguyen.github.io/project/hdg7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/hdg7/</guid>
+      <description>&lt;p&gt;We consider the numerical approximation of the spectrum of a second-order elliptic eigenvalue problem by the hybridizable discontinuous Galerkin (HDG) method. We show for problems with smooth eigenfunctions that the approximate eigenvalues and eigenfunctions converge at the rate 2k+1 and k+1, respectively. Here k is the degree of the polynomials used to approximate the solution, its flux, and the numerical traces. Our numerical studies show that a Rayleigh quotient-like formula applied to certain locally postprocessed approximations can yield eigenvalues that converge faster at the rate 2k + 2 for the HDG method as well as for the Brezzi-Douglas-Marini (BDM) method. We also derive and study a condensed nonlinear eigenproblem for the numerical traces obtained by eliminating all the other variables.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Subgrid-scale modeling and implicit numerical dissipation in DG-based Large-Eddy Simulation</title>
+      <link>https://ngoccuongnguyen.github.io/project/les3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/les3/</guid>
+      <description>&lt;p&gt;&amp;lsquo;Over the past few years, high-order discontinuous Galerkin (DG) methods for Large-Eddy Simulation (LES) have emerged as a promising approach to solve complex turbulent flows. However, despite the significant research investment, the relation between the discretization scheme, the subgrid-scale (SGS) model and the resulting LES solver remains unclear. This paper aims to shed some light on this matter. To that end, we investigate the role of the Riemann solver, the SGS model, the time resolution, and the accuracy order in the ability to predict a variety of flow regimes, including transition to turbulence, wall-free turbulence, wall-bounded turbulence, and turbulence decay. The transitional flow over the Eppler 387 wing, the TaylorGreen vortex problem and the turbulent channel flow are considered to this end. The focus is placed on post-processing the LES results and providing with a rationale for the performance of the various approaches.&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian finite element methods for electromagnetics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem7/</guid>
+      <description>&lt;p&gt;We present several high-order accurate finite element methods for the Maxwell?s equations which provide time-invariant, non-drifting approximations to the total electric and magnetic charges, and to the total energy. We devise these methods by taking advantage of the Hamiltonian structures of the Maxwell?s equations as follows. First, we introduce spatial discretizations of the Maxwell?s equations using mixed finite element, discontinuous Galerkin, and hybridizable discontinuous Galerkin methods to obtain a semi-discrete system of equations which display discrete versions of the Hamiltonian structure of the Maxwell?s equations. Then we discretize the resulting semi-discrete system in time by using a symplectic integrator. This ensures the conservation properties of the fully discrete system of equations. For the Symplectic Hamiltonian HDG method, we present numerical experiments which confirm its optimal orders of convergence for all variables and its conservation properties for the total linear and angular momenta, as well as the total energy. Finally, we discuss the extension of our results to other boundary conditions and to numerical schemes defined by different weak formulations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian finite element methods for linear elastodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm4/</guid>
+      <description>&lt;p&gt;We present a class of high-order finite element methods that can conserve the linear and angular momenta as well as the energy for the equations of linear elastodynamics. These methods are devised by exploiting and preserving the Hamiltonian structure of the equations of linear elastodynamics. We show that several mixed finite element, discontinuous Galerkin, and hybridizable discontinuous Galerkin (HDG) methods belong to this class. We discretize the semidiscrete Hamiltonian system in time by using a symplectic integrator in order to ensure the symplectic properties of the resulting methods, which are called symplectic Hamiltonian finite element methods. For a particular semidiscrete HDG method, we obtain optimal error estimates and present, for the symplectic Hamiltonian HDG method, numerical experiments that confirm its optimal orders of convergence for all variables as well as its conservation properties.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian HDG methods for wave propagation phenomena</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem4/</guid>
+      <description>&lt;p&gt;We devise the first symplectic Hamiltonian hybridizable discontinuous Galerkin (HDG) methods for the acoustic wave equation. We discretize in space by using a Hamiltonian HDG scheme, that is, an HDG method which preserves the Hamiltonian structure of the wave equation, and in time by using symplectic, diagonally implicit and explicit partitioned Runge?Kutta methods. The fundamental feature of the resulting scheme is that the conservation of a discrete energy, which is nothing but a discrete version of the original Hamiltonian, is guaranteed. We present numerical experiments which indicate that the method achieves optimal approximations of order k+1 in the L2-norm when polynomials of degree k?0 and Runge?Kutta time-marching methods of order k+1 are used. In addition, by means of post-processing techniques and by increasing the order of the Runge?Kutta method to k+2, we obtain superconvergent approximations of order k+2 in the L2-norm for the displacement and the velocity. We also present numerical examples that corroborate that the methods conserve energy and that they compare favorably with dissipative HDG schemes, of similar accuracy properties, for long-time simulations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terahertz and infrared nonlocality and field saturation in extreme-scale nanoslits</title>
+      <link>https://ngoccuongnguyen.github.io/project/photonics12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/photonics12/</guid>
+      <description>&lt;p&gt;Partial differential equations (PDEs) are commonly used to model a wide variety of physical phenomena. A PDE model of a physical problem is typically described by conservation laws, constitutive laws, material properties, boundary conditions, boundary data, and geometry. In most practical applications, however, the PDE model is only an approximation to the real physical problem due to both (i) the deliberate mathematical simplification of the model to keep it tractable and (ii) the inherent uncertainty of the physical parameters. In such cases, the PDE model may not produce a good prediction of the true state of the underlying physical problem. In this paper, we introduce a functional regression method that incorporates observations into a deterministic linear PDE model to improve its prediction of the true state. Our method is devised as follows. First, we augment the PDE model with a random Gaussian functional which serves to represent various sources of uncertainty in the model. We next derive a linear regression model for the Gaussian functional by utilizing observations and adjoint states. This allows us to determine the posterior distribution of the Gaussian functional and the posterior distribution for our estimate of the true state. Furthermore, we consider the problem of experimental design in this setting, wherein we develop an algorithm for designing experiments to efficiently reduce the variance of our state estimate. We provide several examples from the heat conduction, the convection-diffusion equation, and the reduced wave equation, all of which demonstrate the performance of the proposed methodology.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The hybridized discontinuous Galerkin method for implicit large-eddy simulation of transitional turbulent flows</title>
-      <link>https://ngoccuongnguyen.github.io/project/les2/</link>
+      <link>https://ngoccuongnguyen.github.io/project/les1/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://ngoccuongnguyen.github.io/project/les2/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations.&lt;/p&gt;
+      <guid>https://ngoccuongnguyen.github.io/project/les1/</guid>
+      <description>&lt;p&gt;We present a high-order Implicit Large-Eddy Simulation (ILES) approach for transitional aerodynamic flows. The approach encompasses a hybridized Discontinuous Galerkin (DG) method for the discretization of the Navier?Stokes (NS) equations, and a parallel preconditioned Newton-GMRES solver for the resulting nonlinear system of equations. The combination of hybridized DG methods with an efficient solution procedure leads to a high-order accurate NS solver that is competitive to alternative approaches, such as finite volume and finite difference codes, in terms of computational cost. The proposed approach is applied to transitional flows over the NACA 65-(18)10 compressor cascade and the Eppler 387 wing at Reynolds numbers up to 460,000. Grid convergence studies are presented and the required resolution to capture transition at different Reynolds numbers is investigated. Numerical results show rapid convergence and excellent agreement with experimental data. In short, this work aims to demonstrate the potential of high-order ILES for simulating transitional aerodynamic flows. This is illustrated through numerical results and supported by theoretical considerations.&lt;/p&gt;
 </description>
     </item>
     

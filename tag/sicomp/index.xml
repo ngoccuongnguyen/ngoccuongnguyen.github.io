@@ -13,32 +13,47 @@
     </image>
     
     <item>
+      <title>Accelerated Residual Methods for the Iterative Solution of Systems of Equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc2/</guid>
+      <description>&lt;p&gt;We present accelerated residual methods for the iterative solution of systems of equations by leveraging recent developments in accelerated gradient methods for convex optimization. The stability properties of the proposed method are analyzed for linear systems of equations by using the finite difference equation theory. Next, we introduce a residual descent restarting strategy and an adaptive computation of the acceleration parameter to enhance the robustness and efficiency of our method. Furthermore, we incorporate preconditioning techniques into the proposed method to accelerate its convergence. We demonstrate the performance of our method on systems of equations resulting from the finite element approximation of linear and nonlinear partial differential equations. In a variety of test cases, the numerical results show that the proposed method is competitive with the pseudo&amp;ndash;time-marching method, Nesterov&amp;rsquo;s method, and Newton&amp;ndash;Krylov methods. Finally, we discuss some open issues that should be addressed in future research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc5/</guid>
+      <description>&lt;p&gt;This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GPU-accelerated sparse matrix-vector product for a hybridizable discontinuous Galerkin method</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc3/</guid>
+      <description>&lt;p&gt;The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reduced-basis method for the iterative solution of parametrized symmetric positive-definite linear systems</title>
+      <link>https://ngoccuongnguyen.github.io/project/sc4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/sc4/</guid>
+      <description>&lt;p&gt;We present a class of reduced basis (RB) methods for the iterative solution of parametrized symmetric positive-definite (SPD) linear systems. The essential ingredients are a Galerkin projection of the underlying parametrized system onto a reduced basis space to obtain a reduced system; an adaptive greedy algorithm to efficiently determine sampling parameters and associated basis vectors; an offline-online computational procedure and a multi-fidelity approach to decouple the construction and application phases of the reduced basis method; and solution procedures to employ the reduced basis approximation as a stand-alone iterative solver or as a preconditioner in the conjugate gradient method. We present numerical examples to demonstrate the performance of the proposed methods in comparison with multigrid methods. Numerical results show that, when applied to solve linear systems resulting from discretizing the Poisson&amp;rsquo;s equations, the speed of convergence of our methods matches or surpasses that of the multigrid-preconditioned conjugate gradient method, while their computational cost per iteration is significantly smaller providing a feasible alternative when the multigrid approach is out of reach due to timing or memory constraints for large systems. Moreover, numerical results verify that this new class of reduced basis methods, when applied as a stand-alone solver or as a preconditioner, is capable of achieving the accuracy at the level of the truth approximation which is far beyond the RB level.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow</title>
       <link>https://ngoccuongnguyen.github.io/project/sc1/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/project/sc1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/exasim1.png&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.&lt;/p&gt;
+      <description>&lt;p&gt;A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number.&lt;/p&gt;
 </description>
     </item>
     

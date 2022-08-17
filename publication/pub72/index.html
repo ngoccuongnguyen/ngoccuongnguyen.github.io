@@ -78,7 +78,7 @@
   
     
   
-  <meta name="description" content=" Click the Cite button above to import publication metadata into your reference management software. " />
+  <meta name="description" content="The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://ngoccuongnguyen.github.io/publication/pub72/" />
@@ -311,7 +311,7 @@
   <meta property="og:site_name" content="Dr. Ngoc Cuong Nguyen" />
   <meta property="og:url" content="https://ngoccuongnguyen.github.io/publication/pub72/" />
   <meta property="og:title" content="GPU-accelerated sparse matrix-vector product for a hybridizable discontinuous Galerkin method | Dr. Ngoc Cuong Nguyen" />
-  <meta property="og:description" content=" Click the Cite button above to import publication metadata into your reference management software. " /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:description" content="The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU." /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -362,7 +362,7 @@
       "url": "https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": " Click the Cite button above to import publication metadata into your reference management software. "
+  "description": "The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU."
 }
 </script>
 
@@ -598,7 +598,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#featured"><span>Research</span></a>
+            <a class="nav-link " href="/#research"><span>Research</span></a>
           </li>
 
           
@@ -709,44 +709,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#accomplishments"><span>Softwares</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#collaborators"><span>Collaborators</span></a>
+            <a class="nav-link " href="/#softwares"><span>Software</span></a>
           </li>
 
           
@@ -983,6 +946,10 @@
 
 
 
+<a class="btn btn-outline-primary btn-page-header" href="/publication/pub72/pub72.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
@@ -1018,6 +985,9 @@
 
   <div class="article-container">
 
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">The iterative solution of the large systems of equations that result from discontinuous Galerkin (DG) discretizations require the ability to carry out fast matrix-vector products. DG matrices have a sparse block structure with a constant number of non-zero equal-sized non-overlapping blocks per row. General-purpose sparse matrix-vector product algorithms are not designed to exploit the specic structure of the DG matrices and, as a consequence, result in sub-optimal performance. To address this issue, we propose a sparse matrix-vector product for DG discretizations based on a dense tensor contraction. A GPU implementation of the proposed algorithm for a hybridizable discontinuous Galerkin (HDG) method is tested on the NVIDIA GEFORCE GTX 285. The results show that the tensor contraction performs at about 20 to 25 GFLOP/s in double precision with a sustained eciency of more than 40 percent (60 GBytes/s) of the peak memory bandwidth (160 GBytes/s). Moreover, for HDG matrices in double precision, the proposed method is 2 times faster than the general sparse matrix-vector products provided by the GPU library CUSPARSE and about 30 times faster than MATLAB running on a CPU.</p>
     
 
     

@@ -13,32 +13,65 @@
     </image>
     
     <item>
-      <title>Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</title>
+      <title>A nested hybridizable discontinuous Galerkin method for computing second-harmonic generation in three-dimensional metallic nanostructures</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem6/</guid>
+      <description>&lt;p&gt;We develop a nested hybridizable discontinuous Galerkin (HDG) method to numerically solve the Maxwell&amp;rsquo;s equations coupled with a hydrodynamic model for the conduction-band electrons in metals. The HDG method leverages static condensation to eliminate the degrees of freedom of the approximate solution defined in the elements, yielding a linear system in terms of the degrees of freedom of the approximate trace defined on the element boundaries. This article presents a computational method that relies on a degree-of-freedom reordering such that the HDG linear system accommodates an additional static condensation step to eliminate a large portion of the degrees of freedom of the approximate trace, thereby yielding a much smaller linear system. For the particular metallic structures considered in this article, the resulting linear system obtained by means of nested static condensations is a block tridiagonal system, which can be solved efficiently. We apply the nested HDG method to compute second harmonic generation on a triangular coaxial periodic nanogap structure. This nonlinear optics phenomenon features rapid field variations and extreme boundary-layer structures that span a wide range of length scales. Numerical results show that the ability to identify structures which exhibit resonances at ? and 2? is essential to excite the second harmonic response.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An explicit hybridizable discontinuous Galerkin method for the acoustic wave equation</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem3/</guid>
+      <description>&lt;p&gt;We present an explicit hybridizable discontinuous Galerkin (HDG) method for numerically solving the acoustic wave equation. The method is fully explicit, high-order accurate in both space and time, and coincides with the classic discontinuous Galerkin (DG) method with upwinding fluxes for a particular choice of its stabilization function. This means that it has the same computational complexity as other explicit DG methods. However, just as its implicit version, it provides optimal convergence of order for all the approximate variables including the gradient of the solution, and, when the time-stepping method is of order , it displays a superconvergence property which allow us, by means of local postprocessing, to obtain new improved approximations of the scalar field variables at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order in the L2 norm for. These properties do not hold for all numerical fluxes. Indeed, our results show that, when the HDG numerical flux is replaced by the Lax?Friedrichs flux, the above-mentioned superconvergence properties are lost, although some are recovered when the Lax?Friedrichs flux is used only in the interior of the domain. Finally, we extend the explicit HDG method to treat the wave equation with perfectly matched layers. We provide numerical examples to demonstrate the performance of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-order implicit hybridizable discontinuous Galerkin methods for acoustics and elastodynamics</title>
       <link>https://ngoccuongnguyen.github.io/project/cem1/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://ngoccuongnguyen.github.io/project/cem1/</guid>
-      <description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://ngoccuongnguyen.github.io/featured.jpeg&#34; alt=&#34;Example image&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.&lt;/p&gt;
+      <description>&lt;p&gt;We present a class of hybridizable discontinuous Galerkin (HDG) methods for the numerical simulation of wave phenomena in acoustics and elastodynamics. The methods are fully implicit and high-order accurate in both space and time, yet computationally attractive owing to their following distinctive features. First, they reduce the globally coupled unknowns to the approximate trace of the velocity, which is defined on the element faces and single-valued, thereby leading to a significant saving in the computational cost. In addition, all the approximate variables (including the approximate velocity and gradient) converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k ? 0 are used to represent the numerical solution and when the time-stepping method is accurate with order k + 1. When the time-stepping method is of order k + 2, superconvergence properties allows us, by means of local postprocessing, to obtain better, yet inexpensive approximations of the displacement and velocity at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order k + 2 in the L2-norm when k ? 1 for both acoustics and elastodynamics. Extensive numerical results are provided to illustrate these distinctive features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for the time-harmonic Maxwells equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem2/</guid>
+      <description>&lt;p&gt;We present two hybridizable discontinuous Galerkin (HDG) methods for the numerical solution of the time-harmonic Maxwell?s equations. The first HDG method explicitly enforces the divergence-free condition and thus necessitates the introduction of a Lagrange multiplier. It produces a linear system for the degrees of freedom of the approximate traces of both the tangential component of the vector field and the Lagrange multiplier. The second HDG method does not explicitly enforce the divergence-free condition and thus results in a linear system for the degrees of freedom of the approximate trace of the tangential component of the vector field only. For both HDG methods, the approximate vector field converges with the optimal order of k + 1 in the L2-norm, when polynomials of degree k are used to represent all the approximate variables. We propose elementwise postprocessing to obtain a new Hcurl-conforming approximate vector field which converges with order k + 1 in the Hcurl-norm. We present extensive numerical examples to demonstrate and compare the performance of the HDG methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implicit hybridized discontinuous Galerkin methods for compressible magnetohydrodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem5/</guid>
+      <description>&lt;p&gt;We present hybridized discontinuous Galerkin (HDG) methods for ideal and resistive compressible magnetohydrodynamics (MHD). The HDG methods are fully implicit, high-order accurate and endowed with a unique feature which distinguishes themselves from other discontinuous Galerkin (DG) methods. In particular, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby resulting in considerably smaller global degrees of freedom than other DG methods. Furthermore, we develop a shock capturing method to deal with shocks by appropriately adding artificial bulk viscosity, molecular viscosity, thermal conductivity, and electric resistivity to the physical viscosities in the MHD equations. We show the optimal convergence of the HDG methods for ideal MHD problems and validate our resistive implementation for a magnetic reconnection problem. For smooth problems, we observe that employing a generalized Lagrange multiplier (GLM) formulation can reduce the errors in the divergence of the magnetic field by two orders of magnitude. We demonstrate the robustness of our shock capturing method on a number of test cases and compare our results, both qualitatively and quantitatively, with other MHD solvers. For shock problems, we observe that an effective treatment of both the shock wave and the divergence-free constraint is crucial to ensuring numerical stability.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian finite element methods for electromagnetics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem7/</guid>
+      <description>&lt;p&gt;We present several high-order accurate finite element methods for the Maxwell?s equations which provide time-invariant, non-drifting approximations to the total electric and magnetic charges, and to the total energy. We devise these methods by taking advantage of the Hamiltonian structures of the Maxwell?s equations as follows. First, we introduce spatial discretizations of the Maxwell?s equations using mixed finite element, discontinuous Galerkin, and hybridizable discontinuous Galerkin methods to obtain a semi-discrete system of equations which display discrete versions of the Hamiltonian structure of the Maxwell?s equations. Then we discretize the resulting semi-discrete system in time by using a symplectic integrator. This ensures the conservation properties of the fully discrete system of equations. For the Symplectic Hamiltonian HDG method, we present numerical experiments which confirm its optimal orders of convergence for all variables and its conservation properties for the total linear and angular momenta, as well as the total energy. Finally, we discuss the extension of our results to other boundary conditions and to numerical schemes defined by different weak formulations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian HDG methods for wave propagation phenomena</title>
+      <link>https://ngoccuongnguyen.github.io/project/cem4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cem4/</guid>
+      <description>&lt;p&gt;We devise the first symplectic Hamiltonian hybridizable discontinuous Galerkin (HDG) methods for the acoustic wave equation. We discretize in space by using a Hamiltonian HDG scheme, that is, an HDG method which preserves the Hamiltonian structure of the wave equation, and in time by using symplectic, diagonally implicit and explicit partitioned Runge?Kutta methods. The fundamental feature of the resulting scheme is that the conservation of a discrete energy, which is nothing but a discrete version of the original Hamiltonian, is guaranteed. We present numerical experiments which indicate that the method achieves optimal approximations of order k+1 in the L2-norm when polynomials of degree k?0 and Runge?Kutta time-marching methods of order k+1 are used. In addition, by means of post-processing techniques and by increasing the order of the Runge?Kutta method to k+2, we obtain superconvergent approximations of order k+2 in the L2-norm for the displacement and the velocity. We also present numerical examples that corroborate that the methods conserve energy and that they compare favorably with dissipative HDG schemes, of similar accuracy properties, for long-time simulations.&lt;/p&gt;
 </description>
     </item>
     

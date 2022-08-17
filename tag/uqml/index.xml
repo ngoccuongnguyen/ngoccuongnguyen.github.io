@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uqml | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/uqml/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/uqml/index.xml" rel="self" type="application/rss+xml" />
+    <description>uqml</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>uqml</title>
+      <link>https://ngoccuongnguyen.github.io/tag/uqml/</link>
+    </image>
+    
+    <item>
+      <title>A model and variance reduction method for computing statistical outputs of stochastic elliptic partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml1/</guid>
+      <description>&lt;p&gt;We present a model and variance reduction method for the fast and reliable computation of statistical outputs of stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the hybridizable discontinuous Galerkin (HDG) discretization of elliptic partial differential equations (PDEs), which allows us to obtain high-order accurate solutions of the governing PDE; (2) the reduced basis method for a new HDG discretization of the underlying PDE to enable real-time solution of the parameterized PDE in the presence of stochastic parameters; and (3) a multilevel variance reduction method that exploits the statistical correlation among the different reduced basis approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the reduced basis approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the reduced basis approximations and the sizes of Monte Carlo samples to achieve a given error tolerance. We provide numerical examples to demonstrate the performance of the proposed method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Empirical Interpolation and Model-Variance Reduction Method for Computing Statistical Outputs  of Parametrized Stochastic Partial Differential Equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml4/</guid>
+      <description>&lt;p&gt;We present an empirical interpolation and model-variance reduction method for the fast and reliable computation of statistical outputs of parametrized stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the real-time computation of reduced basis (RB) outputs approximating high-fidelity outputs computed with the hybridizable discontinuous Galerkin (HDG) discretization; (2) the empirical interpolation for an efficient offline-online decoupling of the parametric and stochastic influence; and (3) a multilevel variance reduction method that exploits the statistical correlation between the low-fidelity approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the RB approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the RB approximations and the size of Monte Carlo samples to achieve a given error tolerance. In addition, we extend the method to compute estimates for the gradients of the statistical outputs. The proposed method is particularly useful for stochastic optimization problems where many evaluations of the objective function and its gradient are required.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Functional Regression for State Prediction Using Linear PDE Models and Observations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml5/</guid>
+      <description>&lt;p&gt;Partial differential equations (PDEs) are commonly used to model a wide variety of physical phenomena. A PDE model of a physical problem is typically described by conservation laws, constitutive laws, material properties, boundary conditions, boundary data, and geometry. In most practical applications, however, the PDE model is only an approximation to the real physical problem due to both (i) the deliberate mathematical simplification of the model to keep it tractable and (ii) the inherent uncertainty of the physical parameters. In such cases, the PDE model may not produce a good prediction of the true state of the underlying physical problem. In this paper, we introduce a functional regression method that incorporates observations into a deterministic linear PDE model to improve its prediction of the true state. Our method is devised as follows. First, we augment the PDE model with a random Gaussian functional which serves to represent various sources of uncertainty in the model. We next derive a linear regression model for the Gaussian functional by utilizing observations and adjoint states. This allows us to determine the posterior distribution of the Gaussian functional and the posterior distribution for our estimate of the true state. Furthermore, we consider the problem of experimental design in this setting, wherein we develop an algorithm for designing experiments to efficiently reduce the variance of our state estimate. We provide several examples from the heat conduction, the convection-diffusion equation, and the reduced wave equation, all of which demonstrate the performance of the proposed methodology.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gaussian functional regression for linear partial differential equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml3/</guid>
+      <description>&lt;p&gt;In this paper, we present a new statistical approach to the problem of incorporating experimental observations into a mathematical model described by linear partial differential equations (PDEs) to improve the prediction of the state of a physical system. We augment the linear PDE with a functional that accounts for the uncertainty in the mathematical model and is modeled as a Gaussian process. This gives rise to a stochastic PDE which is characterized by the Gaussian functional. We develop a Gaussian functional regression method to determine the posterior mean and covariance of the Gaussian functional, thereby solving the stochastic PDE to obtain the posterior distribution for our prediction of the physical state. Our method has the following features which distinguish itself from other regression methods. First, it incorporates both the mathematical model and the observations into the regression procedure. Second, it can handle the observations given in the form of linear functionals of the field variable. Third, the method is non-parametric in the sense that it provides a systematic way to optimally determine the prior covariance operator of the Gaussian functional based on the observations. Fourth, it provides the posterior distribution quantifying the magnitude of uncertainty in our prediction of the physical state. We present numerical results to illustrate these features of the method and compare its performance to that of the standard Gaussian process regression.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gaussian functional regression for output prediction: Model assimilation and experimental design</title>
+      <link>https://ngoccuongnguyen.github.io/project/uqml2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/uqml2/</guid>
+      <description>&lt;p&gt;In this paper, we introduce a Gaussian functional regression (GFR) technique that integrates multi-fidelity models with model reduction to efficiently predict the input?output relationship of a high-fidelity model. The GFR method combines the high-fidelity model with a low-fidelity model to provide an estimate of the output of the high-fidelity model in the form of a posterior distribution that can characterize uncertainty in the prediction. A reduced basis approximation is constructed upon the low-fidelity model and incorporated into the GFR method to yield an inexpensive posterior distribution of the output estimate. As this posterior distribution depends crucially on a set of training inputs at which the high-fidelity models are simulated, we develop a greedy sampling algorithm to select the training inputs. Our approach results in an output prediction model that inherits the fidelity of the high-fidelity model and has the computational complexity of the reduced basis approximation. Numerical results are presented to demonstrate the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

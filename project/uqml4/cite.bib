@@ -1,0 +1,11 @@
+@article{doi:10.1137/15M1016783,
+author = {Vidal-Codina, F. and Nguyen, N. C. and Giles, M. B. and Peraire, J.},
+title = {An Empirical Interpolation and Model-Variance Reduction Method for Computing Statistical Outputs  of Parametrized Stochastic Partial Differential Equations},
+journal = {SIAM/ASA Journal on Uncertainty Quantification},
+volume = {4},
+number = {1},
+pages = {244-265},
+year = {2016},
+doi = {10.1137/15M1016783},
+abstract = {We present an empirical interpolation and model-variance reduction method for the fast and reliable computation of statistical outputs of parametrized stochastic elliptic partial differential equations. Our method consists of three main ingredients (1) the real-time computation of reduced basis (RB) outputs approximating high-fidelity outputs computed with the hybridizable discontinuous Galerkin (HDG) discretization; (2) the empirical interpolation for an efficient offline-online decoupling of the parametric and stochastic influence; and (3) a multilevel variance reduction method that exploits the statistical correlation between the low-fidelity approximations and the high-fidelity HDG discretization to accelerate the convergence of the Monte Carlo simulations. The multilevel variance reduction method provides efficient computation of the statistical outputs by shifting most of the computational burden from the high-fidelity HDG approximation to the RB approximations. Furthermore, we develop a posteriori error estimates for our approximations of the statistical outputs. Based on these error estimates, we propose an algorithm for optimally choosing both the dimensions of the RB approximations and the size of Monte Carlo samples to achieve a given error tolerance. In addition, we extend the method to compute estimates for the gradients of the statistical outputs. The proposed method is particularly useful for stochastic optimization problems where many evaluations of the objective function and its gradient are required. }
+}

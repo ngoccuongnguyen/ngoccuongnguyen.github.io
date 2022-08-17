@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csm | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/csm/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/csm/index.xml" rel="self" type="application/rss+xml" />
+    <description>csm</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>csm</title>
+      <link>https://ngoccuongnguyen.github.io/tag/csm/</link>
+    </image>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for both thin and 3D nonlinear elastic structures</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm3/</guid>
+      <description>&lt;p&gt;We present a 3D hybridizable discontinuous Galerkin (HDG) method for nonlinear elasticity which can be efficiently used for thin structures with large deformation. The HDG method is developed for a three-field formulation of nonlinear elasticity and is endowed with a number of attractive features that make it ideally suited for thin structures. Regarding robustness, the method avoids a variety of locking phenomena such as membrane locking, shear locking, and volumetric locking. Regarding accuracy, the method yields optimal convergence for the displacements, which can be further improved by an inexpensive postprocessing. And finally, regarding efficiency, the only globally coupled unknowns are the degrees of freedom of the numerical trace on the interior faces, resulting in substantial savings in computational time and memory storage. This last feature is particularly advantageous for thin structures because the number of interior faces is typically small. In addition, we discuss the implementation of the HDG method with arc-length algorithms for phenomena such as snap-through, where the standard load incrementation algorithm becomes unstable. Numerical results are presented to verify the convergence and demonstrate the performance of the HDG method through simple analytical and popular benchmark problems in the literature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High-order implicit hybridizable discontinuous Galerkin methods for acoustics and elastodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm1/</guid>
+      <description>&lt;p&gt;We present a class of hybridizable discontinuous Galerkin (HDG) methods for the numerical simulation of wave phenomena in acoustics and elastodynamics. The methods are fully implicit and high-order accurate in both space and time, yet computationally attractive owing to their following distinctive features. First, they reduce the globally coupled unknowns to the approximate trace of the velocity, which is defined on the element faces and single-valued, thereby leading to a significant saving in the computational cost. In addition, all the approximate variables (including the approximate velocity and gradient) converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k ? 0 are used to represent the numerical solution and when the time-stepping method is accurate with order k + 1. When the time-stepping method is of order k + 2, superconvergence properties allows us, by means of local postprocessing, to obtain better, yet inexpensive approximations of the displacement and velocity at any time levels for which an enhanced accuracy is required. In particular, the new approximations converge with order k + 2 in the L2-norm when k ? 1 for both acoustics and elastodynamics. Extensive numerical results are provided to illustrate these distinctive features.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hybridizable discontinuous Galerkin methods for partial differential equations in continuum mechanics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm2/</guid>
+      <description>&lt;p&gt;We present hybridizable discontinuous Galerkin methods for solving steady and time-dependent partial differential equations (PDEs) in continuum mechanics. The essential ingredients are a local Galerkin projection of the underlying PDEs at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the numerical trace; a judicious choice of the numerical flux to provide stability and consistency; and a global jump condition that enforces the continuity of the numerical flux to arrive at a global weak formulation in terms of the numerical trace. The HDG methods are fully implicit, high-order accurate and endowed with several unique features which distinguish themselves from other discontinuous Galerkin methods. First, they reduce the globally coupled unknowns to the approximate trace of the solution on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, they provide, for smooth viscous-dominated problems, approximations of all the variables which converge with the optimal order of k + 1 in the L2-norm. Third, they possess some superconvergence properties that allow us to define inexpensive element-by-element postprocessing procedures to compute a new approximate solution which may converge with higher order than the original solution. And fourth, they allow for a novel and systematic way for imposing boundary conditions for the total stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the methods. In addition, they possess other interesting properties for specific problems. Their approximate solution can be postprocessed to yield an exactly divergence-free and H(div)-conforming velocity field for incompressible flows. They do not exhibit volumetric locking for nearly incompressible solids. We provide extensive numerical results to illustrate their distinct characteristics and compare their performance with that of continuous Galerkin methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Symplectic Hamiltonian finite element methods for linear elastodynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/csm4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/csm4/</guid>
+      <description>&lt;p&gt;We present a class of high-order finite element methods that can conserve the linear and angular momenta as well as the energy for the equations of linear elastodynamics. These methods are devised by exploiting and preserving the Hamiltonian structure of the equations of linear elastodynamics. We show that several mixed finite element, discontinuous Galerkin, and hybridizable discontinuous Galerkin (HDG) methods belong to this class. We discretize the semidiscrete Hamiltonian system in time by using a symplectic integrator in order to ensure the symplectic properties of the resulting methods, which are called symplectic Hamiltonian finite element methods. For a particular semidiscrete HDG method, we obtain optimal error estimates and present, for the symplectic Hamiltonian HDG method, numerical experiments that confirm its optimal orders of convergence for all variables as well as its conservation properties.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

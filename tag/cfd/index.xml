@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cfd | Dr. Ngoc Cuong Nguyen</title>
+    <link>https://ngoccuongnguyen.github.io/tag/cfd/</link>
+      <atom:link href="https://ngoccuongnguyen.github.io/tag/cfd/index.xml" rel="self" type="application/rss+xml" />
+    <description>cfd</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>cfd</title>
+      <link>https://ngoccuongnguyen.github.io/tag/cfd/</link>
+    </image>
+    
+    <item>
+      <title>A class of embedded discontinuous Galerkin methods for computational fluid dynamics</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd5/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd5/</guid>
+      <description>&lt;p&gt;We present a class of embedded discontinuous Galerkin (EDG) methods for numerically solving the Euler equations and the Navier?Stokes equations. The essential ingredients are a local Galerkin projection of the underlying governing equations at the element level onto spaces of polynomials of degree k to parametrize the numerical solution in terms of the approximate trace, a judicious choice of the numerical flux to provide stability and consistency, and a global jump condition that weakly enforces the single-valuedness of the numerical flux to arrive at a global formulation in terms of the numerical trace. The EDG methods are thus obtained from the hybridizable discontinuous Galerkin (HDG) method by requiring the approximate trace to belong to smaller approximation spaces than the one in the HDG method. In the EDG methods, the numerical trace is taken to be continuous on a suitable collection of faces, thus resulting in an even smaller number of globally coupled degrees of freedom than in the HDG method. On the other hand, the EDG methods are no longer locally conservative. In the framework of convection?diffusion problems, this lack of local conservativity is reflected in the fact that the EDG methods do not provide the optimal convergence of the approximate gradient or the superconvergence for the scalar variable for diffusion-dominated problems as the HDG method does. However, since the HDG method does not display these properties in the convection-dominated regime, the EDG method becomes a reasonable alternative since it produces smaller algebraic systems than the HDG method. In fact, the resulting stiffness matrix has a similar sparsity pattern as that of the statically condensed continuous Galerkin (CG) method. The main advantage of the EDG methods is that they are generally more stable and robust than the CG method for solving convection-dominated problems. Numerical results are presented to illustrate the performance of the EDG methods. They confirm that, even though the EDG methods are not locally conservative, they are a viable alternative to the HDG method in the convection-dominated regime.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A dissimilar non-matching HDG discretization for Stokes flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd12/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd12/</guid>
+      <description>&lt;p&gt;In this work we propose and analyze an HDG method for the Stokes equation whose domain is discretized by two independent polygonal subdomains with different meshsizes. This causes a non-conformity at the intersection of the subdomains or leaves a gap (unmeshed region) between them. In order to appropriately couple these two different discretizations, we propose suitable transmission conditions to preserve the high order convergence of the scheme. Furthermore, stability estimates are established in order to show the well-posedness of the method and the error estimates. In particular, for smooth enough solutions, the L2 norm of the errors associated to the approximations of the velocity gradient, the velocity and the pressure are of order hk+1, where h is the meshsize and k is the polynomial degree of the local approximation spaces. Moreover, the method presents superconvergence of the velocity trace and the divergence-free postprocessed velocity. Finally, we show numerical experiments that validate our theory and the capacities of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for the compressible Euler and Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd3/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd3/</guid>
+      <description>&lt;p&gt;In this paper, we present a Hybridizable Discontinuous Galerkin (HDG) method for the solution of the compressible Euler and Navier-Stokes equations. The method is devised by using the discontinuous Galerkin approximation with a special choice of the numerical fluxes and weakly imposing the continuity of the normal component of the numerical fluxes across the element interfaces. This allows the approximate conserved variables defining the discontinuous Galerkin solution to be locally condensed, thereby resulting in a reduced system which involves only the degrees of freedom of the approximate traces of the solution. The HDG method inherits the geometric flexibility and arbitrary high order accuracy of Discontinuous Galerkin methods, but offers a significant reduction in the computational cost as well as improved accuracy and convergence properties. In particular, we show that HDG produces optimal converges rates for both the conserved quantities as well as the viscous stresses and the heat fluxes. We present some numerical results to demonstrate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A hybridizable discontinuous Galerkin method for the incompressible Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd13/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd13/</guid>
+      <description>&lt;p&gt;We present a hybridizable discontinuous Galerkin method for the numerical solution the incompressible Navier-Stokes equations. The method is devised by using the discontinuous Galerkin approximation with a special choice of the numerical traces and a fully implicit time-stepping method for temporal discretization. The HDG method possesses several unique features which distinguish themselves from other discontinuous Galerkin methods. First, it reduces the globally coupled unknowns to the approximate trace of the velocity and the mean of the pressure on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Second, it allows for pressure, vorticity and stress boundary conditions to be prescribed on different parts of the boundary. Third, it provides, for smooth viscous-dominated problems, approximations of the velocity, pressure, and velocity gradient which converge with the optimal order of k+1 in the L2 norm, when polynomials of degree k ? 0 are used for all components of the approximate solution. And fourth, it displays superconvergence properties that allow us to use the above-mentioned optimal convergence properties to define an element-by-element postprocessing scheme to compute a new and better approximate velocity. Indeed, this new approximation is exactly divergence-free, H(div)-conforming, and converges with order k + 2 for k ? 1 and with order 1 for k = 0 in the L2 norm. We present extensive numerical results to demonstrate the accuracy and convergence properties of the method for a wide range of Reynolds numbers and for various polynomial degrees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Hybridized Multiscale Discontinuous Galerkin Method for Compressible Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd9/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd9/</guid>
+      <description>&lt;p&gt;&amp;lsquo;We introduce a hybridized multiscale discontinuous Galerkin (HMDG) method for the numerical solution of compressible flows. The HMDG method is developed upon extending the hybridizable discontinuous Galerkin (HDG) method presented in [30]. The extension is carried out by modifying the local approximation spaces on elements. Our local approximation spaces are characterized by two integers (n*, k*), where n* is the number of subcells within an element and k* is the polynomial degree of shape functions defined on the subcells. The selection of the value of (n*, k*) on a particular element depends on the smoothness of the solution on that element. More specifically, for elements on which the solution is smooth, we choose the smallest value n* = 1 and the highest degree k* = k. For elements containing shocks in the solution, we use the largest value n* = n and the lowest degree k* = 0 so as to capture shocks without using artificial viscosity and limiting slopes/fluxes. The proposed method thus combines the accuracy and efficiency of higli-order approximations with the robustness of low-order approximations. Numerical results are presented to demonstrate the performance of the proposed method.&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Time-Spectral Hybridizable Discontinuous Galerkin Method for Periodic Flow Problems</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd8/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd8/</guid>
+      <description>&lt;p&gt;Numerical simulations of time-periodic flows are an essential design tool for a wide range of engineered systems, including jet engines, wind turbines and flapping wings. Conventional solvers for time-periodic flows are limited in accuracy and efficiency by the low-order Finite Volume and time-marching methods they typically employ. These methods introduce significant numerical dissipation in the simulated flow, and can require hundreds of timesteps to describe a periodic flow with only a few harmonic modes. However, recent developments in high-order methods and Fourier-based time discretizations present an opportunity to greatly improve computational performance. This thesis presents a novel Time-Spectral Hybridizable Discontinuous Galerkin (HDG) method for periodic flow problems, together with applications to flow through cascades and rotor/stator assemblies in aeronautical turbomachinery. The present work combines a Fourier-based Time-Spectral discretization in time with an HDG discretization in space, realizing the dual benefits of spectral accuracy in time and high-order accuracy in space. Low numerical dissipation and favorable stability properties are inherited from the high-order HDG method, together with a reduced number of globally coupled degrees of freedom compared to other DG methods. HDG provides a natural framework for treating boundary conditions, which is exploited in the development of a new high-order sliding mesh interface coupling technique for multiple-row turbomachinery problems. A regularization of the Spalart-Allmaras turbulence model is also employed to ensure numerical stability of unsteady flow solutions obtained with high-order methods. Turning to the temporal discretization, the Time-Spectral method enables direct solution of a periodic flow state, bypasses initial transient behavior, and can often deliver substantial savings in computational cost compared to implicit time-marching. An important driver of computational efficiency is the ability to select and resolve only the most important frequencies of a periodic problem, such as the blade-passing frequencies in turbomachinery flows. To this end, the present work introduces an adaptive frequency selection technique, using the Time-Spectral residual to form an inexpensive error indicator. Having selected a set of frequencies, the accuracy of the Time-Spectral solution is greatly improved by using optimally selected collocation points in time. For multi-domain problems such as turbomachinery flows, an anti-aliasing filter is also needed to avoid errors in the transfer of the solution across the sliding interface. All of these aspects contribute to the Adaptive Time-Spectral HDG method developed in this thesis. Performance characteristics of the method are demonstrated through applications to periodic ordinary differential equations, a convection problem, laminar flow over a pitching airfoil, and turbulent flow through a range of single- and multiple-row turbomachinery configurations. For a 2:1 rotor/stator flow problem, the Adaptive Time-Spectral HDG method correctly identifies the relevant frequencies in each blade row. This leads to an accurate periodic flow solution with greatly reduced computational cost, when compared to sequentially selected frequencies or a time-marching solution. For comparable accuracy in prediction of rotor loading, the Adaptive Time- Spectral HDG method incurs 3 times lower computational cost (CPU time) than time-marching, and for prediction of only the 1st harmonic amplitude, these savings rise to a factor of 200. Finally, in three-row compressor flow simulations, a high-order HDG method is shown to achieve significantly greater accuracy than a lower-order method with the same computational cost. For example, considering error in the amplitude of the 1st harmonic mode of total rotor loading, a p = 1 computation results in 20% error, in contrast to only 1% error in a p = 4 solution with comparable cost. This highlights the benefits that can be obtained from higher-order methods in the context of turbomachinery flow problems&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advances in the development of a High Order, Viscous-Inviscid Interaction Solver</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd10/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd10/</guid>
+      <description>&lt;p&gt;We present a high order viscous-inviscid interaction solver for aerodynamic flows. Our approach is based on a split formulation where the viscous and inviscid effects are solved in two different domains that overlap near solid walls or the wake centerline and are coupled using the equivalent mass transpiration proposed by Lighthill. Both the viscous and inviscid solvers are based on a high order Hybridized Discontinuous Galerkin scheme (HDG). In the case of the viscous solver, the mesh is extruded on the fly from the surface mesh using a normal scaling indicator ?, based on integrated boundary layer quantities, that is computed as part of the solution. Results will be presented to validate the coupled viscous-inviscid solver in a variety of cases using the Euler equations as well as the full potential equation as inviscid models.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An adaptive shock-capturing HDG method for compressible flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd14/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd14/</guid>
+      <description>&lt;p&gt;We introduce a hybridizable discontinuous Galerkin (HDG) method for the numerical solution of the compressible Euler equations with shock waves. By locally condensing the approximate conserved variables the HDG method results in a final system involving only the degrees of freedom of the approximate traces of the conserved variables. The HDG method inherits the geometric flexibility and high-order accuracy of discontinuous Galerkin methods, and offers a significant reduction in the computational cost. In order to treat compressible fluid flows with discontinuities, the HDG method is equipped with an artificial viscosity term based on an extension of existing artificial viscosity methods. Moreover, the artificial viscosity can be used as an indicator for adaptive grid refinement to improve shock profiles. Numerical results for subsonic, transonic, supersonic, and hypersonic flows are presented to demonstrate the performance of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An implicit high-order hybridizable discontinuous Galerkin method for the incompressible Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd1/</guid>
+      <description>&lt;p&gt;We present an implicit high-order hybridizable discontinuous Galerkin method for the steady-state and time-dependent incompressible Navier?Stokes equations. The method is devised by using the discontinuous Galerkin discretization for a velocity gradient-pressure?velocity formulation of the incompressible Navier?Stokes equations with a special choice of the numerical traces. The method possesses several unique features which distinguish itself from other discontinuous Galerkin methods. First, it reduces the globally coupled unknowns to the approximate trace of the velocity and the mean of the pressure on element boundaries, thereby leading to a significant reduction in the degrees of freedom. Moreover, if the augmented Lagrangian method is used to solve the linearized system, the globally coupled unknowns become the approximate trace of the velocity only. Second, it provides, for smooth viscous-dominated problems, approximations of the velocity, pressure, and velocity gradient which converge with the optimal order of k + 1 in the L2-norm, when polynomials of degree k?0 are used for all components of the approximate solution. And third, it displays superconvergence properties that allow us to use the above-mentioned optimal convergence properties to define an element-by-element postprocessing scheme to compute a new and better approximate velocity. Indeed, this new approximation is exactly divergence-free, H (div)-conforming, and converges with order k + 2 for k ? 1 and with order 1 for k = 0 in the L2-norm. Moreover, a novel and systematic way is proposed for imposing boundary conditions for the stress, viscous stress, vorticity and pressure which are not naturally associated with the weak formulation of the method. This can be done on different parts of the boundary and does not result in the degradation of the optimal order of convergence properties of the method. Extensive numerical results are presented to demonstrate the convergence and accuracy properties of the method for a wide range of Reynolds numbers and for various polynomial degrees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis of HDG methods for Oseen equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd4/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd4/</guid>
+      <description>&lt;p&gt;We propose a hybridizable discontinuous Galerkin (HDG) method to numerically solve the Oseen equations which can be seen as the linearized version of the incompressible Navier-Stokes equations. We use same polynomial degree to approximate the velocity, its gradient and the pressure. With a special projection and postprocessing, we obtain optimal convergence for the velocity gradient and pressure and superconvergence for the velocity. Numerical results supporting our theoretical results are provided.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dilation-based shock capturing for high-order methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd6/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd6/</guid>
+      <description>&lt;p&gt;In this paper, we introduce a shock-capturing artificial viscosity technique for high-order unstructured mesh methods. This artificial viscosity model is based on a non-dimensional form of the divergence of the velocity. The technique is an extension and improvement of the dilation-based artificial viscosity methods introduced in Premasuthan et al., and further extended in Nguyen and Peraire . The approach presented has a number attractive properties including non-dimensional analytical form, sub-cell resolution, and robustness for complex shock flows on anisotropic meshes. We present extensive numerical results to demonstrate the performance of the proposed approach.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entropy-stable hybridized discontinuous Galerkin methods for the compressible Euler and Navier-Stokes equations</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd7/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd7/</guid>
+      <description>&lt;p&gt;In the spirit of making high-order discontinuous Galerkin (DG) methods more competitive, researchers have developed the hybridized DG methods, a class of discontinuous Galerkin methods that generalizes the Hybridizable DG (HDG), the Embedded DG (EDG) and the Interior Embedded DG (IEDG) methods. These methods are amenable to hybridization (static condensation) and thus to more computationally efficient implementations. Like other high-order DG methods, however, they may suffer from numerical stability issues in under-resolved fluid flow simulations. In this spirit, we introduce the hybridized DG methods for the compressible Euler and Navier-Stokes equations in entropy variables. Under a suitable choice of the numerical flux, the scheme can be shown to be entropy stable and satisfy the Second Law of Thermodynamics in an integral sense. The performance and robustness of the proposed family of schemes are illustrated through a series of steady and unsteady flow problems in subsonic, transonic, and supersonic regimes. The hybridized DG methods in entropy variables show the optimal accuracy order given by the polynomial approximation space, and are significantly superior to their counterparts in conservation variables in terms of stability and robustness, particularly for under-resolved and shock flows.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mesh Topology Preserving Boundary-Layer Adaptivity Method for Steady Viscous Flows</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd11/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd11/</guid>
+      <description>&lt;p&gt;The efficiency and accuracy of viscous flow simulations depend crucially on the quality of the boundary-layer mesh. Too coarse meshes can result in inaccurate predictions and in some cases lead to numerical instabilities, whereas too fine meshes produce accurate predictions at the expense of long simulation times. Constructing an optimal (or near-optimal) boundary-layer mesh has been recognized as an important problem in computational fluid dynamics. For few simple flows, one may be able to construct such a mesh a priori before simulation. For most viscous flow simulations, however, it is difficult to generate such mesh in advance. In this paper, a boundary-layer adaptivity method is developed for the efficient computation of steady viscous flows. This method turns the problem of determining the location of the mesh nodes into a set of equations that are solved simultaneously with the flow equations. The mesh equations are designed so that the boundary-layer mesh adapts to the viscous layers as the flow solver marches toward the converged solution. Extensive numerical experiments are presented to demonstrate the performance of the method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RANS solutions using high order discontinuous Galerkin methods</title>
+      <link>https://ngoccuongnguyen.github.io/project/cfd2/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://ngoccuongnguyen.github.io/project/cfd2/</guid>
+      <description>&lt;p&gt;We present a practical approach for the numerical solution of the Reynolds averaged Navier-Stokes (RANS) equations using high-order discontinuous Galerkin methods. Turbulence is modeled by the Spalart-Allmaras (SA) one-equation model. We introduce an artificial viscosity model for SA equation which is aimed at accommodating high-order RANS approximations on grids which would otherwise be too coarse. Generally, the model term is only active at the edge of the boundary layer, where the grid resolution is insufficient to capture the abrupt change in curvature required for the eddy viscosity profile to match its free-stream value. Furthermore, the amount of viscosity required decreases with the grid resolution and vanishes when the resolution is sufficiently high. For transonic computations, an additional shock-capturing artificial viscosity model term is required. Numerical predictions for turbulent flows past a flat plate and a NACA 0012 airfoil are presented via comparison with the experimental measurements. In the flat plate case, grid refinement studies are performed in order to assess the convergence properties and demonstrate the effectiveness of high-order approximations.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

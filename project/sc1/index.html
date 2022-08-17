@@ -78,7 +78,7 @@
   
     
   
-  <meta name="description" content="This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C&#43;&#43; codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs." />
+  <meta name="description" content="A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://ngoccuongnguyen.github.io/project/sc1/" />
@@ -310,8 +310,8 @@
   
   <meta property="og:site_name" content="Dr. Ngoc Cuong Nguyen" />
   <meta property="og:url" content="https://ngoccuongnguyen.github.io/project/sc1/" />
-  <meta property="og:title" content="Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors | Dr. Ngoc Cuong Nguyen" />
-  <meta property="og:description" content="This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C&#43;&#43; codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs." /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:title" content="Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow | Dr. Ngoc Cuong Nguyen" />
+  <meta property="og:description" content="A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number." /><meta property="og:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -344,14 +344,14 @@
     "@type": "WebPage",
     "@id": "https://ngoccuongnguyen.github.io/project/sc1/"
   },
-  "headline": "Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors",
+  "headline": "Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow",
   
   "datePublished": "2022-01-01T00:00:00Z",
   "dateModified": "2022-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Jordi Vila-Perez"
+    "name": "Xevi Roca"
   },
   
   "publisher": {
@@ -362,7 +362,7 @@
       "url": "https://ngoccuongnguyen.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs."
+  "description": "A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number."
 }
 </script>
 
@@ -373,7 +373,7 @@
   
 
 
-  <title>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors | Dr. Ngoc Cuong Nguyen</title>
+  <title>Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow | Dr. Ngoc Cuong Nguyen</title>
 
   
   
@@ -598,7 +598,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#featured"><span>Research</span></a>
+            <a class="nav-link " href="/#research"><span>Research</span></a>
           </li>
 
           
@@ -709,44 +709,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#accomplishments"><span>Softwares</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#collaborators"><span>Collaborators</span></a>
+            <a class="nav-link " href="/#softwares"><span>Software</span></a>
           </li>
 
           
@@ -905,7 +868,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Exasim: Generating Discontinuous Galerkin Codes for Numerical Solutions of Partial Differential Equations on Graphics Processors</h1>
+  <h1>Scalable parallelization of the hybridized discontinuous Galerkin method for compressible flow</h1>
 
   
 
@@ -923,10 +886,9 @@
     
 
   <span >
-      Jordi Vila-Perez</span>, <span >
-      R. Loek Van Heyningen</span>, <span class="author-highlighted">
+      Xevi Roca</span>, <span class="author-highlighted">
       Ngoc Cuong Nguyen</span>, <span >
-      Jaume Peraire</span>
+      Jaime Peraire</span>
   </div>
   
   
@@ -1039,28 +1001,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/exasim1.png" alt="Example image" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>This paper presents an overview of the functionalities and applications of Exasim, an open-source code for generating high-order discontinuous Galerkin codes to numerically solve parametrized partial differential equations (PDEs). The software combines high-level and low-level languages to construct parametrized PDE models via Julia, Python or Matlab scripts and produce high-performance C++ codes for solving the PDE models on CPU and Nvidia GPU processors with distributed memory. Exasim provides matrix-free discontinuous Galerkin discretization schemes together with scalable reduced basis preconditioners and Newton-GMRES solvers, making it suitable for accurate and efficient approximation of wide-ranging classes of PDEs.</p>
+      <p>A distributed and parallel implementation of a hybridized discontinuous Galerkin (HDG) solver for the compressible Navier-Stokes equations is presented. This implementation exploits the characteristics of the HDG method. First, the global degrees of freedom are reduced to the numerical trace of the solution on the element boundaries. Second, the conserved quantities and their gradients on each element are obtained in terms of the numerical trace on the element boundary. For meshes composed by a large numer of elements, the cost of the solver is dominated by the first stage, since the second stage scales linearly with the number of elements and it can be parallelized. To accelerate the first stage, we use a distributed GMRES solver with restart pre-conditioned with an algebraic additive Schwarz domain decomposition with l-levels of overlap (ASDD(l)). Each sub-domain problem is approximated by an incomplete LU factorization with k-levels of fill-in (ILU(k)). From the considered tests cases, we conclude that ASDD(1)/ILU(0) presents good weak scaling characteristics for studying the periodic vortex shedding around an airfoil at low Reynolds and low Mach number.</p>
 
     </div>
 
@@ -1089,7 +1030,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;text=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;text=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1102,7 +1043,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://ngoccuongnguyen.github.io/project/sc1/&amp;t=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://ngoccuongnguyen.github.io/project/sc1/&amp;t=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1115,7 +1056,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors&amp;body=https://ngoccuongnguyen.github.io/project/sc1/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow&amp;body=https://ngoccuongnguyen.github.io/project/sc1/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1128,7 +1069,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;title=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;title=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1141,7 +1082,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors%20https://ngoccuongnguyen.github.io/project/sc1/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow%20https://ngoccuongnguyen.github.io/project/sc1/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1154,7 +1095,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;title=Exasim:%20Generating%20Discontinuous%20Galerkin%20Codes%20for%20Numerical%20Solutions%20of%20Partial%20Differential%20Equations%20on%20Graphics%20Processors" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://ngoccuongnguyen.github.io/project/sc1/&amp;title=Scalable%20parallelization%20of%20the%20hybridized%20discontinuous%20Galerkin%20method%20for%20compressible%20flow" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1173,12 +1114,6 @@
 
 
   
-  
-    
-
-
-
-
   
     
 
